@@ -1,0 +1,55 @@
+{
+  "pilot": "pilot-01",
+  "date": "2026-11-13",
+  "models": [
+    {
+      "id": "chatgpt-web",
+      "name": "ChatGPT (web)",
+      "version": "not captured",
+      "note": "Web UI; model version not recorded"
+    },
+    {
+      "id": "deepseek-v4.1-flash",
+      "name": "DeepSeek v4.1 Flash",
+      "version": "v4.1 Flash",
+      "note": "Web UI"
+    }
+  ],
+  "cards": [
+    {
+      "id": "D1",
+      "constraints": 6,
+      "levels": [
+        "L0",
+        "L1",
+        "L2",
+        "L3",
+        "L4"
+      ],
+      "note_limit": 300
+    },
+    {
+      "id": "D2",
+      "constraints": 13,
+      "levels": [
+        "L0",
+        "L1",
+        "L2",
+        "L3"
+      ],
+      "note_limit": 600
+    },
+    {
+      "id": "D3",
+      "constraints": 20,
+      "levels": [
+        "L0",
+        "L1"
+      ],
+      "note_limit": 900
+    }
+  ],
+  "notes": "Design notes are included. ChatGPT D1/D2 and DeepSeek D1/D2 use card-level notes; ChatGPT D3 and DeepSeek D3 use level-specific notes (L0/L1).",
+  "caution": "n=1 per model/card; no repeats; no formal K/M scoring; ChatGPT version not captured.",
+  "source": "Desktop experiment folders, 2026-11-13"
+}
