@@ -63,6 +63,16 @@ A simple workflow:
 
 **You are not limited to the library.** The library gives you parts; the guide turns parts into a prompt; your own words are allowed as long as they are visible, countable, or checkable.
 
+## Call for submissions
+
+This pilot is deliberately unfinished.
+
+- **More models.** Any model, open or closed, local or hosted.
+- **More styles and media.** SVG is the reference format because it renders and diffs cleanly, but the design logic is the point. Raster, pixel art, 3D, ASCII, video, or another medium is welcome under [`submissions/experimental/`](submissions/experimental/README.md); say what you changed.
+- **L5 wanted.** The alien riding a bicycle is still unclaimed. If your model can do it, add `submissions/<model>/<card>/L5/ride.svg` and a note. The L5 prompt is in the standard.
+
+中文：欢迎更多模型、更多风格、更多媒介来试这套题；也期待第一个 L5“外星人骑自行车”的提交。
+
 ## First observations
 
 1. **All 56 SVGs are structurally valid.** 56/56 parse, use `viewBox="0 0 512 512"`, and contain no `<text>`, `<image>`, `<script>`, or external assets. The largest file is 362 KB, under the 512 KB cap.
@@ -109,10 +119,11 @@ xenodesign-pilot-01/
 │   │   ├── D1/  # L0–L4 + DESIGN_NOTES.md
 │   │   ├── D2/  # L0–L3 + README_设计说明.txt
 │   │   └── D3/  # L0–L1 + level notes
-│   └── deepseek-v4.1-flash/
-│       ├── D1/  # L0–L4 + design-notes.md
-│       ├── D2/  # L0–L3 + xenodesign.md
-│       └── D3/  # L0–L1 + L0.md / L1.md
+│   ├── deepseek-v4.1-flash/
+│   │   ├── D1/  # L0–L4 + design-notes.md
+│   │   ├── D2/  # L0–L3 + xenodesign.md
+│   │   └── D3/  # L0–L1 + L0.md / L1.md
+│   └── experimental/         # non-SVG media (see its README)
 ├── reports/
 │   ├── pilot-01.md           # detailed Chinese observations
 │   └── release-v0.1-pilot.md # release-note draft

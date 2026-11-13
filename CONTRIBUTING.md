@@ -49,6 +49,21 @@ The prompt library in `spec/提示词素材库.md` is a menu, not a closed list.
    difficulty and note cap are right, and run at least one model.
 6. Open a PR with the new item and one example card.
 
+## Add an experimental medium
+
+The reference format is SVG, but the design logic is the point.
+
+1. Put the work under `submissions/experimental/<model>/<card>/<level>/`.
+2. Include the output, a browser-openable preview, `note.md`, and a one-line
+   `medium.md` saying what changed.
+3. Keep each file under 10 MB.
+4. Say in the PR that it is experimental; the main gallery currently indexes
+   SVG only.
+
+For L5, the bicycle is still the target: `ride.svg`, `ride.png`, or `ride.mp4`
+all count if the creature is on the bicycle and the note explains contact and
+motion.
+
 ## Reporting a problem
 
 Open an issue with the model, card, level, file, and what looks wrong. A broken
