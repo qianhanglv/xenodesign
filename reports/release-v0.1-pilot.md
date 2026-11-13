@@ -18,6 +18,11 @@ topological pelt → motion.
 - **Standard:** `spec/` contains the main standard, authoring guide, prompt
   library, and L0 template.
 
+## Read the standard
+
+- [Spec index](https://github.com/qianhanglv/xenodesign/blob/main/spec/README.md) — links to the main standard, authoring guide, prompt library, and L0 template.
+- **Offline:** attach `xenodesign-spec-v0.1-pilot.zip` to this release. It contains the four documents with ASCII filenames, plus a short `README.txt`.
+
 ## What it is not
 
 - **Not a ranking.** n = 1 per model/card; no repeats, no seeds.
@@ -37,8 +42,6 @@ topological pelt → motion.
 
 ## Known issues
 
-- GitHub Pages serves the nav's `.md` links as raw Markdown; GitHub itself
-  renders them. This is cosmetic.
 - ChatGPT web model version was not recorded.
 - Note file names are inconsistent (`DESIGN_NOTES.md`, `README_设计说明.txt`,
   `design-notes.md`, `L0.md`, `design_note.txt`).
@@ -61,6 +64,7 @@ topological pelt → motion.
 - **Title:** `Pilot 01 — 2 models, 3 cards, 56 SVGs`
 - **Description:** paste the sections above, plus the gallery link.
 - **Assets:** GitHub automatically attaches the source ZIP. Optionally attach:
+  - `xenodesign-spec-v0.1-pilot.zip` — the four spec documents, offline (47 KB)
   - `assets/pelt-comparison.png` (the visual hook)
   - a PDF of `reports/pilot-01.md` (if you export one)
   - a ZIP of `assets/` (optional; not required)

@@ -71,7 +71,7 @@ This pilot is deliberately unfinished.
 - **More styles and media.** SVG is the reference format because it renders and diffs cleanly, but the design logic is the point. Raster, pixel art, 3D, ASCII, video, or another medium is welcome under [`submissions/experimental/`](submissions/experimental/README.md); say what you changed.
 - **L5 wanted.** The alien riding a bicycle is still unclaimed. If your model can do it, add `submissions/<model>/<card>/L5/ride.svg` and a note. The L5 prompt is in the standard.
 
-中文：欢迎更多模型、更多风格、更多媒介来试这套题；也期待第一个 L5“外星人骑自行车”的提交。
+欢迎更多模型、更多风格、更多媒介来试这套题；也期待第一个 L5“外星人骑自行车”的提交。
 
 ## First observations
 
