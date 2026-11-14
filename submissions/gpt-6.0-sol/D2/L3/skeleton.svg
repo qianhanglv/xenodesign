@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Same exterior outline and feature positions -->
+    <path d="M79 259 Q84 195 144 174 Q242 140 361 175 Q420 190 432 246 Q435 308 380 333 Q258 367 143 331 Q88 313 79 259Z" stroke="#90b7b0" stroke-width="3" opacity=".45"/>
+    <g stroke="#699d96" stroke-width="13">
+      <path d="M183 302 179 359 155 402 M267 314 272 367 251 411 M351 301 363 359 348 402"/>
+      <path d="M168 307 154 367 124 419 M251 324 242 378 222 430 M337 314 333 377 315 420"/>
+    </g>
+    <!-- Mineral frame and dorsal supports -->
+    <path d="M111 260 Q130 199 207 190 Q314 165 387 216 Q415 254 387 302 Q310 339 207 328 Q130 318 111 260Z" stroke="#a5d6bc" stroke-width="10"/>
+    <path d="M137 258 Q241 220 390 257 M142 279 Q250 308 383 281" stroke="#6da99f" stroke-width="7"/>
+    <g stroke="#83b8a5" stroke-width="7">
+      <path d="M139 201 153 288 M184 185 194 314 M237 177 241 327 M287 177 286 328 M337 188 330 318 M381 216 371 302"/>
+    </g>
+    <g fill="#a9dfbd" stroke="#163a46" stroke-width="3">
+      <circle cx="183" cy="302" r="10"/><circle cx="267" cy="314" r="10"/><circle cx="351" cy="301" r="10"/>
+      <circle cx="168" cy="307" r="11"/><circle cx="251" cy="324" r="11"/><circle cx="337" cy="314" r="11"/>
+      <circle cx="179" cy="359" r="7"/><circle cx="272" cy="367" r="7"/><circle cx="363" cy="359" r="7"/>
+      <circle cx="154" cy="367" r="7"/><circle cx="242" cy="378" r="7"/><circle cx="333" cy="377" r="7"/>
+    </g>
+    <g stroke="#9bcbbb" stroke-width="3" opacity=".65">
+      <circle cx="108" cy="212" r="8"/><circle cx="139" cy="201" r="8"/>
+      <circle cx="115" cy="235" r="10"/><circle cx="147" cy="224" r="10"/>
+      <ellipse cx="107" cy="277" rx="12" ry="7"/><ellipse cx="133" cy="296" rx="12" ry="7"/>
+      <ellipse cx="391" cy="258" rx="20" ry="25"/><ellipse cx="363" cy="272" rx="25" ry="29"/>
+      <path d="M111 184 Q91 137 74 114 M145 175 Q142 128 130 104"/>
+    </g>
+  </g>
+</svg>

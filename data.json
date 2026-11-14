@@ -3,16 +3,16 @@
   "date": "2026-11-14",
   "models": [
     {
-      "id": "chatgpt-web",
-      "name": "ChatGPT (web)",
-      "version": "not captured",
-      "note": "Web UI; model version not recorded"
-    },
-    {
       "id": "deepseek-v4.1-flash",
       "name": "DeepSeek v4.1 Flash",
       "version": "v4.1 Flash",
       "note": "Web UI; standard D1–D3 plus XD-01 challenge"
+    },
+    {
+      "id": "gpt-6.0-sol",
+      "name": "GPT 6.0 Sol",
+      "version": "6.0 Sol",
+      "note": "Web UI; D1/D2/D3 DESIGN_NOTES.md included"
     },
     {
       "id": "kimi-k3.1-pro",
@@ -24,7 +24,13 @@
       "id": "gemini-web",
       "name": "Gemini (web)",
       "version": "not captured",
-      "note": "Web UI; D1/D2/D3 design notes included"
+      "note": "Web UI; D1/D2/D3 DESIGN_NOTES.md included"
+    },
+    {
+      "id": "chatgpt-web",
+      "name": "ChatGPT (web, free)",
+      "version": "not captured",
+      "note": "Free web UI; model version not recorded"
     }
   ],
   "cards": [
@@ -78,24 +84,24 @@
     }
   ],
   "counts": {
-    "svgs": 124,
-    "l0": 13,
-    "l1": 78,
-    "l2": 9,
-    "l3": 18,
-    "l4": 5,
+    "svgs": 152,
+    "l0": 16,
+    "l1": 96,
+    "l2": 11,
+    "l3": 22,
+    "l4": 6,
     "l5": 1,
     "style_studies": 2,
-    "pelts": 9,
-    "models": 4,
+    "pelts": 11,
+    "models": 5,
     "cards": 4,
-    "card_runs": 13,
+    "card_runs": 16,
     "q_dimensions": 25,
     "challenges": 1,
     "l5_animated": 1,
     "l5_archived": 1
   },
-  "notes": "Design notes are included. ChatGPT and DeepSeek use card/level notes; Kimi D2/D3 use card-level notes and D1 has no note; Gemini D1/D2/D3 use card-level DESIGN_NOTES.md; XD-01 has a card README plus per-level notes.",
+  "notes": "Design notes are included. DeepSeek/ChatGPT use card/level notes; GPT 6.0 Sol, Kimi and Gemini use card-level DESIGN_NOTES.md (Kimi D1 has no note); XD-01 has a card README plus per-level notes.",
   "caution": "n=1 per model/card; no repeats; no formal K/M scoring; ChatGPT and Gemini versions not captured; XD-01 is a stress test and its failures are part of the result; the L5 is now animated but still structurally distorted; the static first attempt is archived.",
   "source": "Desktop experiment folders, 2026-11-14"
 }

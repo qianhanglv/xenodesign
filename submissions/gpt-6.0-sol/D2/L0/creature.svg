@@ -1,0 +1,61 @@
+<svg id="vent-orb" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Far-side limbs -->
+    <g stroke="#477f88" stroke-width="17">
+      <path d="M183 302 179 359 155 402"/>
+      <path d="M267 314 272 367 251 411"/>
+      <path d="M351 301 363 359 348 402"/>
+    </g>
+    <g stroke="#122b3d" stroke-width="4">
+      <path d="M183 302 179 359 155 402 M267 314 272 367 251 411 M351 301 363 359 348 402"/>
+    </g>
+    <!-- Hull and hinged exoskeleton -->
+    <path d="M79 259 Q84 195 144 174 Q242 140 361 175 Q420 190 432 246 Q435 308 380 333 Q258 367 143 331 Q88 313 79 259Z" fill="#183748" stroke="#76b8ad" stroke-width="5"/>
+    <path d="M94 253 Q119 189 226 181 Q349 164 412 220 M93 278 Q165 338 302 337 Q390 332 421 286" stroke="#3c7580" stroke-width="4"/>
+    <!-- Six dorsal plates -->
+    <g fill="#537e83" stroke="#a4d4b6" stroke-width="3">
+      <path d="M113 190 136 163 159 165 165 190 139 205Z"/>
+      <path d="M163 171 187 150 211 154 213 183 184 194Z"/>
+      <path d="M214 155 239 144 261 149 263 178 234 184Z"/>
+      <path d="M265 148 292 149 313 160 310 187 277 181Z"/>
+      <path d="M315 157 340 163 360 180 351 204 320 190Z"/>
+      <path d="M362 176 389 187 408 212 391 229 359 207Z"/>
+    </g>
+    <!-- Paired posterior spore sacs -->
+    <ellipse cx="391" cy="258" rx="20" ry="25" fill="#38666d" stroke="#80d7a7" stroke-width="3"/>
+    <ellipse cx="363" cy="272" rx="25" ry="29" fill="#4c7b78" stroke="#a2e1ae" stroke-width="3"/>
+    <circle cx="391" cy="258" r="5" fill="#9df3bd"/>
+    <circle cx="363" cy="272" r="6" fill="#9df3bd"/>
+    <!-- Four eyes: the upper pair belongs to the far side -->
+    <g fill="#9df4e5" stroke="#083a4a" stroke-width="4">
+      <circle cx="108" cy="212" r="8"/><circle cx="139" cy="201" r="8"/>
+      <circle cx="115" cy="235" r="10"/><circle cx="147" cy="224" r="10"/>
+    </g>
+    <!-- Two feeding openings -->
+    <g fill="#071f30" stroke="#82d9ce" stroke-width="4">
+      <ellipse cx="107" cy="277" rx="12" ry="7"/>
+      <ellipse cx="133" cy="296" rx="12" ry="7"/>
+    </g>
+    <!-- Two antennae -->
+    <g stroke="#86dcc5" stroke-width="6">
+      <path d="M111 184 Q91 137 74 114"/><path d="M145 175 Q142 128 130 104"/>
+    </g>
+    <g fill="#aaf7cf"><circle cx="74" cy="114" r="6"/><circle cx="130" cy="104" r="6"/></g>
+    <!-- Near-side limbs -->
+    <g stroke="#71a59c" stroke-width="20">
+      <path d="M168 307 154 367 124 419"/>
+      <path d="M251 324 242 378 222 430"/>
+      <path d="M337 314 333 377 315 420"/>
+    </g>
+    <g stroke="#173b4b" stroke-width="5">
+      <path d="M168 307 154 367 124 419 M251 324 242 378 222 430 M337 314 333 377 315 420"/>
+    </g>
+    <g fill="#a9dfbd" stroke="#163a46" stroke-width="3">
+      <circle cx="168" cy="307" r="11"/><circle cx="251" cy="324" r="11"/><circle cx="337" cy="314" r="11"/>
+    </g>
+    <!-- Light-pattern channels -->
+    <g stroke="#8ef2d0" stroke-width="5">
+      <path d="M181 246 204 249 M229 250 252 253 M277 252 300 254 M322 249 344 246"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <!-- One connected unfolded sheet; six lateral extensions are limb covers -->
+    <path d="M71 115 Q94 103 139 105 L215 105 220 91 220 40 235 20 246 92 267 92 280 20 294 40 294 91 301 105 371 105 Q391 109 394 137 L394 170 433 161 450 181 433 202 394 202 394 241 433 232 451 253 433 274 394 274 394 313 433 304 450 325 433 346 394 346 394 385 Q392 410 365 420 L282 420 276 470 255 487 234 470 229 420 93 420 Q67 410 66 385 L66 346 27 346 10 325 27 304 66 313 66 274 27 274 9 253 27 232 66 241 66 202 27 202 10 181 27 161 66 170 66 137 Q66 122 71 115Z" fill="#285564" stroke="#a4d4b6" stroke-width="5"/>
+    <!-- Unfolded zones, left to right: ventral, left flank, dorsal, right flank -->
+    <path d="M70 117 138 106 138 420 93 420 Q67 410 66 385Z" fill="#1a3d51"/>
+    <path d="M139 105 210 105 210 420 139 420Z" fill="#326a70"/>
+    <path d="M210 105 302 105 302 420 210 420Z" fill="#537e83"/>
+    <path d="M302 105 371 105 394 137 394 385 Q392 410 365 420 L302 420Z" fill="#326a70"/>
+    <!-- Continuous light-pattern bands across the opened seams -->
+    <g fill="none" stroke="#8ef2d0" stroke-width="5">
+      <path d="M84 174 134 169 179 172 225 169 276 169 333 172 389 169 429 181"/>
+      <path d="M30 253 84 247 134 250 179 247 225 250 276 250 333 247 389 250 431 253"/>
+      <path d="M29 325 84 322 134 325 179 322 225 325 276 325 333 322 389 325 429 325"/>
+    </g>
+    <!-- Six dorsal plates on the central field -->
+    <g fill="#779c8b" stroke="#bce5bb" stroke-width="3">
+      <path d="M218 119 294 119 288 153 224 153Z"/>
+      <path d="M218 158 294 158 288 192 224 192Z"/>
+      <path d="M218 197 294 197 288 231 224 231Z"/>
+      <path d="M218 236 294 236 288 270 224 270Z"/>
+      <path d="M218 275 294 275 288 309 224 309Z"/>
+      <path d="M218 314 294 314 288 348 224 348Z"/>
+    </g>
+    <!-- Incision and fold seams; they do not split the sheet -->
+    <g fill="none" stroke="#bdd7c3" stroke-width="2" stroke-dasharray="6 7">
+      <path d="M138 106 138 420 M210 105 210 420 M302 105 302 420 M371 105 371 420"/>
+      <path d="M66 202 84 206 M66 274 84 278 M66 346 84 350"/>
+      <path d="M394 202 376 206 M394 274 376 278 M394 346 376 350"/>
+    </g>
+    <!-- Perforations: four eyes, two feeding openings, two sac pores -->
+    <g fill="#071f30" stroke="#a9e8d4" stroke-width="3">
+      <circle cx="165" cy="127" r="8"/><circle cx="189" cy="137" r="8"/>
+      <circle cx="327" cy="127" r="8"/><circle cx="351" cy="137" r="8"/>
+      <ellipse cx="95" cy="131" rx="12" ry="7"/><ellipse cx="121" cy="146" rx="12" ry="7"/>
+      <circle cx="231" cy="379" r="8"/><circle cx="281" cy="379" r="8"/>
+    </g>
+    <!-- Six limb roots, continuous with their lateral extensions -->
+    <g fill="none" stroke="#a9dfbd" stroke-width="3">
+      <path d="M66 170 Q81 181 66 202 M66 241 Q81 253 66 274 M66 313 Q81 325 66 346"/>
+      <path d="M394 170 Q379 181 394 202 M394 241 Q379 253 394 274 M394 313 Q379 325 394 346"/>
+    </g>
+  </g>
+</svg>

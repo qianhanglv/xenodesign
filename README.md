@@ -2,12 +2,13 @@
 
 **Can an AI design a coherent alien?**
 
-Four models, three standard cards, and one hard challenge. 124 SVGs — portrait, six views, section, skeleton, topological pelt, motion, and the first L5 bicycle. A visual pilot, not a leaderboard.
+Five models, three standard cards, and one hard challenge. 152 SVGs — portrait, six views, section, skeleton, topological pelt, motion, and the first L5 bicycle. A visual pilot, not a leaderboard.
 
-![Twelve L0 creatures: ChatGPT, DeepSeek, Kimi, and Gemini on D1/D2/D3](assets/hero-l0-pilot02.png)
+![Fifteen L0 creatures: DeepSeek, GPT 6.0 Sol, Kimi, Gemini, and ChatGPT on D1/D2/D3](assets/hero-l0-pilot02.png)
 
 ## What's new in Pilot 02
 
+- **GPT 6.0 Sol** ran the three standard cards (D1–D3).
 - **Gemini (web)** ran the three standard cards (D1–D3).
 - **Kimi K3.1 Pro** ran the three standard cards (D1–D3).
 - **XD-01, the donut-cavity challenge**: a D2 card with one hard geometric Q — a real through-hole whose visible area is at least 1/3 of the body silhouette. Only DeepSeek has run it so far; the failures are kept and compared.
@@ -18,7 +19,7 @@ Four models, three standard cards, and one hard challenge. 124 SVGs — portrait
 ## What this is
 
 - **A pipeline test.** One set of prompts asks for a single creature carried through L0 portrait, L1 six orthographic views, L2 section, L3 skeleton + topological pelt, L4 motion, and optionally L5 ride.
-- **A four-model comparison.** ChatGPT (web), DeepSeek v4.1 Flash, Kimi K3.1 Pro, and Gemini (web) ran the same three standard cards: 6, 13, and 20 constraints.
+- **A five-model comparison.** DeepSeek v4.1 Flash, GPT 6.0 Sol, Kimi K3.1 Pro, Gemini (web), and ChatGPT (web, free) ran the same three standard cards: 6, 13, and 20 constraints.
 - **A hard-mode stress test.** XD-01 adds a donut-topology constraint: the body must have a real through-hole covering at least a third of its silhouette. It is designed to break single-view plausibility.
 - **A first look at the hardest part.** The L3 pelt is specified as **one continuous skin, unfolded flat** — not a cutaway, not an exploded view, not several pieces.
 
@@ -29,7 +30,7 @@ Four models, three standard cards, and one hard challenge. 124 SVGs — portrait
 - **Not a claim about intelligence.** It is a visual smoke test for composition, spatial consistency, and instruction following.
 - **Not a clean pass for XD-01.** The challenge is deliberately hard; its failures are part of the result, not hidden.
 - **Not a clean L5.** The ride is structurally distorted; the animated version moves, but the geometry still twists.
-- **Counts are active submissions.** The archived static L5 is extra and is not in the 124.
+- **Counts are active submissions.** The archived static L5 is extra and is not in the 152.
 
 ## The cards
 
@@ -47,10 +48,11 @@ Challenge prompt: [cards/XD-01-donut-cavity-L5.md](cards/XD-01-donut-cavity-L5.m
 
 | Model | D1 | D2 | D3 | XD-01 | Notes |
 |---|---|---|---|---|---|
-| ChatGPT (web) | L0–L4 | L0–L3 | L0–L1 | — | version not captured |
 | DeepSeek v4.1 Flash | L0–L4 | L0–L3 | L0–L1 | L0–L5 | standard + challenge |
+| GPT 6.0 Sol | L0–L4 | L0–L3 | L0–L1 | — | notes included |
 | Kimi K3.1 Pro | L0–L4 | L0–L3 | L0–L1 | — | D1 note missing |
 | Gemini (web) | L0–L4 | L0–L3 | L0–L1 | — | notes included; version not captured |
+| ChatGPT (web, free) | L0–L4 | L0–L3 | L0–L1 | — | version not captured |
 
 ## Challenge 01: the donut cavity
 
@@ -77,9 +79,9 @@ All XD-01 levels: [assets/xd01-all-levels.png](assets/xd01-all-levels.png)
 
 ## The pelt test
 
-The pelt remains the differentiator. A good pelt is one continuous sheet with a boundary, seams, and pattern continuity — not a cutaway, not an exploded view, not several pieces. Pilot 02 adds Kimi's two, Gemini's two, and the XD-01 pelt with its central cavity.
+The pelt remains the differentiator. A good pelt is one continuous sheet with a boundary, seams, and pattern continuity — not a cutaway, not an exploded view, not several pieces. Pilot 02 adds GPT 6.0 Sol's two, Kimi's two, Gemini's two, and the XD-01 pelt with its central cavity.
 
-![Nine pelts: ChatGPT, DeepSeek, Kimi, Gemini, and XD-01](assets/pelt-comparison-pilot02.png)
+![Eleven pelts: DeepSeek, GPT 6.0 Sol, Kimi, Gemini, ChatGPT, and XD-01](assets/pelt-comparison-pilot02.png)
 
 ## First L5: the bicycle
 
@@ -107,13 +109,16 @@ The same XD-01 geometry was rendered twice: an illuminated miniature with parchm
 
 ## First observations
 
-1. **All 124 SVGs are structurally valid.** 124/124 parse, use `viewBox="0 0 512 512"`, and contain no `<text>`, `<image>`, `<script>`, `foreignObject`, or external `href`. The largest file is 363 KB, under the 512 KB cap.
-2. **The pelt is still the differentiator.** DeepSeek, Kimi, and Gemini read more like one continuous skin; ChatGPT's D1/D2 pelts are single sheets but read more like symmetrical patterns. The XD-01 pelt is the clearest topological test because the central hole has to survive the unfold.
+1. **All 152 SVGs are structurally valid.** 152/152 parse, use `viewBox="0 0 512 512"`, and contain no `<text>`, `<image>`, `<script>`, `foreignObject`, or external `href`. The largest file is 363 KB, under the 512 KB cap.
+2. **The pelt is still the differentiator.** DeepSeek, GPT 6.0 Sol, Kimi, and Gemini read more like one continuous skin; ChatGPT's D1/D2 pelts are single sheets but read more like symmetrical patterns. The XD-01 pelt is the clearest topological test because the central hole has to survive the unfold.
 3. **Kimi is strongest at D2/D3; its D1 is much simpler and has no design note.** D1 is a clean, friendly creature, but without a note the six constraints cannot be checked line by line. D2 and D3 have detailed notes and much denser constraint mapping. The gap is useful: a model can produce a clean picture without showing the reasoning.
-4. **Gemini is the most literal note-taker of the four.** Its cards come with scale bars and a full constraint map; D1 is a fish-like ice creature with a dorsal water sac, D2 a vent beetle, D3 a green radial organism. D1/D2 include pelt and section; D3 stops at L0/L1. The notes are systematic; the pictures are flatter and more diagram-like than Kimi's.
-5. **XD-01 shows the single-view trap.** The L0 ring and the L5 bicycle are convincing at a glance; the L1 side views and L2 section are where the topology falls apart. The notes claim a 0.39 area ratio and a continuous void; the artifacts do not fully prove either.
-6. **The first L5 now moves.** `ride.svg` is a 3.2 s animated loop; the body is still visibly twisted, and the contact/balance need a frame-by-frame check. The static first attempt is kept in `archive/XD-01-L5/`.
-7. **Style studies are cheap and high-leverage.** Re-rendering the same geometry in two historical styles adds a second axis — representation — without changing the design constraints.
+4. **GPT 6.0 Sol is the cleanest vector stylist of the five.** D1 is a tiny fish-like ice creature, D2 a vent-orb, D3 a 24 m cyst-weaver. D1/D2 include pelt and section; D3 stops at L0/L1. Its D1 uses only two walking limbs, which is allowed by “≤4” — don't misread it as a missing limb.
+5. **Gemini is the most literal note-taker of the five.** Its cards come with scale bars and a full constraint map; D1 is a fish-like ice creature with a dorsal water sac, D2 a vent beetle, D3 a green radial organism. D1/D2 include pelt and section; D3 stops at L0/L1. The notes are systematic; the pictures are flatter and more diagram-like than Kimi's.
+6. **XD-01 shows the single-view trap.** The L0 ring and the L5 bicycle are convincing at a glance; the L1 side views and L2 section are where the topology falls apart. The notes claim a 0.39 area ratio and a continuous void; the artifacts do not fully prove either.
+7. **The first L5 now moves.** `ride.svg` is a 3.2 s animated loop; the body is still visibly twisted, and the contact/balance need a frame-by-frame check. The static first attempt is kept in `archive/XD-01-L5/`.
+8. **Style studies are cheap and high-leverage.** Re-rendering the same geometry in two historical styles adds a second axis — representation — without changing the design constraints.
+
+![GPT 6.0 Sol on D1/D2/D3](assets/gpt-sol-l0-grid.png)
 
 ![Kimi K3.1 Pro on D1/D2/D3](assets/kimi-l0-grid.png)
 
@@ -178,10 +183,11 @@ This pilot is deliberately unfinished.
 │   ├── experiment-prompts.md  # D1/D2/D3
 │   └── XD-01-donut-cavity-L5.md
 ├── submissions/
-│   ├── chatgpt-web/           # D1–D3
 │   ├── deepseek-v4.1-flash/   # D1–D3 + XD-01
+│   ├── gpt-6.0-sol/           # D1–D3
 │   ├── kimi-k3.1-pro/         # D1–D3
 │   ├── gemini-web/            # D1–D3
+│   ├── chatgpt-web/           # D1–D3 (free web)
 │   └── experimental/          # non-SVG media
 ├── archive/                   # first static L5, kept for comparison
 ├── reports/
@@ -202,9 +208,9 @@ This pilot is deliberately unfinished.
 |---|---|---|
 | `README.md` | Landing page: what this is, the cards, the challenge, how to build a card. | Everyone |
 | `index.html` | Static gallery; GitHub Pages serves it. | Visitors |
-| `assets/` | Rendered comparison sheets, including the 4×3 L0 grid, 9-pelt comparison, and XD-01 failure sheet. | README and gallery |
+| `assets/` | Rendered comparison sheets, including the 5×3 L0 grid, 11-pelt comparison, and XD-01 failure sheet. | README and gallery |
 | `cards/` | The standard prompts and the XD-01 challenge. | People running a model |
-| `submissions/` | 124 SVGs and the design notes, grouped by model/card/level. | Contributors and reviewers |
+| `submissions/` | 152 SVGs and the design notes, grouped by model/card/level. | Contributors and reviewers |
 | `spec/` | Main standard, authoring guide, prompt library, L0 template. | People building new cards |
 | `build_gallery.py` | Rebuilds `index.html`; stdlib only. | Maintainers |
 | `data.json` | Model, card, level, and count metadata. | Maintainers |
@@ -219,7 +225,7 @@ This pilot is deliberately unfinished.
 
 ## Release
 
-Pilot 01 is tagged `v0.1-pilot`. Pilot 02 is drafted as `v0.2-pilot`; release notes: [reports/release-v0.2-pilot.md](reports/release-v0.2-pilot.md). The old `v0.1-pilot` remains the Pilot 01 snapshot.
+Pilot 01 is tagged `v0.1-pilot`. Pilot 02 is published as `v0.2-pilot` — the 4-model snapshot (124 SVGs). GPT 6.0 Sol is the first addition for a future `v0.3`. Release notes: [reports/release-v0.2-pilot.md](reports/release-v0.2-pilot.md).
 
 ## License
 
@@ -229,7 +235,7 @@ Pilot 01 is tagged `v0.1-pilot`. Pilot 02 is drafted as `v0.2-pilot`; release no
 
 ## Status
 
-Pilot 02. Four models, 124 SVGs, one hard challenge, one L5. Still one sample per model/card, no repeats, no formal K1–K8 / M1–M7 scoring, and no blind human check. The XD-01 failures are intentionally visible.
+Pilot 02. Five models, 152 SVGs, one hard challenge, one L5. Still one sample per model/card, no repeats, no formal K1–K8 / M1–M7 scoring, and no blind human check. The XD-01 failures are intentionally visible.
 
 Next: formalize the K/M checklists, run 3 seeds per model/card, add a blind human check on L0, turn the animated L5 into a clean, contact-readable ride, and invite more models to XD-01.
 
