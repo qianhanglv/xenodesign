@@ -168,10 +168,10 @@ footer p{max-width:900px}
     <span class="badge">no repeats</span>
     <span class="badge">no human scoring yet</span>
     <span class="badge">XD-01 challenge</span>
-    <span class="badge">first L5 ride</span>
+    <span class="badge">first L5 · static</span>
   </div>
   <img class="hero-grid" src="assets/hero-l0-pilot02.png" alt="Nine L0 alien creatures: ChatGPT, DeepSeek, and Kimi on D1/D2/D3">
-  <p class="caveat">Pilot 02 adds Kimi K3.1 Pro, the XD-01 donut-cavity challenge, and the first L5 ride. Still one run per model/card; not a leaderboard.</p>
+  <p class="caveat">Pilot 02 adds Kimi K3.1 Pro, the XD-01 donut-cavity challenge, and the first L5 ride — static and structurally distorted. Still one run per model/card; not a leaderboard.</p>
 </div></header>
 <nav><div class="wrap">
   <a href="#D1">D1</a><a href="#D2">D2</a><a href="#D3">D3</a><a href="#XD-01">XD-01</a>
@@ -255,7 +255,7 @@ footer p{max-width:900px}
                             if level == "L4":
                                 caption += " · animated SVG"
                             elif level == "L5":
-                                caption += " · optional capstone"
+                                caption += " · first L5 (static, distorted)"
                             elif f.suffix.lower() == ".png":
                                 caption = "style study · " + f.stem
                             parts.append(figure(f, caption))

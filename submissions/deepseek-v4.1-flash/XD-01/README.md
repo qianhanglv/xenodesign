@@ -63,3 +63,12 @@ python3 build_l0.py && python3 build_l1.py && python3 build_l2.py \
   按受光分五级（单线→密线→交叉线→实黑），轮廓为刻刀边线，地面用横向排线。
 
 生成脚本：`build/art.py`（Pillow 自写光栅器 + 同一套法线/投影，含密度直方图归一）。
+
+## Known limitations (Pilot 02 review)
+
+- **L5 is static:** `L5/ride.svg` has no `<animate>`; it is a single frame, not a ride cycle.
+- **L5 structure is distorted:** in the riding pose the ring body is visibly twisted/skewed and is not a clean torus.
+- **L5 contact is hard to verify:** the bicycle is small relative to the body; saddle, pedal, and handlebar contacts need a close-up.
+- **L1 side views lose the cavity:** left/right read as a solid bent slab, so the six views do not all describe the same topology.
+- **L2 section reads as a capsule:** the ring topology is hard to recover from the section drawing.
+- **Area ratios are self-reported:** the 0.39 / 0.36 cavity ratios are not independently measured.
