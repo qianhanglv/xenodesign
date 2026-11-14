@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Ice Substrate Line (F1) -->
+  <line x1="30" y1="366" x2="482" y2="366" stroke="#a5f3fc" stroke-width="3"/>
+
+  <!-- Creature Assembly (idle -> anticipation dip -> stride forward -> settle -> idle, 3s loop) -->
+  <g>
+    <animateTransform attributeName="transform" type="translate"
+      values="0,0; 0,5; 28,-4; 52,0; 52,4; 24,-3; 0,0"
+      keyTimes="0; 0.15; 0.35; 0.5; 0.65; 0.85; 1"
+      dur="3s" repeatCount="indefinite"/>
+
+    <!-- Far Limbs (Left Pair - 2 of 4) -->
+    <g stroke="#1e293b" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none">
+      <!-- Far Front Limb -->
+      <polyline points="175,270 155,310 135,358">
+        <animate attributeName="points"
+          values="175,270 155,310 135,358; 175,270 150,315 135,353; 175,270 175,305 168,342; 175,270 155,310 135,358; 175,270 150,315 135,354; 175,270 140,312 115,358; 175,270 155,310 135,358"
+          keyTimes="0; 0.15; 0.35; 0.5; 0.65; 0.85; 1"
+          dur="3s" repeatCount="indefinite"/>
+      </polyline>
+      <!-- Far Rear Limb -->
+      <polyline points="295,275 315,315 335,358">
+        <animate attributeName="points"
+          values="295,275 315,315 335,358; 295,275 320,318 335,353; 295,275 295,312 288,358; 295,275 315,315 335,358; 295,275 320,318 335,354; 295,275 330,308 355,342; 295,275 315,315 335,358"
+          keyTimes="0; 0.15; 0.35; 0.5; 0.65; 0.85; 1"
+          dur="3s" repeatCount="indefinite"/>
+      </polyline>
+    </g>
+
+    <!-- Single Tail (1) with follow-through flex -->
+    <path d="M 335,245 Q 395,235 445,255 Q 410,275 335,265 Z" fill="#1e293b" stroke="#38bdf8" stroke-width="2">
+      <animate attributeName="d"
+        values="M 335,245 Q 395,235 445,255 Q 410,275 335,265 Z;
+                M 335,245 Q 395,242 445,264 Q 410,280 335,265 Z;
+                M 335,245 Q 395,228 445,244 Q 410,266 335,265 Z;
+                M 335,245 Q 395,235 445,255 Q 410,275 335,265 Z;
+                M 335,245 Q 395,242 445,264 Q 410,280 335,265 Z;
+                M 335,245 Q 395,228 445,244 Q 410,266 335,265 Z;
+                M 335,245 Q 395,235 445,255 Q 410,275 335,265 Z"
+        keyTimes="0; 0.15; 0.35; 0.5; 0.65; 0.85; 1"
+        dur="3s" repeatCount="indefinite"/>
+    </path>
+
+    <!-- Dorsal Water Sac (F2) with slosh & squash -->
+    <path d="M 185,220 C 190,145 310,145 325,225 C 300,245 205,245 185,220 Z" fill="#0088cc" fill-opacity="0.75" stroke="#38bdf8" stroke-width="2.5">
+      <animate attributeName="d"
+        values="M 185,220 C 190,145 310,145 325,225 C 300,245 205,245 185,220 Z;
+                M 183,222 C 185,152 315,152 327,226 C 300,246 205,246 183,222 Z;
+                M 187,219 C 195,140 305,140 323,224 C 300,244 205,244 187,219 Z;
+                M 185,220 C 190,145 310,145 325,225 C 300,245 205,245 185,220 Z;
+                M 183,222 C 185,152 315,152 327,226 C 300,246 205,246 183,222 Z;
+                M 187,219 C 195,140 305,140 323,224 C 300,244 205,244 187,219 Z;
+                M 185,220 C 190,145 310,145 325,225 C 300,245 205,245 185,220 Z"
+        keyTimes="0; 0.15; 0.35; 0.5; 0.65; 0.85; 1"
+        dur="3s" repeatCount="indefinite"/>
+    </path>
+
+    <!-- Main Body -->
+    <path d="M 125,245 C 125,215 165,205 195,215 L 325,222 C 345,228 350,262 330,272 L 190,275 C 155,275 125,268 125,245 Z" fill="#2c3e50" stroke="#475569" stroke-width="2.5"/>
+    <path d="M 155,222 L 165,248 M 215,235 L 222,265 M 255,238 L 262,268 M 295,236 L 302,265" stroke="#38bdf8" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="148" cy="235" r="6" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+    <circle cx="146" cy="235" r="2.5" fill="#0f172a"/>
+
+    <!-- Near Limbs (Right Pair - 2 of 4) -->
+    <g stroke="#334155" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none">
+      <!-- Near Front Limb (planted during forward body shift 0.15->0.5) -->
+      <polyline points="185,272 165,318 145,362">
+        <animate attributeName="points"
+          values="185,272 165,318 145,362; 185,272 160,322 145,357; 185,272 148,320 117,366; 185,272 165,318 145,362; 185,272 160,322 145,358; 185,272 185,310 175,345; 185,272 165,318 145,362"
+          keyTimes="0; 0.15; 0.35; 0.5; 0.65; 0.85; 1"
+          dur="3s" repeatCount="indefinite"/>
+      </polyline>
+      <!-- Near Rear Limb (steps forward 0.15->0.5, planted during return 0.65->1) -->
+      <polyline points="305,274 325,318 345,362">
+        <animate attributeName="points"
+          values="305,274 325,318 345,362; 305,274 330,322 345,357; 305,274 342,310 355,345; 305,274 325,318 345,362; 305,274 330,322 345,358; 305,274 308,320 317,366; 305,274 325,318 345,362"
+          keyTimes="0; 0.15; 0.35; 0.5; 0.65; 0.85; 1"
+          dur="3s" repeatCount="indefinite"/>
+      </polyline>
+    </g>
+
+    <!-- 2 Antennae with sway -->
+    <path d="M 132,226 Q 95,190 65,155" fill="none" stroke="#38bdf8" stroke-width="3" stroke-linecap="round">
+      <animate attributeName="d"
+        values="M 132,226 Q 95,190 65,155; M 132,226 Q 95,196 68,162; M 132,226 Q 95,184 62,148; M 132,226 Q 95,190 65,155; M 132,226 Q 95,196 68,162; M 132,226 Q 95,184 62,148; M 132,226 Q 95,190 65,155"
+        keyTimes="0; 0.15; 0.35; 0.5; 0.65; 0.85; 1"
+        dur="3s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 136,220 Q 108,175 88,135" fill="none" stroke="#0284c7" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+</svg>

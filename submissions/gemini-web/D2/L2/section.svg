@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Far Limbs (3 of 6) (Q1) -->
+  <g stroke="#1e293b" stroke-width="7" stroke-linecap="round" fill="none">
+    <polyline points="175,285 160,330 145,375"/>
+    <polyline points="245,288 240,335 232,378"/>
+    <polyline points="315,285 325,330 335,375"/>
+  </g>
+
+  <!-- Outer Cutaway Shell Contour (6 dorsal silicate plates sectioned) (Q5, N1, P2) -->
+  <path d="M 116,262 C 116,215 170,192 256,192 C 342,192 396,222 396,264 Q 256,296 116,262 Z" fill="#0f172a" stroke="#94a3b8" stroke-width="4"/>
+
+  <!-- 6 Sectioned Silicate Plate Hinge Joints (F4, N1) -->
+  <g fill="#cbd5e1">
+    <polygon points="166,198 172,196 170,208 164,208"/>
+    <polygon points="212,192 218,192 216,204 210,204"/>
+    <polygon points="260,192 266,192 264,204 258,204"/>
+    <polygon points="308,196 314,198 310,208 304,208"/>
+    <polygon points="354,212 360,215 354,224 348,221"/>
+  </g>
+
+  <!-- 2 Feeding Openings converging via Y-ducts into Shared Digestive Cavity (Q3, F2) -->
+  <ellipse cx="126" cy="264" rx="9" ry="5" fill="#020617" stroke="#38bdf8" stroke-width="1.5"/>
+  <ellipse cx="136" cy="272" rx="10" ry="6" fill="#020617" stroke="#38bdf8" stroke-width="2"/>
+  <path d="M 126,264 Q 155,254 185,252 M 136,272 Q 160,260 185,252" fill="none" stroke="#38bdf8" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Shared Digestive & Filtration Stomach Cavity + Posterior Exit (F2) -->
+  <ellipse cx="242" cy="252" rx="58" ry="18" fill="#be123c" fill-opacity="0.7" stroke="#fb7185" stroke-width="2.5"/>
+  <path d="M 300,252 Q 345,256 385,264" fill="none" stroke="#fb7185" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- 2 Spore Sacs sitting dorsally above the digestive cavity (Q4, F2) -->
+  <g>
+    <ellipse cx="212" cy="222" rx="22" ry="13" fill="#0891b2" fill-opacity="0.75" stroke="#22d3ee" stroke-width="2.5"/>
+    <circle cx="206" cy="220" r="3" fill="#cffafe"/>
+    <circle cx="216" cy="224" r="2.5" fill="#cffafe"/>
+    <path d="M 212,235 L 212,242" stroke="#22d3ee" stroke-width="3"/>
+
+    <ellipse cx="308" cy="224" rx="22" ry="13" fill="#0891b2" fill-opacity="0.75" stroke="#22d3ee" stroke-width="2.5"/>
+    <circle cx="302" cy="222" r="3" fill="#cffafe"/>
+    <circle cx="312" cy="226" r="2.5" fill="#cffafe"/>
+    <path d="M 308,237 L 308,246" stroke="#22d3ee" stroke-width="3"/>
+  </g>
+
+  <!-- 2 Antennae (Q6) -->
+  <path d="M 122,242 Q 82,215 48,185" fill="none" stroke="#38bdf8" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 126,236 Q 94,198 68,162" fill="none" stroke="#0284c7" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Near Limbs (3 of 6) (Q1) -->
+  <g stroke="#475569" stroke-width="8" stroke-linecap="round" fill="none">
+    <polyline points="182,282 168,332 154,382"/>
+    <polyline points="256,286 250,336 244,384"/>
+    <polyline points="328,282 338,332 348,382"/>
+  </g>
+</svg>

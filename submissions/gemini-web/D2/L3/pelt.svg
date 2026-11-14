@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Single Continuous Unfolded Exoskeleton Pelt (ventral midline seam splayed top/bottom = left/right flaps) -->
+  <path d="M 116,236 
+           C 124,185 152,155 182,152 
+           L 256,146 L 330,152 
+           C 362,155 388,185 396,236 
+           L 416,256 L 396,276 
+           C 388,327 362,357 330,360 
+           L 256,366 L 182,360 
+           C 152,357 124,327 116,276 
+           L 132,256 Z" 
+        fill="#334155" stroke="#94a3b8" stroke-width="2.5" stroke-dasharray="6,3"/>
+
+  <!-- 6 Dorsal Silicate Plate Boundaries continuous across dorsal midline (Q5) -->
+  <g stroke="#64748b" stroke-width="2" fill="none">
+    <path d="M 166,154 Q 174,256 166,358"/>
+    <path d="M 212,148 Q 218,256 212,364"/>
+    <path d="M 258,146 L 258,366"/>
+    <path d="M 304,148 Q 298,256 304,364"/>
+    <path d="M 350,154 Q 342,256 350,358"/>
+  </g>
+
+  <!-- Photophore Light Pattern continuous along dorsal midline (F3) -->
+  <g fill="#fde047">
+    <rect x="138" y="252" width="16" height="8" rx="3"/>
+    <rect x="182" y="252" width="16" height="8" rx="3"/>
+    <rect x="228" y="252" width="16" height="8" rx="3"/>
+    <rect x="274" y="252" width="16" height="8" rx="3"/>
+    <rect x="320" y="252" width="16" height="8" rx="3"/>
+    <rect x="364" y="252" width="16" height="8" rx="3"/>
+  </g>
+
+  <!-- 2 Spore Sac Membrane Openings (left & right dorsal-lateral) (Q4) -->
+  <ellipse cx="256" cy="212" rx="36" ry="10" fill="#0891b2" fill-opacity="0.7" stroke="#22d3ee" stroke-width="2"/>
+  <ellipse cx="256" cy="300" rx="36" ry="10" fill="#0891b2" fill-opacity="0.7" stroke="#22d3ee" stroke-width="2"/>
+
+  <!-- 4 Eye Holes (2 left flap, 2 right flap) (Q2) -->
+  <circle cx="146" cy="218" r="5.5" fill="#020617" stroke="#fef08a" stroke-width="2"/>
+  <circle cx="190" cy="210" r="5" fill="#020617" stroke="#fef08a" stroke-width="2"/>
+  <circle cx="146" cy="294" r="5.5" fill="#020617" stroke="#fef08a" stroke-width="2"/>
+  <circle cx="190" cy="302" r="5" fill="#020617" stroke="#fef08a" stroke-width="2"/>
+
+  <!-- 2 Antennae Base Holes (Q6) -->
+  <circle cx="130" cy="238" r="4.5" fill="#020617" stroke="#38bdf8" stroke-width="1.5"/>
+  <circle cx="130" cy="274" r="4.5" fill="#020617" stroke="#38bdf8" stroke-width="1.5"/>
+
+  <!-- 2 Feeding Opening Holes near anterior ventral margin (Q3) -->
+  <ellipse cx="144" cy="176" rx="8" ry="5" fill="#020617" stroke="#38bdf8" stroke-width="1.5"/>
+  <ellipse cx="144" cy="336" rx="8" ry="5" fill="#020617" stroke="#38bdf8" stroke-width="1.5"/>
+
+  <!-- 6 Limb Socket Holes (3 on left ventral flap, 3 on right ventral flap) (Q1) -->
+  <circle cx="182" cy="168" r="7" fill="#020617" stroke="#94a3b8" stroke-width="2"/>
+  <circle cx="256" cy="164" r="7" fill="#020617" stroke="#94a3b8" stroke-width="2"/>
+  <circle cx="328" cy="168" r="7" fill="#020617" stroke="#94a3b8" stroke-width="2"/>
+
+  <circle cx="182" cy="344" r="7" fill="#020617" stroke="#94a3b8" stroke-width="2"/>
+  <circle cx="256" cy="348" r="7" fill="#020617" stroke="#94a3b8" stroke-width="2"/>
+  <circle cx="328" cy="344" r="7" fill="#020617" stroke="#94a3b8" stroke-width="2"/>
+</svg>

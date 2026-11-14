@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Right-side Limbs (far, 2 of 4) -->
+  <g stroke="#1e293b" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <polyline points="185,272 165,318 145,358"/>
+    <polyline points="305,274 325,318 345,358"/>
+  </g>
+  <!-- Tail (1) -->
+  <path d="M 335,245 Q 395,235 445,255 Q 410,275 335,265 Z" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+  <!-- Water Sac -->
+  <path d="M 185,220 C 190,145 310,145 325,225 C 300,245 205,245 185,220 Z" fill="#0088cc" fill-opacity="0.65" stroke="#38bdf8" stroke-width="2.5"/>
+  <!-- Body -->
+  <path d="M 125,245 C 125,215 165,205 195,215 L 325,222 C 345,228 350,262 330,272 L 190,275 C 155,275 125,268 125,245 Z" fill="#2c3e50" stroke="#475569" stroke-width="2.5"/>
+  <path d="M 155,222 L 165,248 M 215,235 L 222,265 M 255,238 L 262,268 M 295,236 L 302,265" stroke="#38bdf8" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="148" cy="235" r="6" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+  <circle cx="146" cy="235" r="2.5" fill="#0f172a"/>
+  <!-- Left-side Limbs (near, 2 of 4) -->
+  <g stroke="#334155" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <polyline points="175,270 155,310 135,358"/>
+    <path d="M 135,358 L 126,364 M 135,358 L 142,366" stroke="#7dd3fc" stroke-width="3"/>
+    <polyline points="295,275 315,315 335,358"/>
+    <path d="M 335,358 L 326,366 M 335,358 L 344,364" stroke="#7dd3fc" stroke-width="3"/>
+  </g>
+  <!-- Antennae (2) -->
+  <path d="M 132,226 Q 95,190 65,155" fill="none" stroke="#38bdf8" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 136,220 Q 108,175 88,135" fill="none" stroke="#0284c7" stroke-width="2.5" stroke-linecap="round"/>
+</svg>

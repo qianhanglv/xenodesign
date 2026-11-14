@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <rect width="512" height="512" fill="#021510"/>
+  <g transform="translate(256, 256)">
+    <!-- Posterior view mirroring radial hub & 8 segments -->
+    <ellipse cx="0" cy="0" rx="90" ry="90" fill="#047857" stroke="#34d399" stroke-width="3"/>
+    <ellipse cx="0" cy="0" rx="65" ry="65" fill="#059669" stroke="#6ee7b7" stroke-width="2"/>
+    <ellipse cx="0" cy="0" rx="40" ry="40" fill="#022c22" stroke="#34d399" stroke-width="2"/>
+
+    <!-- 6 Light Organs (Q5) on posterior -->
+    <circle cx="0" cy="-55" r="7" fill="#34d399" stroke="#a7f3d0" stroke-width="1.5"/>
+    <circle cx="-48" cy="-20" r="7" fill="#34d399" stroke="#a7f3d0" stroke-width="1.5"/>
+    <circle cx="48" cy="-20" r="7" fill="#34d399" stroke="#a7f3d0" stroke-width="1.5"/>
+    <circle cx="-30" cy="40" r="7" fill="#34d399" stroke="#a7f3d0" stroke-width="1.5"/>
+    <circle cx="30" cy="40" r="7" fill="#34d399" stroke="#a7f3d0" stroke-width="1.5"/>
+    <circle cx="0" cy="65" r="7" fill="#34d399" stroke="#a7f3d0" stroke-width="1.5"/>
+
+    <!-- 4 Eyes (Q2) visible from posterior aspect -->
+    <circle cx="-35" cy="-35" r="6" fill="#fef08a" stroke="#f59e0b" stroke-width="2"/>
+    <circle cx="35" cy="-35" r="6" fill="#fef08a" stroke="#f59e0b" stroke-width="2"/>
+    <circle cx="-35" cy="35" r="5" fill="#fef08a" stroke="#f59e0b" stroke-width="2"/>
+    <circle cx="35" cy="35" r="5" fill="#fef08a" stroke="#f59e0b" stroke-width="2"/>
+
+    <!-- 3 Feeding Openings (Q3) & 4 Sensory Pits (Q6) & 4 Gill Openings (Q4) & 6 Limbs (Q1) -->
+    <circle cx="0" cy="0" r="8" fill="#022c22" stroke="#6ee7b7" stroke-width="2"/>
+    <circle cx="-15" cy="-10" r="7" fill="#022c22" stroke="#6ee7b7" stroke-width="1.5"/>
+    <circle cx="15" cy="-10" r="7" fill="#022c22" stroke="#6ee7b7" stroke-width="1.5"/>
+
+    <g fill="none" stroke="#047857" stroke-width="8" stroke-linecap="round">
+      <line x1="0" y1="-90" x2="0" y2="-145"/>
+      <line x1="-78" y1="-45" x2="-125" y2="-72"/>
+      <line x1="78" y1="-45" x2="125" y2="-72"/>
+      <line x1="-78" y1="45" x2="-125" y2="72"/>
+      <line x1="78" y1="45" x2="125" y2="72"/>
+      <line x1="0" y1="90" x2="0" y2="145"/>
+    </g>
+  </g>
+</svg>

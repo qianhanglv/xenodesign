@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Far Limbs (Left Side: 3 of 6) (Q1) -->
+  <g stroke="#1e293b" stroke-width="7" stroke-linecap="round" fill="none">
+    <polyline points="337,285 352,330 367,382"/>
+    <polyline points="267,288 272,335 280,384"/>
+    <polyline points="197,285 187,330 177,382"/>
+  </g>
+  <!-- Ventral Chassis -->
+  <path d="M 390,272 Q 256,296 120,272 L 127,255 L 384,255 Z" fill="#0f172a" stroke="#475569" stroke-width="2"/>
+  <!-- 2 Feeding Openings (Q3, F2) -->
+  <ellipse cx="376" cy="272" rx="12" ry="7" fill="#020617" stroke="#38bdf8" stroke-width="2"/>
+  <path d="M 386,269 L 404,262 M 387,272 L 406,272 M 386,275 L 403,281" stroke="#bae6fd" stroke-width="2" stroke-linecap="round"/>
+  <ellipse cx="386" cy="264" rx="10" ry="6" fill="#020617" stroke="#38bdf8" stroke-width="1.5"/>
+
+  <!-- 6 Dorsal Silicate Plates (Q5, N1) -->
+  <g stroke="#94a3b8" stroke-width="2" stroke-linejoin="round" fill="#334155">
+    <path d="M 396,262 C 396,222 367,205 340,202 L 346,264 Z"/>
+    <path d="M 348,202 C 327,196 307,194 294,194 L 300,266 L 352,264 Z"/>
+    <path d="M 302,194 C 280,191 260,191 246,192 L 252,268 L 306,266 Z"/>
+    <path d="M 254,192 C 232,193 212,195 198,198 L 204,267 L 258,268 Z"/>
+    <path d="M 206,198 C 184,202 166,208 152,215 L 160,265 L 210,267 Z"/>
+    <path d="M 160,215 C 134,226 116,244 116,264 L 166,265 Z"/>
+  </g>
+
+  <!-- 2 Spore Sacs (Q4) -->
+  <ellipse cx="300" cy="222" rx="18" ry="12" fill="#0e7490" fill-opacity="0.8" stroke="#22d3ee" stroke-width="2"/>
+  <ellipse cx="204" cy="224" rx="18" ry="12" fill="#0e7490" fill-opacity="0.8" stroke="#22d3ee" stroke-width="2"/>
+
+  <!-- Photophore Strips (F3) -->
+  <g fill="#fde047">
+    <rect x="364" y="250" width="16" height="4" rx="2"/>
+    <rect x="314" y="252" width="20" height="4" rx="2"/>
+    <rect x="266" y="253" width="20" height="4" rx="2"/>
+    <rect x="218" y="253" width="20" height="4" rx="2"/>
+    <rect x="174" y="251" width="18" height="4" rx="2"/>
+    <rect x="136" y="250" width="14" height="4" rx="2"/>
+  </g>
+
+  <!-- 2 Right-Side Eyes (of 4 total) (Q2) -->
+  <circle cx="368" cy="236" r="6" fill="#fef08a" stroke="#f59e0b" stroke-width="2"/>
+  <circle cx="369" cy="236" r="2.5" fill="#0f172a"/>
+  <circle cx="324" cy="238" r="5.5" fill="#fef08a" stroke="#f59e0b" stroke-width="2"/>
+  <circle cx="325" cy="238" r="2.2" fill="#0f172a"/>
+
+  <!-- Near Limbs (Right Side: 3 of 6) (Q1) -->
+  <g stroke="#475569" stroke-width="8" stroke-linecap="round" fill="none">
+    <polyline points="330,282 344,332 358,382"/>
+    <polyline points="256,286 262,336 268,384"/>
+    <polyline points="184,282 174,332 164,382"/>
+  </g>
+
+  <!-- 2 Antennae (Q6) -->
+  <path d="M 390,242 Q 430,215 464,185" fill="none" stroke="#38bdf8" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 386,236 Q 418,198 444,162" fill="none" stroke="#0284c7" stroke-width="2.5" stroke-linecap="round"/>
+</svg>

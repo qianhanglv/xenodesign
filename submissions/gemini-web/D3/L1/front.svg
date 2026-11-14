@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="ammoniaCloudF" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#022c22" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#022c22" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="lightOrgF" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#a7f3d0"/>
+      <stop offset="100%" stop-color="#059669" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="512" height="512" fill="#021510"/>
+  <circle cx="256" cy="256" r="220" fill="url(#ammoniaCloudF)"/>
+  
+  <g transform="translate(256, 256)">
+    <!-- Radial front-on view of the 3-section, 8-segment radial hub -->
+    <ellipse cx="0" cy="0" rx="95" ry="95" fill="#10b981" stroke="#34d399" stroke-width="3"/>
+    <ellipse cx="0" cy="0" rx="72" ry="72" fill="#059669" stroke="#6ee7b7" stroke-width="2"/>
+    <ellipse cx="0" cy="0" rx="45" ry="45" fill="#047857" stroke="#34d399" stroke-width="2"/>
+
+    <!-- 3 Feeding Openings radially distributed (Q3) -->
+    <circle cx="0" cy="-22" r="10" fill="#022c22" stroke="#34d399" stroke-width="2"/>
+    <circle cx="-18" cy="12" r="10" fill="#022c22" stroke="#34d399" stroke-width="2"/>
+    <circle cx="18" cy="12" r="10" fill="#022c22" stroke="#34d399" stroke-width="2"/>
+
+    <!-- 4 Eyes symmetrically set (Q2) -->
+    <circle cx="-42" cy="-42" r="7" fill="#fef08a" stroke="#f59e0b" stroke-width="2"/>
+    <circle cx="42" cy="-42" r="7" fill="#fef08a" stroke="#f59e0b" stroke-width="2"/>
+    <circle cx="-42" cy="42" r="6" fill="#fef08a" stroke="#f59e0b" stroke-width="2"/>
+    <circle cx="42" cy="42" r="6" fill="#fef08a" stroke="#f59e0b" stroke-width="2"/>
+
+    <!-- 6 Light Organs symmetrically spaced (Q5) -->
+    <circle cx="0" cy="-62" r="7" fill="url(#lightOrgF)" stroke="#a7f3d0" stroke-width="1.5"/>
+    <circle cx="-55" cy="-22" r="7" fill="url(#lightOrgF)" stroke="#a7f3d0" stroke-width="1.5"/>
+    <circle cx="55" cy="-22" r="7" fill="url(#lightOrgF)" stroke="#a7f3d0" stroke-width="1.5"/>
+    <circle cx="-35" cy="48" r="7" fill="url(#lightOrgF)" stroke="#a7f3d0" stroke-width="1.5"/>
+    <circle cx="35" cy="48" r="7" fill="url(#lightOrgF)" stroke="#a7f3d0" stroke-width="1.5"/>
+    <circle cx="0" cy="70" r="7" fill="url(#lightOrgF)" stroke="#a7f3d0" stroke-width="1.5"/>
+
+    <!-- 4 Sensory Pits (Q6) -->
+    <circle cx="0" cy="-82" r="3.5" fill="#022c22" stroke="#6ee7b7" stroke-width="1.5"/>
+    <circle cx="-75" cy="0" r="3.5" fill="#022c22" stroke="#6ee7b7" stroke-width="1.5"/>
+    <circle cx="75" cy="0" r="3.5" fill="#022c22" stroke="#6ee7b7" stroke-width="1.5"/>
+    <circle cx="0" cy="85" r="3.5" fill="#022c22" stroke="#6ee7b7" stroke-width="1.5"/>
+
+    <!-- 6 Limbs radiating outwards radially (Q1, Q9) -->
+    <g fill="none" stroke="#059669" stroke-width="8" stroke-linecap="round">
+      <line x1="0" y1="-95" x2="0" y2="-150"/>
+      <line x1="-82" y1="-48" x2="-130" y2="-75"/>
+      <line x1="82" y1="-48" x2="130" y2="-75"/>
+      <line x1="-82" y1="48" x2="-130" y2="75"/>
+      <line x1="82" y1="48" x2="130" y2="75"/>
+      <line x1="0" y1="95" x2="0" y2="150"/>
+    </g>
+
+    <!-- 4 Gill Openings (Q4) and 8 Segments (Q7) implicitly structured radially -->
+    <circle cx="0" cy="0" r="120" fill="none" stroke="#34d399" stroke-width="1" stroke-dasharray="4,4"/>
+  </g>
+</svg>

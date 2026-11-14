@@ -7,10 +7,11 @@ Report: https://github.com/qianhanglv/xenodesign/blob/main/reports/pilot-02.md
 
 ## What this release is
 
-Pilot 02 adds Kimi K3.1 Pro, the XD-01 donut-cavity challenge, the first L5 bicycle, and two style studies. The project now has **3 models, 3 standard cards + 1 challenge, 96 SVGs**, and **25 Q dimensions**.
+Pilot 02 adds Gemini (web), Kimi K3.1 Pro, the XD-01 donut-cavity challenge, the first L5 bicycle, and two style studies. The project now has **4 models, 3 standard cards + 1 challenge, 124 SVGs**, and **25 Q dimensions**.
 
 ## What's new
 
+- **Gemini (web)** ran D1/D2/D3 (28 SVGs).
 - **Kimi K3.1 Pro** ran D1/D2/D3 (28 SVGs).
 - **XD-01**: a D2 card with a hard geometric Q — one real through-hole covering at least 1/3 of the body silhouette. Only DeepSeek has run it so far; its failures are kept and compared.
 - **First L5**: a complete bicycle scene. It is a milestone, not a clean pass.
@@ -39,12 +40,12 @@ Pilot 02 adds Kimi K3.1 Pro, the XD-01 donut-cavity challenge, the first L5 bicy
 - XD-01 L1 left/right lose the through-hole; L2 section is hard to read as a ring.
 - The XD-01 0.39 / 0.36 cavity ratios are self-reported, not independently measured.
 - Kimi D1 has no design note.
-- ChatGPT web model version was not captured.
+- ChatGPT and Gemini web model versions were not captured.
 
 ## Assets to attach
 
 - `xenodesign-spec-v0.2-pilot.zip` — four spec documents with Q-25, offline.
-- `assets/pelt-comparison-pilot02.png` — seven pelts.
+- `assets/pelt-comparison-pilot02.png` — nine pelts.
 - `assets/xd01-failure.png` — the L0/L1/L2/L3 failure comparison.
 - `assets/xd01-art.png` — illuminated / woodcut style studies.
 - `assets/xd01-l5.png` — the first (static, distorted) L5.
@@ -55,7 +56,7 @@ GitHub automatically attaches the source ZIP. Do not attach every SVG individual
 
 - **Tag:** `v0.2-pilot`
 - **Target:** `main`
-- **Title:** `Pilot 02 — Kimi, the donut cavity, and the first L5`
+- **Title:** `Pilot 02 — Gemini, Kimi, the donut cavity, and the first L5`
 - **Description:** paste the sections above.
 - **Assets:** the five files listed above.
 - **Set as latest:** yes.
@@ -63,4 +64,4 @@ GitHub automatically attaches the source ZIP. Do not attach every SVG individual
 
 ## One-line release summary
 
-> Pilot 02: Kimi joins, the donut cavity breaks, and the first alien rides a bicycle — twisted, static, and still worth it.
+> Pilot 02: Gemini and Kimi join, the donut cavity breaks, and the first alien rides a bicycle — twisted, static, and still worth it.

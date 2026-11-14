@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="sacGrad" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#80e5ff" stop-opacity="0.85"/>
+      <stop offset="70%" stop-color="#0088cc" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="#004466" stop-opacity="0.9"/>
+    </radialGradient>
+    <linearGradient id="carapaceGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2c3e50"/>
+      <stop offset="100%" stop-color="#1a252f"/>
+    </linearGradient>
+    <linearGradient id="iceGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#d4f1f9" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#75e6da" stop-opacity="0.2"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sub-glacial ice ceiling context (F1) -->
+  <path d="M 0,0 L 512,0 L 512,95 L 440,125 L 360,85 L 270,130 L 180,90 L 90,120 L 0,80 Z" fill="url(#iceGrad)" stroke="#a5f3fc" stroke-width="2"/>
+
+  <!-- Scale bar (1-10 cm indicator via tick marks, no text) (P1) -->
+  <g stroke="#64748b" stroke-width="2">
+    <line x1="150" y1="450" x2="362" y2="450"/>
+    <line x1="150" y1="442" x2="150" y2="458"/>
+    <line x1="256" y1="445" x2="256" y2="455"/>
+    <line x1="362" y1="442" x2="362" y2="458"/>
+  </g>
+
+  <!-- Far Limbs (Left Pair - 2 of 4 limbs) (Q2) -->
+  <g stroke="#1e293b" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- Far Front Limb -->
+    <polyline points="175,270 155,310 135,345"/>
+    <circle cx="135" cy="345" r="4" fill="#38bdf8" stroke="none"/>
+    <!-- Far Rear Limb -->
+    <polyline points="295,275 315,315 335,348"/>
+    <circle cx="335" cy="348" r="4" fill="#38bdf8" stroke="none"/>
+  </g>
+
+  <!-- Tail (1 tail) (Q3) -->
+  <path d="M 335,245 Q 395,235 445,255 Q 410,275 335,265 Z" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+  <path d="M 355,253 L 425,255" stroke="#7dd3fc" stroke-width="1.5" stroke-dasharray="6,4"/>
+
+  <!-- Translucent Dorsal Water Sac (F2) -->
+  <path d="M 185,220 C 190,145 310,145 325,225 C 300,245 205,245 185,220 Z" fill="url(#sacGrad)" stroke="#38bdf8" stroke-width="2.5"/>
+  <!-- Internal water level wave -->
+  <path d="M 192,195 Q 230,185 260,195 T 320,192 C 315,230 205,235 192,195 Z" fill="#38bdf8" fill-opacity="0.35"/>
+
+  <!-- Main Segmented Body & Head -->
+  <path d="M 125,245 C 125,215 165,205 195,215 L 325,222 C 345,228 350,262 330,272 L 190,275 C 155,275 125,268 125,245 Z" fill="url(#carapaceGrad)" stroke="#475569" stroke-width="2.5"/>
+  
+  <!-- Dorsal Stripe Pattern -->
+  <path d="M 155,222 L 165,248 M 215,235 L 222,265 M 255,238 L 262,268 M 295,236 L 302,265" stroke="#38bdf8" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Eye & Ventral Mouth/Siphon -->
+  <circle cx="148" cy="235" r="6" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+  <circle cx="146" cy="235" r="2.5" fill="#0f172a"/>
+  <ellipse cx="142" cy="264" rx="8" ry="3" fill="#0f172a" stroke="#38bdf8" stroke-width="1.5"/>
+
+  <!-- Near Limbs (Right Pair - 2 of 4 limbs, ice-hook tips) (Q2, F1) -->
+  <g stroke="#334155" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- Near Front Limb -->
+    <polyline points="185,272 165,318 145,358"/>
+    <path d="M 145,358 L 136,364 M 145,358 L 152,366" stroke="#7dd3fc" stroke-width="3"/>
+    <!-- Near Rear Limb -->
+    <polyline points="305,274 325,318 345,358"/>
+    <path d="M 345,358 L 336,366 M 345,358 L 354,364" stroke="#7dd3fc" stroke-width="3"/>
+  </g>
+
+  <!-- 2 Antennae (Q1) -->
+  <path d="M 132,226 Q 95,190 65,155" fill="none" stroke="#38bdf8" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="65" cy="155" r="3.5" fill="#bae6fd"/>
+  <path d="M 136,220 Q 108,175 88,135" fill="none" stroke="#0284c7" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="88" cy="135" r="3" fill="#7dd3fc"/>
+</svg>

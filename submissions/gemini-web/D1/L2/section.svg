@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Antennae (2) -->
+  <path d="M 132,226 Q 95,190 65,155" fill="none" stroke="#38bdf8" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 136,220 Q 108,175 88,135" fill="none" stroke="#0284c7" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Far Limbs (2 of 4) -->
+  <g stroke="#1e293b" stroke-width="6" stroke-linecap="round" fill="none">
+    <polyline points="175,270 155,310 135,345"/>
+    <polyline points="295,275 315,315 335,348"/>
+  </g>
+
+  <!-- Tail (1) with internal cartilaginous rod -->
+  <path d="M 335,245 Q 395,235 445,255 Q 410,275 335,265 Z" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+  <line x1="335" y1="255" x2="430" y2="255" stroke="#e2e8f0" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Cutaway Dorsal Water Sac & Mineralized Exoskeleton Wall -->
+  <path d="M 185,220 C 190,145 310,145 325,225 L 330,272 L 190,275 C 155,275 125,268 125,245 C 125,215 165,205 185,220 Z" fill="#0f172a" stroke="#94a3b8" stroke-width="4"/>
+
+  <!-- Water Sac Reservoir Chamber (F2) -->
+  <path d="M 192,218 C 196,155 304,155 318,222 Z" fill="#0284c7" fill-opacity="0.45" stroke="#38bdf8" stroke-width="2"/>
+  <path d="M 195,195 Q 255,188 315,195 C 312,220 198,220 195,195 Z" fill="#38bdf8" fill-opacity="0.6"/>
+
+  <!-- Valve Duct connecting Water Sac to Alimentary Canal -->
+  <path d="M 250,220 L 250,238 L 260,238 L 260,220 Z" fill="#38bdf8"/>
+
+  <!-- Digestive & Vascular Canal connecting Mouth to Posterior Pore -->
+  <path d="M 142,262 Q 170,242 255,244 T 330,256" fill="none" stroke="#f43f5e" stroke-width="7" stroke-linecap="round"/>
+  <path d="M 142,262 Q 170,242 255,244 T 330,256" fill="none" stroke="#fda4af" stroke-width="2" stroke-dasharray="4,4"/>
+
+  <!-- Calcified Mineral Rib-Plates along Cut Edge -->
+  <g fill="#cbd5e1">
+    <rect x="170" y="212" width="8" height="4" rx="1"/>
+    <rect x="210" y="216" width="8" height="4" rx="1"/>
+    <rect x="285" y="218" width="8" height="4" rx="1"/>
+    <rect x="175" y="270" width="10" height="4" rx="1"/>
+    <rect x="235" y="270" width="10" height="4" rx="1"/>
+    <rect x="295" y="269" width="10" height="4" rx="1"/>
+  </g>
+
+  <!-- Near Limbs (2 of 4) -->
+  <g stroke="#334155" stroke-width="7" stroke-linecap="round" fill="none">
+    <polyline points="185,272 165,318 145,358"/>
+    <polyline points="305,274 325,318 345,358"/>
+  </g>
+</svg>

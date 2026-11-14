@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- 2 Antennae (Q6) -->
+  <path d="M 122,240 Q 82,215 48,195" fill="none" stroke="#38bdf8" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 122,272 Q 82,297 48,317" fill="none" stroke="#38bdf8" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Ventral Plate & Folding Grooves (F4, N1) -->
+  <ellipse cx="256" cy="256" rx="140" ry="58" fill="#0f172a" stroke="#475569" stroke-width="2.5"/>
+  <!-- 6 Ventral Limb Folding Grooves (F4) -->
+  <g stroke="#334155" stroke-width="4" stroke-linecap="round">
+    <line x1="182" y1="210" x2="210" y2="246"/>
+    <line x1="256" y1="204" x2="256" y2="246"/>
+    <line x1="328" y1="210" x2="300" y2="246"/>
+    <line x1="182" y1="302" x2="210" y2="266"/>
+    <line x1="256" y1="308" x2="256" y2="266"/>
+    <line x1="328" y1="302" x2="300" y2="266"/>
+  </g>
+
+  <!-- 2 Feeding Openings with Filter Combs (Q3, F2) -->
+  <ellipse cx="142" cy="240" rx="12" ry="7" fill="#020617" stroke="#38bdf8" stroke-width="2"/>
+  <path d="M 132,237 L 112,232 M 130,240 L 110,240 M 132,243 L 112,248" stroke="#bae6fd" stroke-width="2"/>
+  <ellipse cx="142" cy="272" rx="12" ry="7" fill="#020617" stroke="#38bdf8" stroke-width="2"/>
+  <path d="M 132,269 L 112,264 M 130,272 L 110,272 M 132,275 L 112,280" stroke="#bae6fd" stroke-width="2"/>
+
+  <!-- 6 Limbs emerging from ventral sockets (Q1) -->
+  <g stroke="#475569" stroke-width="8" stroke-linecap="round" fill="none">
+    <polyline points="182,210 164,165 154,142"/>
+    <polyline points="256,204 250,158 244,136"/>
+    <polyline points="328,210 338,165 348,142"/>
+    <polyline points="182,302 164,347 154,370"/>
+    <polyline points="256,308 250,354 244,376"/>
+    <polyline points="328,302 338,347 348,370"/>
+  </g>
+</svg>

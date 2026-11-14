@@ -19,6 +19,12 @@
       "name": "Kimi K3.1 Pro",
       "version": "K3.1 Pro",
       "note": "Web UI; D1 design note missing; D2/D3 notes included"
+    },
+    {
+      "id": "gemini-web",
+      "name": "Gemini (web)",
+      "version": "not captured",
+      "note": "Web UI; D1/D2/D3 design notes included"
     }
   ],
   "cards": [
@@ -72,22 +78,22 @@
     }
   ],
   "counts": {
-    "svgs": 96,
-    "l0": 10,
-    "l1": 60,
-    "l2": 7,
-    "l3": 14,
-    "l4": 4,
+    "svgs": 124,
+    "l0": 13,
+    "l1": 78,
+    "l2": 9,
+    "l3": 18,
+    "l4": 5,
     "l5": 1,
     "style_studies": 2,
-    "pelts": 7,
-    "models": 3,
+    "pelts": 9,
+    "models": 4,
     "cards": 4,
-    "card_runs": 10,
+    "card_runs": 13,
     "q_dimensions": 25,
     "challenges": 1
   },
-  "notes": "Design notes are included. ChatGPT and DeepSeek use card/level notes; Kimi D2/D3 use card-level notes and D1 has no note; XD-01 has a card README plus per-level notes.",
-  "caution": "n=1 per model/card; no repeats; no formal K/M scoring; ChatGPT version not captured; XD-01 is a stress test and its failures are part of the result; the first L5 is static and structurally distorted.",
+  "notes": "Design notes are included. ChatGPT and DeepSeek use card/level notes; Kimi D2/D3 use card-level notes and D1 has no note; Gemini D1/D2/D3 use card-level DESIGN_NOTES.md; XD-01 has a card README plus per-level notes.",
+  "caution": "n=1 per model/card; no repeats; no formal K/M scoring; ChatGPT and Gemini versions not captured; XD-01 is a stress test and its failures are part of the result; the first L5 is static and structurally distorted.",
   "source": "Desktop experiment folders, 2026-11-14"
 }

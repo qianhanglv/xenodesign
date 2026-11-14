@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Antennae (2) -->
+  <path d="M 244,225 Q 210,175 190,140" fill="none" stroke="#38bdf8" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="190" cy="140" r="3.5" fill="#bae6fd"/>
+  <path d="M 268,225 Q 302,175 322,140" fill="none" stroke="#38bdf8" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="322" cy="140" r="3.5" fill="#bae6fd"/>
+
+  <!-- Dorsal Water Sac -->
+  <path d="M 206,225 C 206,155 306,155 306,225 Z" fill="#0088cc" fill-opacity="0.65" stroke="#38bdf8" stroke-width="2.5"/>
+  <path d="M 210,198 Q 256,192 302,198 C 302,225 210,225 210,198 Z" fill="#38bdf8" fill-opacity="0.4"/>
+
+  <!-- Limbs (4 total: front pair prominent, rear pair aligned behind) -->
+  <g stroke="#1e293b" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <polyline points="222,272 204,315 194,352"/>
+    <polyline points="290,272 308,315 318,352"/>
+  </g>
+  <g stroke="#334155" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <polyline points="216,270 196,318 184,360"/>
+    <path d="M 184,360 L 178,367 M 184,360 L 190,367" stroke="#7dd3fc" stroke-width="3"/>
+    <polyline points="296,270 316,318 328,360"/>
+    <path d="M 328,360 L 322,367 M 328,360 L 334,367" stroke="#7dd3fc" stroke-width="3"/>
+  </g>
+
+  <!-- Head & Body Front Cross-Profile -->
+  <ellipse cx="256" cy="246" rx="46" ry="30" fill="#2c3e50" stroke="#475569" stroke-width="2.5"/>
+  <!-- Eyes (2) & Mouth -->
+  <circle cx="226" cy="238" r="6" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+  <circle cx="226" cy="238" r="2.5" fill="#0f172a"/>
+  <circle cx="286" cy="238" r="6" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+  <circle cx="286" cy="238" r="2.5" fill="#0f172a"/>
+  <ellipse cx="256" cy="262" rx="10" ry="4" fill="#0f172a" stroke="#38bdf8" stroke-width="1.5"/>
+</svg>

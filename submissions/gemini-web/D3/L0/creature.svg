@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="ammoniaCloud" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#022c22" stop-opacity="0.9"/>
+      <stop offset="60%" stop-color="#064e3b" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#022c22" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="50%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#047857"/>
+    </linearGradient>
+    <radialGradient id="lightOrg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#a7f3d0"/>
+      <stop offset="50%" stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#059669" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Gas giant background haze (F1) -->
+  <rect width="512" height="512" fill="#021510"/>
+  <circle cx="256" cy="256" r="220" fill="url(#ammoniaCloud)"/>
+  <path d="M 0,100 Q 128,60 256,120 T 512,100 L 512,412 Q 384,450 256,390 T 0,412 Z" fill="#065f46" fill-opacity="0.25"/>
+
+  <!-- Scale Bar: 10-50 m indicator (260 px = 30 m scale) (P1) -->
+  <g stroke="#6ee7b7" stroke-width="2">
+    <line x1="126" y1="460" x2="386" y2="460"/>
+    <line x1="126" y1="452" x2="126" y2="468"/>
+    <line x1="256" y1="455" x2="256" y2="465"/>
+    <line x1="386" y1="452" x2="386" y2="468"/>
+  </g>
+
+  <!-- Section 1: Anterior Cephalic Hub (Q8) with 3 Feeding Openings (Q3), 2 of 4 Eyes (Q2), 2 of 4 Sensory Pits (Q6), 2 of 6 Light Organs (Q5) -->
+  <g transform="translate(256, 256)">
+    <!-- 8 Body Segments stacked along radial/axial body (Q7, N1) -->
+    <!-- Segment 8 (Posterior) -->
+    <ellipse cx="0" cy="55" rx="35" ry="15" fill="#047857" stroke="#34d399" stroke-width="1.5"/>
+    <!-- Segment 7 -->
+    <ellipse cx="0" cy="40" rx="45" ry="16" fill="#059669" stroke="#34d399" stroke-width="1.5"/>
+    <!-- Segment 6 (Section 3: Abdominal-equivalent) -->
+    <ellipse cx="0" cy="22" rx="58" ry="18" fill="#047857" stroke="#6ee7b7" stroke-width="2"/>
+    <!-- Segment 5 -->
+    <ellipse cx="0" cy="3" rx="72" ry="20" fill="#059669" stroke="#6ee7b7" stroke-width="2"/>
+    <!-- Segment 4 (Section 2: Thoracic-equivalent) -->
+    <ellipse cx="0" cy="-18" rx="88" ry="22" fill="#10b981" stroke="#34d399" stroke-width="2"/>
+    <!-- Segment 3 -->
+    <ellipse cx="0" cy="-42" rx="100" ry="22" fill="#059669" stroke="#6ee7b7" stroke-width="2"/>
+    <!-- Segment 2 -->
+    <ellipse cx="0" cy="-66" rx="90" ry="20" fill="#047857" stroke="#34d399" stroke-width="2"/>
+    <!-- Segment 1 (Section 1: Cephalic Hub) -->
+    <ellipse cx="0" cy="-90" rx="75" ry="22" fill="#10b981" stroke="#6ee7b7" stroke-width="2.5"/>
+
+    <!-- 6 Limbs radiating radially (Q1, N1, Q9: no wings) -->
+    <g fill="none" stroke="#059669" stroke-width="8" stroke-linecap="round">
+      <path d="M 0,-66 Q -80,-30 -130,20"/>
+      <path d="M 0,-66 Q 80,-30 130,20"/>
+      <path d="M 0,-18 Q -100,0 -150,50"/>
+      <path d="M 0,-18 Q 100,0 150,50"/>
+      <path d="M 0,22 Q -70,70 -110,120"/>
+      <path d="M 0,22 Q 70,70 110,120"/>
+    </g>
+    <!-- Limb filter bristles (F2) -->
+    <g stroke="#34d399" stroke-width="2">
+      <line x1="-115" y1="30" x2="-135" y2="25"/><line x1="-120" y1="35" x2="-142" y2="33"/>
+      <line x1="115" y1="30" x2="135" y2="25"/><line x1="120" y1="35" x2="142" y2="33"/>
+      <line x1="-130" y1="60" x2="-155" y2="58"/><line x1="-135" y1="66" x2="-160" y2="66"/>
+      <line x1="130" y1="60" x2="155" y2="58"/><line x1="135" y1="66" x2="160" y2="66"/>
+    </g>
+
+    <!-- 3 Feeding Openings arranged radially at anterior center (Q3, F2) -->
+    <g>
+      <circle cx="0" cy="-95" r="12" fill="#022c22" stroke="#34d399" stroke-width="2.5"/>
+      <circle cx="-14" cy="-85" r="10" fill="#022c22" stroke="#34d399" stroke-width="2"/>
+      <circle cx="14" cy="-85" r="10" fill="#022c22" stroke="#34d399" stroke-width="2"/>
+      <!-- Filter cilia inside mouths (F2) -->
+      <path d="M -9,-95 L -3,-95 M 3,-95 L 9,-95 M 0,-101 L 0,-89" stroke="#6ee7b7" stroke-width="1.5"/>
+    </g>
+
+    <!-- 4 Gill Openings (Q4) paired laterally across mid-segments -->
+    <g stroke="#022c22" stroke-width="3" stroke-linecap="round">
+      <line x1="-65" y1="-42" x2="-85" y2="-42"/>
+      <line x1="65" y1="-42" x2="85" y2="-42"/>
+      <line x1="-70" y1="3" x2="-90" y2="3"/>
+      <line x1="70" y1="3" x2="90" y2="3"/>
+    </g>
+
+    <!-- 4 Eyes (Q2) distributed symmetrically -->
+    <circle cx="-35" cy="-92" r="7" fill="#fef08a" stroke="#f59e0b" stroke-width="2"/>
+    <circle cx="35" cy="-92" r="7" fill="#fef08a" stroke="#f59e0b" stroke-width="2"/>
+    <circle cx="-65" cy="-75" r="6" fill="#fef08a" stroke="#f59e0b" stroke-width="2"/>
+    <circle cx="65" cy="-75" r="6" fill="#fef08a" stroke="#f59e0b" stroke-width="2"/>
+
+    <!-- 6 Light Organs (Q5, F3) for camouflage (F5) and communication (F3) -->
+    <circle cx="0" cy="-80" r="8" fill="url(#lightOrg)" stroke="#a7f3d0" stroke-width="1.5"/>
+    <circle cx="-45" cy="-55" r="7" fill="url(#lightOrg)" stroke="#a7f3d0" stroke-width="1.5"/>
+    <circle cx="45" cy="-55" r="7" fill="url(#lightOrg)" stroke="#a7f3d0" stroke-width="1.5"/>
+    <circle cx="-55" cy="-10" r="7" fill="url(#lightOrg)" stroke="#a7f3d0" stroke-width="1.5"/>
+    <circle cx="55" cy="-10" r="7" fill="url(#lightOrg)" stroke="#a7f3d0" stroke-width="1.5"/>
+    <circle cx="0" cy="30" r="8" fill="url(#lightOrg)" stroke="#a7f3d0" stroke-width="1.5"/>
+
+    <!-- 4 Sensory Pits (Q6) -->
+    <circle cx="-20" cy="-105" r="3.5" fill="#022c22" stroke="#6ee7b7" stroke-width="1.5"/>
+    <circle cx="20" cy="-105" r="3.5" fill="#022c22" stroke="#6ee7b7" stroke-width="1.5"/>
+    <circle cx="-75" cy="-30" r="3" fill="#022c22" stroke="#6ee7b7" stroke-width="1.5"/>
+    <circle cx="75" cy="-30" r="3" fill="#022c22" stroke="#6ee7b7" stroke-width="1.5"/>
+  </g>
+</svg>

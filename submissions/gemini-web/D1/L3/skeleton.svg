@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Faint Body Outline -->
+  <path d="M 185,220 C 190,145 310,145 325,225 L 445,255 L 330,272 L 190,275 C 155,275 125,268 125,245 C 125,215 165,205 185,220 Z" fill="none" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4,4"/>
+
+  <!-- Antennae Mineralized Cores (2) -->
+  <path d="M 134,225 Q 95,190 65,155" fill="none" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="3,2"/>
+  <path d="M 138,220 Q 108,175 88,135" fill="none" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="3,2"/>
+
+  <!-- Cranial Capsule -->
+  <ellipse cx="152" cy="242" rx="24" ry="16" fill="none" stroke="#e2e8f0" stroke-width="3"/>
+  <circle cx="148" cy="235" r="6" fill="none" stroke="#cbd5e1" stroke-width="1.5"/>
+
+  <!-- Vertebral Spine & Tail Caudal Axis (1 tail) -->
+  <path d="M 176,242 L 330,252 L 435,255" fill="none" stroke="#e2e8f0" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Hydrostatic Sac Support Hoops (F2) -->
+  <path d="M 195,222 C 200,158 300,158 315,225" fill="none" stroke="#7dd3fc" stroke-width="2.5"/>
+  <path d="M 225,226 C 230,165 275,165 285,228" fill="none" stroke="#7dd3fc" stroke-width="2"/>
+
+  <!-- Ventral Rib Cage -->
+  <g stroke="#cbd5e1" stroke-width="2.5" fill="none">
+    <path d="M 195,244 Q 192,265 200,272"/>
+    <path d="M 225,246 Q 222,267 230,273"/>
+    <path d="M 255,248 Q 252,268 260,273"/>
+    <path d="M 285,250 Q 282,269 290,272"/>
+  </g>
+
+  <!-- Far Limb Bones & Joints (2 of 4) -->
+  <g stroke="#64748b" stroke-width="3" fill="#64748b">
+    <line x1="175" y1="268" x2="155" y2="310"/>
+    <line x1="155" y1="310" x2="135" y2="345"/>
+    <circle cx="175" cy="268" r="3"/>
+    <circle cx="155" cy="310" r="3"/>
+    <line x1="295" y1="272" x2="315" y2="315"/>
+    <line x1="315" y1="315" x2="335" y2="348"/>
+    <circle cx="295" cy="272" r="3"/>
+    <circle cx="315" cy="315" r="3"/>
+  </g>
+
+  <!-- Near Limb Bones, Joints & Hook Claws (2 of 4) -->
+  <g stroke="#f8fafc" stroke-width="3.5" fill="#38bdf8">
+    <line x1="185" y1="270" x2="165" y2="318"/>
+    <line x1="165" y1="318" x2="145" y2="358"/>
+    <path d="M 145,358 L 136,364 M 145,358 L 152,366" stroke="#38bdf8" stroke-width="2.5"/>
+    <circle cx="185" cy="270" r="4"/>
+    <circle cx="165" cy="318" r="3.5"/>
+
+    <line x1="305" y1="272" x2="325" y2="318"/>
+    <line x1="325" y1="318" x2="345" y2="358"/>
+    <path d="M 345,358 L 336,366 M 345,358 L 354,364" stroke="#38bdf8" stroke-width="2.5"/>
+    <circle cx="305" cy="272" r="4"/>
+    <circle cx="325" cy="318" r="3.5"/>
+  </g>
+</svg>

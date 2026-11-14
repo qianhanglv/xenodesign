@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Single Continuous Unfolded Pelt (Ventral midline incision splayed left/right) -->
+  <path d="M 110,242 
+           C 120,210 155,190 190,175 
+           L 170,130 L 195,125 L 212,168 
+           C 235,140 280,140 302,168 
+           L 320,125 L 345,130 L 325,175 
+           C 350,190 365,225 375,246 
+           L 465,256 L 375,266 
+           C 365,287 350,322 325,337 
+           L 345,382 L 320,387 L 302,344 
+           C 280,372 235,372 212,344 
+           L 195,387 L 170,382 L 190,337 
+           C 155,322 120,302 110,270 
+           L 128,256 Z" 
+        fill="#2c3e50" stroke="#94a3b8" stroke-width="2.5" stroke-dasharray="6,3"/>
+
+  <!-- Translucent Dorsal Water Sac Dome Membrane (center of pelt) -->
+  <ellipse cx="256" cy="256" rx="68" ry="38" fill="#0088cc" fill-opacity="0.55" stroke="#38bdf8" stroke-width="2"/>
+
+  <!-- Continuous Dorsal Stripe Pattern across pelt -->
+  <path d="M 160,212 Q 175,256 160,300 
+           M 215,180 Q 225,256 215,332 
+           M 256,172 L 256,340 
+           M 297,180 Q 287,256 297,332" 
+        fill="none" stroke="#38bdf8" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- 2 Antennae Base Holes -->
+  <circle cx="132" cy="236" r="4.5" fill="#0f172a" stroke="#7dd3fc" stroke-width="1.5"/>
+  <circle cx="132" cy="276" r="4.5" fill="#0f172a" stroke="#7dd3fc" stroke-width="1.5"/>
+
+  <!-- 2 Eye Holes -->
+  <circle cx="152" cy="222" r="6" fill="#0f172a" stroke="#e0f2fe" stroke-width="2"/>
+  <circle cx="152" cy="290" r="6" fill="#0f172a" stroke="#e0f2fe" stroke-width="2"/>
+
+  <!-- 4 Limb Socket Holes (splayed onto left & right ventral flaps) -->
+  <circle cx="192" cy="185" r="7" fill="#0f172a" stroke="#38bdf8" stroke-width="2"/>
+  <circle cx="305" cy="185" r="7" fill="#0f172a" stroke="#38bdf8" stroke-width="2"/>
+  <circle cx="192" cy="327" r="7" fill="#0f172a" stroke="#38bdf8" stroke-width="2"/>
+  <circle cx="305" cy="327" r="7" fill="#0f172a" stroke="#38bdf8" stroke-width="2"/>
+
+  <!-- Mouth Notch (anterior boundary) & Cloacal Hole (posterior) -->
+  <circle cx="352" cy="256" r="4" fill="#0f172a" stroke="#38bdf8" stroke-width="1.5"/>
+</svg>

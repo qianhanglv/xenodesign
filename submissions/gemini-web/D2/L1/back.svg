@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- 2 Antennae tips visible dorsally (Q6) -->
+  <path d="M 240,236 Q 200,200 175,165" fill="none" stroke="#0284c7" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M 272,236 Q 312,200 337,165" fill="none" stroke="#0284c7" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Dorsal Arch of 6 Silicate Plates (posterior pygidial view) (Q5, N1) -->
+  <path d="M 198,262 C 198,191 314,191 314,262 Z" fill="#1e293b" stroke="#94a3b8" stroke-width="2.5"/>
+  <path d="M 206,240 C 216,198 296,198 306,240" fill="none" stroke="#64748b" stroke-width="2"/>
+  <path d="M 218,220 C 230,202 282,202 294,220" fill="none" stroke="#64748b" stroke-width="2"/>
+
+  <!-- 2 Lateral Spore Sacs peeking on left/right flanks (Q4) -->
+  <ellipse cx="198" cy="224" rx="8" ry="12" fill="#0e7490" fill-opacity="0.8" stroke="#22d3ee" stroke-width="2"/>
+  <ellipse cx="314" cy="224" rx="8" ry="12" fill="#0e7490" fill-opacity="0.8" stroke="#22d3ee" stroke-width="2"/>
+
+  <!-- Photophore Light Bars (F3) -->
+  <rect x="228" y="250" width="16" height="4" rx="2" fill="#fde047"/>
+  <rect x="268" y="250" width="16" height="4" rx="2" fill="#fde047"/>
+
+  <!-- Ventral Chassis -->
+  <path d="M 198,262 Q 256,288 314,262 Z" fill="#0f172a" stroke="#475569" stroke-width="2"/>
+
+  <!-- 6 Limbs (3 left, 3 right aligned in depth) (Q1) -->
+  <g stroke="#1e293b" stroke-width="6" stroke-linecap="round" fill="none">
+    <polyline points="214,278 196,332 184,384"/>
+    <polyline points="222,282 208,332 198,378"/>
+    <polyline points="298,278 316,332 328,384"/>
+    <polyline points="290,282 304,332 314,378"/>
+  </g>
+  <g stroke="#475569" stroke-width="8" stroke-linecap="round" fill="none">
+    <polyline points="218,280 202,330 192,376"/>
+    <polyline points="294,280 310,330 320,376"/>
+  </g>
+</svg>

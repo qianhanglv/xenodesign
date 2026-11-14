@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Antennae tips peeking above -->
+  <path d="M 244,225 Q 210,175 190,140" fill="none" stroke="#0284c7" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M 268,225 Q 302,175 322,140" fill="none" stroke="#0284c7" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Dorsal Water Sac -->
+  <path d="M 206,225 C 206,155 306,155 306,225 Z" fill="#0088cc" fill-opacity="0.65" stroke="#38bdf8" stroke-width="2.5"/>
+
+  <!-- Limbs (4 total: rear pair foreground, front pair slightly inward) -->
+  <g stroke="#1e293b" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <polyline points="216,270 196,318 184,360"/>
+    <polyline points="296,270 316,318 328,360"/>
+  </g>
+  <g stroke="#334155" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <polyline points="222,272 204,315 194,352"/>
+    <path d="M 194,352 L 188,360 M 194,352 L 200,360" stroke="#7dd3fc" stroke-width="3"/>
+    <polyline points="290,272 308,315 318,352"/>
+    <path d="M 318,352 L 312,360 M 318,352 L 324,360" stroke="#7dd3fc" stroke-width="3"/>
+  </g>
+
+  <!-- Posterior Body -->
+  <ellipse cx="256" cy="248" rx="44" ry="28" fill="#1a252f" stroke="#475569" stroke-width="2.5"/>
+  <!-- Single Tail (1) centered -->
+  <ellipse cx="256" cy="254" rx="22" ry="9" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+  <line x1="242" y1="254" x2="270" y2="254" stroke="#7dd3fc" stroke-width="1.5"/>
+</svg>
