@@ -194,7 +194,8 @@ This pilot is deliberately unfinished.
 │   ├── pilot-01.md
 │   ├── pilot-02.md
 │   ├── release-v0.1-pilot.md
-│   └── release-v0.2-pilot.md
+│   ├── release-v0.2-pilot.md
+│   └── release-v0.3-pilot.md
 ├── spec/                      # standard, guide, library (25 Q), template
 ├── LICENSE
 ├── LICENSE-CONTENT
@@ -218,14 +219,15 @@ This pilot is deliberately unfinished.
 | `reports/pilot-01.md` | Pilot 01 observations. | Readers |
 | `reports/pilot-02.md` | Pilot 02 observations: Kimi, XD-01, L5, style studies. | Readers |
 | `reports/release-v0.1-pilot.md` | Release note for `v0.1-pilot`. | Maintainers |
-| `reports/release-v0.2-pilot.md` | Draft release note and asset list for `v0.2-pilot`. | Maintainers |
+| `reports/release-v0.2-pilot.md` | Release note and asset list for `v0.2-pilot`. | Maintainers |
+| `reports/release-v0.3-pilot.md` | Release note and asset list for `v0.3-pilot`. | Maintainers |
 | `LICENSE` / `LICENSE-CONTENT` | MIT for code; CC BY 4.0 for prompts/docs/gallery images. | Everyone |
 | `CONTRIBUTING.md` | How to add a model run, a vocabulary item, or an experimental medium. | Contributors |
 | `.gitignore` | Keeps `.DS_Store`, caches, and `.env` out of the repo. | Maintainers |
 
 ## Release
 
-Pilot 01 is tagged `v0.1-pilot`. Pilot 02 is published as `v0.2-pilot` — the 4-model snapshot (124 SVGs). GPT 6.0 Sol is the first addition for a future `v0.3`. Release notes: [reports/release-v0.2-pilot.md](reports/release-v0.2-pilot.md).
+Pilot 01 is tagged `v0.1-pilot`. Pilot 02 is published as `v0.2-pilot` — the 4-model snapshot (124 SVGs); `v0.3-pilot` is drafted as the five-model snapshot with GPT 6.0 Sol. Release notes: [v0.3](reports/release-v0.3-pilot.md) · [v0.2](reports/release-v0.2-pilot.md).
 
 ## License
 
