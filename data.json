@@ -91,9 +91,11 @@
     "cards": 4,
     "card_runs": 13,
     "q_dimensions": 25,
-    "challenges": 1
+    "challenges": 1,
+    "l5_animated": 1,
+    "l5_archived": 1
   },
   "notes": "Design notes are included. ChatGPT and DeepSeek use card/level notes; Kimi D2/D3 use card-level notes and D1 has no note; Gemini D1/D2/D3 use card-level DESIGN_NOTES.md; XD-01 has a card README plus per-level notes.",
-  "caution": "n=1 per model/card; no repeats; no formal K/M scoring; ChatGPT and Gemini versions not captured; XD-01 is a stress test and its failures are part of the result; the first L5 is static and structurally distorted.",
+  "caution": "n=1 per model/card; no repeats; no formal K/M scoring; ChatGPT and Gemini versions not captured; XD-01 is a stress test and its failures are part of the result; the L5 is now animated but still structurally distorted; the static first attempt is archived.",
   "source": "Desktop experiment folders, 2026-11-14"
 }

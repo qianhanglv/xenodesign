@@ -11,7 +11,7 @@ Four models, three standard cards, and one hard challenge. 124 SVGs — portrait
 - **Gemini (web)** ran the three standard cards (D1–D3).
 - **Kimi K3.1 Pro** ran the three standard cards (D1–D3).
 - **XD-01, the donut-cavity challenge**: a D2 card with one hard geometric Q — a real through-hole whose visible area is at least 1/3 of the body silhouette. Only DeepSeek has run it so far; the failures are kept and compared.
-- **First L5**: one submission — a twisted, static first attempt that proves the prompt can reach the bicycle.
+- **First L5**: a twisted first attempt, now with an animated 3.2 s version (`ride.svg`); the original static version is archived.
 - **Two style studies**: the XD-01 creature repainted as an illuminated miniature and a woodcut.
 - The prompt library gains **Q-25**, a geometric-ratio Q for through-hole cavities.
 
@@ -28,7 +28,8 @@ Four models, three standard cards, and one hard challenge. 124 SVGs — portrait
 - **Not a complete matrix.** Standard D2 has no L4; D3 has only L0/L1; XD-01 has only one model; Kimi's D1 note is missing.
 - **Not a claim about intelligence.** It is a visual smoke test for composition, spatial consistency, and instruction following.
 - **Not a clean pass for XD-01.** The challenge is deliberately hard; its failures are part of the result, not hidden.
-- **Not a clean L5.** The first ride is structurally distorted and it is a static SVG, not an animated cycle.
+- **Not a clean L5.** The ride is structurally distorted; the animated version moves, but the geometry still twists.
+- **Counts are active submissions.** The archived static L5 is extra and is not in the 124.
 
 ## The cards
 
@@ -87,10 +88,12 @@ The optional L5 capstone is “the alien riding a bicycle” — a homage to the
 - a complete bicycle with two wheels, frame, handlebar, saddle, and pedals;
 - the ring creature is on it, with legs toward the pedals and manipulators toward the bars;
 - **the body is visibly twisted/skewed** to fit the bike; it is not a clean torus in this pose;
-- **it is a static SVG**, not an animated ride cycle;
-- the bicycle is small relative to the body, so the saddle/pedal/bar contact is hard to verify.
+- **the first attempt was a static SVG**; the current `ride.svg` is an **animated 3.2 s loop** with 14 `animateTransform` tracks;
+- the animation fixes the staticness, but not the twist; the bicycle is small relative to the body, so the saddle/pedal/bar contact is still hard to verify.
 
-That is exactly why it is useful: the first one proves the prompt can produce a bicycle scene. The next one can make the structure clean, the contact readable, and the ride actually move.
+The first version is kept as `archive/XD-01-L5/ride-static.svg`; the animated version is the current [`L5/ride.svg`](submissions/deepseek-v4.1-flash/XD-01/L5/ride.svg).
+
+That is exactly why it is useful: the first one proves the prompt can produce a bicycle scene, and the animation proves the same scene can move. The next one can make the structure clean and the contact readable.
 
 ![First L5: the ring creature on a bicycle](assets/xd01-l5.png)
 
@@ -109,7 +112,7 @@ The same XD-01 geometry was rendered twice: an illuminated miniature with parchm
 3. **Kimi is strongest at D2/D3; its D1 is much simpler and has no design note.** D1 is a clean, friendly creature, but without a note the six constraints cannot be checked line by line. D2 and D3 have detailed notes and much denser constraint mapping. The gap is useful: a model can produce a clean picture without showing the reasoning.
 4. **Gemini is the most literal note-taker of the four.** Its cards come with scale bars and a full constraint map; D1 is a fish-like ice creature with a dorsal water sac, D2 a vent beetle, D3 a green radial organism. D1/D2 include pelt and section; D3 stops at L0/L1. The notes are systematic; the pictures are flatter and more diagram-like than Kimi's.
 5. **XD-01 shows the single-view trap.** The L0 ring and the L5 bicycle are convincing at a glance; the L1 side views and L2 section are where the topology falls apart. The notes claim a 0.39 area ratio and a continuous void; the artifacts do not fully prove either.
-6. **The first L5 is a milestone, not a verdict.** The bicycle is complete and the pose is readable, but the body is visibly twisted, the SVG is static, and the contact/balance need a frame-by-frame check.
+6. **The first L5 now moves.** `ride.svg` is a 3.2 s animated loop; the body is still visibly twisted, and the contact/balance need a frame-by-frame check. The static first attempt is kept in `archive/XD-01-L5/`.
 7. **Style studies are cheap and high-leverage.** Re-rendering the same geometry in two historical styles adds a second axis — representation — without changing the design constraints.
 
 ![Kimi K3.1 Pro on D1/D2/D3](assets/kimi-l0-grid.png)
@@ -157,10 +160,10 @@ This pilot is deliberately unfinished.
 
 - **More models.** Any model, open or closed, local or hosted. The XD-01 challenge is especially open — it currently has only one model.
 - **More styles and media.** SVG is the reference format because it renders and diffs cleanly, but the design logic is the point. Raster, pixel art, 3D, ASCII, video, or another medium is welcome under [`submissions/experimental/`](submissions/experimental/README.md); say what you changed.
-- **L5: the bicycle is waiting.** The first one exists — twisted, static, and gloriously imperfect — and it proves the prompt can get there. We want the next one to be structurally clean, actually animated, and unmistakably riding. Different creature, different bike, different failure: all welcome.
+- **L5: the bicycle is moving.** The first one now has an animated 3.2 s loop — still twisted, still imperfect, but it moves. We want the next one to be structurally clean, contact-readable, and unmistakably riding. Different creature, different bike, different failure: all welcome.
 - **More challenges.** Q-25 is the first geometric-ratio Q. If you have another topology test — a handle, a second tunnel, a non-orientable surface — propose it.
 
-中文：第一个 L5 已经出现——结构扭曲、静态、还很粗糙，但它真的骑上了车。更期待下一个：结构干净、真的会动、接触正确的“外星人骑自行车”。
+中文：第一个 L5 已经有动图版了——结构仍然扭曲，但它真的骑着车动了起来。更期待下一个：结构干净、接触正确、真的像在骑的“外星人骑自行车”。
 
 ## Files
 
@@ -180,6 +183,7 @@ This pilot is deliberately unfinished.
 │   ├── kimi-k3.1-pro/         # D1–D3
 │   ├── gemini-web/            # D1–D3
 │   └── experimental/          # non-SVG media
+├── archive/                   # first static L5, kept for comparison
 ├── reports/
 │   ├── pilot-01.md
 │   ├── pilot-02.md
@@ -204,6 +208,7 @@ This pilot is deliberately unfinished.
 | `spec/` | Main standard, authoring guide, prompt library, L0 template. | People building new cards |
 | `build_gallery.py` | Rebuilds `index.html`; stdlib only. | Maintainers |
 | `data.json` | Model, card, level, and count metadata. | Maintainers |
+| `archive/XD-01-L5/` | The first static L5 attempt, kept for comparison; not indexed by the gallery. | Readers |
 | `reports/pilot-01.md` | Pilot 01 observations. | Readers |
 | `reports/pilot-02.md` | Pilot 02 observations: Kimi, XD-01, L5, style studies. | Readers |
 | `reports/release-v0.1-pilot.md` | Release note for `v0.1-pilot`. | Maintainers |
@@ -226,6 +231,6 @@ Pilot 01 is tagged `v0.1-pilot`. Pilot 02 is drafted as `v0.2-pilot`; release no
 
 Pilot 02. Four models, 124 SVGs, one hard challenge, one L5. Still one sample per model/card, no repeats, no formal K1–K8 / M1–M7 scoring, and no blind human check. The XD-01 failures are intentionally visible.
 
-Next: formalize the K/M checklists, run 3 seeds per model/card, add a blind human check on L0, turn the first L5 into a clean, animated, contact-readable ride, and invite more models to XD-01.
+Next: formalize the K/M checklists, run 3 seeds per model/card, add a blind human check on L0, turn the animated L5 into a clean, contact-readable ride, and invite more models to XD-01.
 
 Detailed notes: [reports/pilot-02.md](reports/pilot-02.md) · Gallery: [index.html](index.html)

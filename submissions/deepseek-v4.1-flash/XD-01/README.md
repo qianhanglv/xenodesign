@@ -18,8 +18,8 @@ X-DONUT-001/
 │        note.md             双文件注释（494 词）
 ├── L4/  motion.svg          SMIL 自包含动画，3.2 s 无缝循环（idle→run→jump→land→idle）
 │        note.md             运动注释（490 词）
-├── L5/  ride.svg            骑自行车（可选彩蛋）
-│        note.md             骑行注释（453 词）
+├── L5/  ride.svg            骑自行车（可选彩蛋；3.2 s 动画版）
+│        note.md             动画 + 接触注释（453 词）
 ├── preview/all-levels.png   十二张图的拼合预览
 └── build/                   生成脚本（可复现，见下）
 ```
@@ -66,8 +66,8 @@ python3 build_l0.py && python3 build_l1.py && python3 build_l2.py \
 
 ## Known limitations (Pilot 02 review)
 
-- **L5 is static:** `L5/ride.svg` has no `<animate>`; it is a single frame, not a ride cycle.
-- **L5 structure is distorted:** in the riding pose the ring body is visibly twisted/skewed and is not a clean torus.
+- **L5 was static, now animated:** the first attempt (`archive/XD-01-L5/ride-static.svg`) was a single frame; the current `L5/ride.svg` has 14 `animateTransform` tracks and a 3.2 s loop.
+- **L5 structure is still distorted:** the animated loop does not fix the visibly twisted/skewed ring body; it is not a clean torus.
 - **L5 contact is hard to verify:** the bicycle is small relative to the body; saddle, pedal, and handlebar contacts need a close-up.
 - **L1 side views lose the cavity:** left/right read as a solid bent slab, so the six views do not all describe the same topology.
 - **L2 section reads as a capsule:** the ring topology is hard to recover from the section drawing.
