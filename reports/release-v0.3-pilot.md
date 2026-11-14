@@ -1,5 +1,7 @@
 # Pilot 02 — `v0.3-pilot`
 
+> Historical note: this release used the old “challenge” framing. The living gallery now treats XD-01 as a **D2 hard variant**, not a fourth card.
+
 Date: 2026-11-14  
 Repo: https://github.com/qianhanglv/xenodesign  
 Gallery: https://qianhanglv.github.io/xenodesign/  

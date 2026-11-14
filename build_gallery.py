@@ -21,7 +21,6 @@ CARDS = [
     ("D1", "6 constraints", "L0–L4", "300-word note cap"),
     ("D2", "13 constraints", "L0–L3", "600-word note cap"),
     ("D3", "20 constraints", "L0–L1", "900-word note cap"),
-    ("XD-01", "D2 + 1/3 through-hole cavity", "L0–L5", "600-word note cap"),
 ]
 LEVELS = [
     ("L0", "portrait"),
@@ -100,6 +99,62 @@ def figure(src: Path, caption: str) -> str:
     )
 
 
+def render_model(model_dir: Path, name: str, card: str) -> list[str]:
+    parts: list[str] = []
+    parts.append('<article class="model">')
+    parts.append(f'<h3>{html.escape(name)}</h3>')
+    for level in CARD_LEVELS[card]:
+        kind = dict(LEVELS)[level]
+        files = files_for(model_dir, card, level)
+        level_note = note_for_level(model_dir, card, level)
+        parts.append('<div class="level">')
+        parts.append('<div class="level-head">')
+        parts.append(f'<h4>{level}</h4><span class="kind">{html.escape(kind)}</span>')
+        if level_note:
+            parts.append(f'<a class="note" href="{url(level_note)}">note</a>')
+        parts.append("</div>")
+        if not files:
+            parts.append('<p class="missing">not run</p>')
+        else:
+            if level == "L1":
+                parts.append('<div class="figs thumbs">')
+                for f in files:
+                    parts.append(figure(f, f.stem))
+                parts.append("</div>")
+            elif level == "L3":
+                parts.append('<div class="figs pair">')
+                for f in files:
+                    parts.append(figure(f, f.stem))
+                parts.append("</div>")
+            elif level == "L0" and any(f.suffix.lower() == ".png" for f in files):
+                svgs = [f for f in files if f.suffix.lower() == ".svg"]
+                pngs = [f for f in files if f.suffix.lower() == ".png"]
+                parts.append('<div class="figs">')
+                for f in svgs:
+                    parts.append(figure(f, f.stem))
+                parts.append("</div>")
+                if pngs:
+                    parts.append('<div class="figs pair">')
+                    for f in pngs:
+                        parts.append(figure(f, "style study · " + f.stem))
+                    parts.append("</div>")
+            else:
+                parts.append('<div class="figs">')
+                for f in files:
+                    caption = f.stem
+                    if level == "L4":
+                        caption += " · animated SVG"
+                    elif level == "L5":
+                        caption += " · animated (3.2 s; still distorted)"
+                    elif f.suffix.lower() == ".png":
+                        caption = "style study · " + f.stem
+                    parts.append(figure(f, caption))
+                parts.append("</div>")
+        parts.append("</div>")
+    parts.append("</article>")
+    return parts
+
+
 def build() -> str:
     parts: list[str] = []
     parts.append(
@@ -137,6 +192,9 @@ section.card{margin:0 0 44px}
 .note{font-size:13px;border:1px solid var(--line);border-radius:8px;padding:4px 8px}
 .models{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 .models.one{grid-template-columns:1fr}
+.variant{margin-top:22px;padding:16px;border:1px solid var(--line);border-radius:14px;background:var(--panel2)}
+.variant-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:10px;margin:0 0 10px}
+.variant-head h3{margin:0;font-size:18px}
 .model{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px}
 .model h3{margin:0 0 10px;font-size:18px}
 .level{border-top:1px solid var(--line);padding:14px 0 4px}
@@ -169,14 +227,14 @@ footer p{max-width:900px}
     <span class="badge">n = 1 per model/card</span>
     <span class="badge">no repeats</span>
     <span class="badge">no human scoring yet</span>
-    <span class="badge">XD-01 challenge</span>
+    <span class="badge">D2 hard variant</span>
     <span class="badge">first L5 · animated</span>
   </div>
   <img class="hero-grid" src="assets/hero-l0-pilot02.png" alt="Fifteen L0 alien creatures: DeepSeek, GPT 6.0 Sol, Kimi, Gemini, and ChatGPT on D1/D2/D3">
-  <p class="caveat">Pilot 02 adds GPT 6.0 Sol, Gemini (web), Kimi K3.1 Pro, the XD-01 donut-cavity challenge, and the first L5 ride — animated, but still structurally distorted. Still one run per model/card; not a leaderboard.</p>
+  <p class="caveat">Pilot 02 adds GPT 6.0 Sol, Gemini (web), Kimi K3.1 Pro, the D2 hard variant (XD-01), and the first L5 ride — animated, but still structurally distorted. Still one run per model/card; not a leaderboard.</p>
 </div></header>
 <nav><div class="wrap">
-  <a href="#D1">D1</a><a href="#D2">D2</a><a href="#D3">D3</a><a href="#XD-01">XD-01</a>
+  <a href="#D1">D1</a><a href="#D2">D2</a><a href="#D3">D3</a>
   <a href="assets/pelt-comparison-pilot02.png">11-pelt comparison</a>
   <a href="assets/l1-pilot02.png">Pilot 02 L1 grid</a>
   <a href="https://github.com/qianhanglv/xenodesign">README</a>
@@ -196,9 +254,6 @@ footer p{max-width:900px}
         parts.append('<div class="card-head">')
         parts.append(f'<h2>{card}</h2>')
         parts.append(f'<span class="meta">{html.escape(count)} · {html.escape(levels)} · {html.escape(cap)}</span>')
-        if card == "XD-01":
-            parts.append('<span class="note">challenge · only DeepSeek so far</span>')
-        # card-level notes, one per model (show both links if present)
         card_notes = []
         for mid, name in MODELS:
             n = note_for_card(SUB / mid, card)
@@ -207,69 +262,30 @@ footer p{max-width:900px}
         if card_notes:
             parts.append(" ".join(card_notes))
         parts.append("</div>")
+        parts.append('<div class="models">')
+        for mid, name in MODELS:
+            parts.extend(render_model(SUB / mid, name, card))
+        parts.append("</div>")
 
-        model_items = MODELS if card != "XD-01" else [m for m in MODELS if (SUB / m[0] / card).exists()]
-        model_class = "models one" if card == "XD-01" else "models"
-        parts.append(f'<div class="{model_class}">')
-        for mid, name in model_items:
-            model_dir = SUB / mid
-            parts.append('<article class="model">')
-            parts.append(f'<h3>{html.escape(name)}</h3>')
-            for level in CARD_LEVELS[card]:
-                kind = dict(LEVELS)[level]
-                files = files_for(model_dir, card, level)
-                level_note = note_for_level(model_dir, card, level)
-                parts.append('<div class="level">')
-                parts.append('<div class="level-head">')
-                parts.append(f'<h4>{level}</h4><span class="kind">{html.escape(kind)}</span>')
-                if level_note:
-                    parts.append(f'<a class="note" href="{url(level_note)}">note</a>')
-                parts.append("</div>")
-                if not files:
-                    parts.append('<p class="missing">not run</p>')
-                else:
-                    if level == "L1":
-                        parts.append('<div class="figs thumbs">')
-                        for f in files:
-                            parts.append(figure(f, f.stem))
-                        parts.append("</div>")
-                    elif level == "L3":
-                        parts.append('<div class="figs pair">')
-                        for f in files:
-                            parts.append(figure(f, f.stem))
-                        parts.append("</div>")
-                    elif level == "L0" and any(f.suffix.lower() == ".png" for f in files):
-                        svgs = [f for f in files if f.suffix.lower() == ".svg"]
-                        pngs = [f for f in files if f.suffix.lower() == ".png"]
-                        parts.append('<div class="figs">')
-                        for f in svgs:
-                            parts.append(figure(f, f.stem))
-                        parts.append("</div>")
-                        if pngs:
-                            parts.append('<div class="figs pair">')
-                            for f in pngs:
-                                parts.append(figure(f, "style study · " + f.stem))
-                            parts.append("</div>")
-                    else:
-                        parts.append('<div class="figs">')
-                        for f in files:
-                            caption = f.stem
-                            if level == "L4":
-                                caption += " · animated SVG"
-                            elif level == "L5":
-                                caption += " · animated (3.2 s; still distorted)"
-                            elif f.suffix.lower() == ".png":
-                                caption = "style study · " + f.stem
-                            parts.append(figure(f, caption))
-                        parts.append("</div>")
-                parts.append("</div>")
-            parts.append("</article>")
-        parts.append("</div></section>")
+        if card == "D2":
+            parts.append('<div class="variant" id="D2-hard"><span id="XD-01"></span>')
+            parts.append('<div class="variant-head">')
+            parts.append('<h3>D2 hard variant · 1/3 through-hole cavity</h3>')
+            parts.append('<span class="note">XD-01 · only DeepSeek so far · not a separate card</span>')
+            n = note_for_card(SUB / "deepseek-v4.1-flash", "XD-01")
+            if n:
+                parts.append(f'<a class="note" href="{url(n)}">DeepSeek note</a>')
+            parts.append('</div>')
+            parts.append('<div class="models one">')
+            parts.extend(render_model(SUB / "deepseek-v4.1-flash", "DeepSeek v4.1 Flash", "XD-01"))
+            parts.append('</div></div>')
+
+        parts.append("</section>")
 
     parts.append(
         """</div></main>
 <footer><div class="wrap">
-  <p><strong>What this is:</strong> Pilot 02 of the XenoDesign prompts — five models, three standard cards, and one hard challenge. <strong>What this is not:</strong> a ranking. One sample per model per card, no repeated seeds, no formal K1–K8 / M1–M7 review. The XD-01 donut-cavity run is a stress test, and its failures are part of the result.</p>
+  <p><strong>What this is:</strong> Pilot 02 of the XenoDesign prompts — five models, three standard cards, and one D2 hard variant. <strong>What this is not:</strong> a ranking. One sample per model per card, no repeated seeds, no formal K1–K8 / M1–M7 review. The D2 hard variant (XD-01) is a stress test, and its failures are part of the result.</p>
   <p>Pilot 02: <a href="assets/hero-l0-pilot02.png">5×3 L0 grid</a> · <a href="assets/pelt-comparison-pilot02.png">11-pelt comparison</a> · <a href="assets/l1-pilot02.png">L1 six views</a> · <a href="assets/xd01-all-levels.png">XD-01 all levels</a> · <a href="assets/xd01-failure.png">XD-01 failure comparison</a> · <a href="assets/xd01-art.png">illuminated / woodcut</a> · <a href="assets/xd01-l5.png">first L5 (animated)</a></p>
   <p>Pilot 01: <a href="assets/section-skeleton-grid.png">sections and skeletons</a> · <a href="assets/motion-grid.png">motion</a></p>
   <p>Generated by <code>build_gallery.py</code>. No external assets, no JavaScript, no tracking.</p>

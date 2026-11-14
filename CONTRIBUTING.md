@@ -32,10 +32,10 @@ not another rule.
   with a stated fallback.
 - Keep the design note within the difficulty cap: D1 300, D2 600, D3 900, XD-01 600 words.
 
-## Add a challenge run (XD-01)
+## Add a D2 hard variant run (XD-01)
 
-XD-01 is the first challenge card: D2 plus Q-25, a real through-hole cavity whose
-visible area is at least 1/3 of the body silhouette.
+XD-01 is not a fourth card: it is a hard variant of D2, adding Q-25, a real
+through-hole cavity whose visible area is at least 1/3 of the body silhouette.
 
 1. Create `submissions/<model>/XD-01/L0/` through `L5/` using the same names as a
    standard run.

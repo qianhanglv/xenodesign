@@ -2,7 +2,7 @@
 
 **Can an AI design a coherent alien?**
 
-Five models, three standard cards, and one hard challenge. 152 SVGs — portrait, six views, section, skeleton, topological pelt, motion, and the first L5 bicycle. A visual pilot, not a leaderboard.
+Five models, three standard cards, and one D2 hard variant. 152 SVGs — portrait, six views, section, skeleton, topological pelt, motion, and the first L5 bicycle. A visual pilot, not a leaderboard.
 
 ![Fifteen L0 creatures: DeepSeek, GPT 6.0 Sol, Kimi, Gemini, and ChatGPT on D1/D2/D3](assets/hero-l0-pilot02.png)
 
@@ -11,7 +11,7 @@ Five models, three standard cards, and one hard challenge. 152 SVGs — portrait
 - **GPT 6.0 Sol** ran the three standard cards (D1–D3).
 - **Gemini (web)** ran the three standard cards (D1–D3).
 - **Kimi K3.1 Pro** ran the three standard cards (D1–D3).
-- **XD-01, the donut-cavity challenge**: a D2 card with one hard geometric Q — a real through-hole whose visible area is at least 1/3 of the body silhouette. Only DeepSeek has run it so far; the failures are kept and compared.
+- **XD-01, the D2 hard variant**: not a fourth card — a D2 experiment with one hard geometric Q (a real through-hole whose visible area is at least 1/3 of the body silhouette). Only DeepSeek has run it so far; the failures are kept and compared.
 - **First L5**: a twisted first attempt, now with an animated 3.2 s version (`ride.svg`); the original static version is archived.
 - **Two style studies**: the XD-01 creature repainted as an illuminated miniature and a woodcut.
 - The prompt library gains **Q-25**, a geometric-ratio Q for through-hole cavities.
@@ -20,7 +20,7 @@ Five models, three standard cards, and one hard challenge. 152 SVGs — portrait
 
 - **A pipeline test.** One set of prompts asks for a single creature carried through L0 portrait, L1 six orthographic views, L2 section, L3 skeleton + topological pelt, L4 motion, and optionally L5 ride.
 - **A five-model comparison.** DeepSeek v4.1 Flash, GPT 6.0 Sol, Kimi K3.1 Pro, Gemini (web), and ChatGPT (web, free) ran the same three standard cards: 6, 13, and 20 constraints.
-- **A hard-mode stress test.** XD-01 adds a donut-topology constraint: the body must have a real through-hole covering at least a third of its silhouette. It is designed to break single-view plausibility.
+- **A D2 hard variant.** XD-01 stays inside D2: it adds a donut-topology constraint (one real through-hole covering at least a third of the silhouette). It is designed to break single-view plausibility.
 - **A first look at the hardest part.** The L3 pelt is specified as **one continuous skin, unfolded flat** — not a cutaway, not an exploded view, not several pieces.
 
 ## What it is not
@@ -28,7 +28,7 @@ Five models, three standard cards, and one hard challenge. 152 SVGs — portrait
 - **Not a ranking.** One run per model per card; no repeated seeds; no human scoring.
 - **Not a complete matrix.** Standard D2 has no L4; D3 has only L0/L1; XD-01 has only one model; Kimi's D1 note is missing.
 - **Not a claim about intelligence.** It is a visual smoke test for composition, spatial consistency, and instruction following.
-- **Not a clean pass for XD-01.** The challenge is deliberately hard; its failures are part of the result, not hidden.
+- **Not a clean pass for XD-01.** The variant is deliberately hard; its failures are part of the result, not hidden.
 - **Not a clean L5.** The ride is structurally distorted; the animated version moves, but the geometry still twists.
 - **Counts are active submissions.** The archived static L5 is extra and is not in the 152.
 
@@ -39,24 +39,25 @@ Five models, three standard cards, and one hard challenge. 152 SVGs — portrait
 | **D1** | 6 | L0–L4 | 300 words |
 | **D2** | 13 | L0–L3 | 600 words |
 | **D3** | 20 | L0–L1 | 900 words |
-| **XD-01** | 13 (D2 + cavity Q1) | L0–L5 | 600 words |
+
+The D2 card has one optional **hard variant, XD-01**: it keeps the D2 constraints but swaps Q1 for Q-25, a real through-hole cavity covering at least 1/3 of the silhouette. It is an experiment inside D2, not a fourth card.
 
 Standard prompts: [cards/experiment-prompts.md](cards/experiment-prompts.md)  
-Challenge prompt: [cards/XD-01-donut-cavity-L5.md](cards/XD-01-donut-cavity-L5.md)
+D2 hard-variant prompt: [cards/XD-01-donut-cavity-L5.md](cards/XD-01-donut-cavity-L5.md)
 
 ## Models tested
 
-| Model | D1 | D2 | D3 | XD-01 | Notes |
+| Model | D1 | D2 | D3 | D2-hard | Notes |
 |---|---|---|---|---|---|
-| DeepSeek v4.1 Flash | L0–L4 | L0–L3 | L0–L1 | L0–L5 | standard + challenge |
+| DeepSeek v4.1 Flash | L0–L4 | L0–L3 | L0–L1 | L0–L5 | standard + D2 hard variant |
 | GPT 6.0 Sol | L0–L4 | L0–L3 | L0–L1 | — | notes included |
 | Kimi K3.1 Pro | L0–L4 | L0–L3 | L0–L1 | — | D1 note missing |
 | Gemini (web) | L0–L4 | L0–L3 | L0–L1 | — | notes included; version not captured |
 | ChatGPT (web, free) | L0–L4 | L0–L3 | L0–L1 | — | version not captured |
 
-## Challenge 01: the donut cavity
+## D2 hard variant: the donut cavity
 
-XD-01 asks for one real through-hole cavity, visible area at least 1/3 of the body silhouette, with a continuous void in section and a hole/tunnel boundary in the pelt. The point is not “draw a ring”; it is to keep the same topology across portrait, six views, section, pelt, motion, and ride.
+XD-01 is not a separate card; it is a hard variant of D2. It asks for one real through-hole cavity, visible area at least 1/3 of the body silhouette, with a continuous void in section and a hole/tunnel boundary in the pelt. The point is not “draw a ring”; it is to keep the same topology across portrait, six views, section, pelt, motion, and ride.
 
 What holds:
 
@@ -166,7 +167,7 @@ This pilot is deliberately unfinished.
 - **More models.** Any model, open or closed, local or hosted. The XD-01 challenge is especially open — it currently has only one model.
 - **More styles and media.** SVG is the reference format because it renders and diffs cleanly, but the design logic is the point. Raster, pixel art, 3D, ASCII, video, or another medium is welcome under [`submissions/experimental/`](submissions/experimental/README.md); say what you changed.
 - **L5: the bicycle is moving.** The first one now has an animated 3.2 s loop — still twisted, still imperfect, but it moves. We want the next one to be structurally clean, contact-readable, and unmistakably riding. Different creature, different bike, different failure: all welcome.
-- **More challenges.** Q-25 is the first geometric-ratio Q. If you have another topology test — a handle, a second tunnel, a non-orientable surface — propose it.
+- **More hard variants.** Q-25 is the first geometric-ratio Q. If you have another topology test — a handle, a second tunnel, a non-orientable surface — propose it as a D2/D3 variant, not a new card.
 
 中文：第一个 L5 已经有动图版了——结构仍然扭曲，但它真的骑着车动了起来。更期待下一个：结构干净、接触正确、真的像在骑的“外星人骑自行车”。
 
@@ -183,7 +184,7 @@ This pilot is deliberately unfinished.
 │   ├── experiment-prompts.md  # D1/D2/D3
 │   └── XD-01-donut-cavity-L5.md
 ├── submissions/
-│   ├── deepseek-v4.1-flash/   # D1–D3 + XD-01
+│   ├── deepseek-v4.1-flash/   # D1–D3 + D2 hard variant XD-01
 │   ├── gpt-6.0-sol/           # D1–D3
 │   ├── kimi-k3.1-pro/         # D1–D3
 │   ├── gemini-web/            # D1–D3
@@ -227,7 +228,7 @@ This pilot is deliberately unfinished.
 
 ## Release
 
-Pilot 01 is tagged `v0.1-pilot`. Pilot 02 is published as `v0.2-pilot` — the 4-model snapshot (124 SVGs); `v0.3-pilot` is drafted as the five-model snapshot with GPT 6.0 Sol. Release notes: [v0.3](reports/release-v0.3-pilot.md) · [v0.2](reports/release-v0.2-pilot.md).
+Pilot 01 is tagged `v0.1-pilot`. Pilot 02 is published as `v0.2-pilot` (4-model snapshot, 124 SVGs) and `v0.3-pilot` (5-model snapshot, 152 SVGs). v0.3 used the old “challenge” label; the living gallery now treats XD-01 as a D2 hard variant. Release notes: [v0.3](reports/release-v0.3-pilot.md) · [v0.2](reports/release-v0.2-pilot.md).
 
 ## License
 
@@ -237,7 +238,7 @@ Pilot 01 is tagged `v0.1-pilot`. Pilot 02 is published as `v0.2-pilot` — the 4
 
 ## Status
 
-Pilot 02. Five models, 152 SVGs, one hard challenge, one L5. Still one sample per model/card, no repeats, no formal K1–K8 / M1–M7 scoring, and no blind human check. The XD-01 failures are intentionally visible.
+Pilot 02. Five models, 152 SVGs, one D2 hard variant, one L5. Still one sample per model/card, no repeats, no formal K1–K8 / M1–M7 scoring, and no blind human check. The XD-01 failures are intentionally visible.
 
 Next: formalize the K/M checklists, run 3 seeds per model/card, add a blind human check on L0, turn the animated L5 into a clean, contact-readable ride, and invite more models to XD-01.
 
