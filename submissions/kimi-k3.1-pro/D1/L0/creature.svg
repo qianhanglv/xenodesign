@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" fill="#e5f4f2"/>
+  <path d="M0 70H512V125L450 112 390 130 320 108 250 126 180 105 100 122 0 108Z" fill="#b8dfe2"/>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <path d="M340 266C382 244 411 293 442 250" fill="none" stroke="#173f48" stroke-width="30"/>
+    <path d="M340 266C382 244 411 293 442 250" fill="none" stroke="#69c6c1" stroke-width="20"/>
+    <g fill="none" stroke="#438e96" stroke-width="15">
+      <path d="M220 287L205 326 185 352"/>
+      <path d="M302 287L315 326 330 350"/>
+    </g>
+    <g fill="none" stroke="#173f48" stroke-width="19">
+      <path d="M205 298L187 340 163 369"/>
+      <path d="M292 299L293 343 274 374"/>
+    </g>
+    <g fill="none" stroke="#69c6c1" stroke-width="11">
+      <path d="M205 298L187 340 163 369"/>
+      <path d="M292 299L293 343 274 374"/>
+    </g>
+    <ellipse cx="255" cy="255" rx="105" ry="75" fill="#69c6c1" stroke="#173f48" stroke-width="7"/>
+    <ellipse cx="263" cy="310" rx="57" ry="29" fill="#9de8ed" stroke="#277482" stroke-width="5"/>
+    <g fill="none" stroke="#d8f3df" stroke-width="13">
+      <path d="M217 192Q230 226 224 248"/>
+      <path d="M257 182Q269 219 263 244"/>
+      <path d="M297 190Q308 220 303 246"/>
+    </g>
+    <g fill="none" stroke="#173f48" stroke-width="7">
+      <path d="M176 221Q133 180 106 143"/>
+      <path d="M190 207Q168 161 156 119"/>
+    </g>
+    <g fill="#d8f3df" stroke="#173f48" stroke-width="4">
+      <circle cx="106" cy="143" r="8"/>
+      <circle cx="156" cy="119" r="8"/>
+    </g>
+    <g fill="#102f39">
+      <circle cx="171" cy="239" r="7"/>
+      <circle cx="185" cy="225" r="6"/>
+    </g>
+    <path d="M151 260Q163 268 174 260" fill="none" stroke="#173f48" stroke-width="5"/>
+    <g fill="none" stroke="#173f48" stroke-width="6">
+      <path d="M155 369L163 369 169 361"/>
+      <path d="M266 374L274 374 281 366"/>
+      <path d="M178 352L185 352 191 345"/>
+      <path d="M323 350L330 350 335 343"/>
+    </g>
+  </g>
+</svg>

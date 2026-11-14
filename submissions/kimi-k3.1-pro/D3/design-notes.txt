@@ -1,0 +1,47 @@
+L0 — creature.svg
+P1 -> Axial body length is 30 m, excluding limbs.
+P2 -> Translucent ammonia-filled sinuses and sealed mineral-organic membranes.
+P3 -> Dense corrosive cloud bands surround sealed segment joints.
+F1 -> Domed flotation body and passive interlimb drift net.
+F2 -> Three comb-lined openings receive particles from the net.
+F3 -> Six yellow light organs form changing patterns.
+F4 -> Basal cyst-seal ring and retractable limb sockets permit dormant enclosure.
+F5 -> Mauve-blue patches match surrounding cloud colors.
+F6 -> A woven particle trap spans the six limbs.
+Q1 -> Exactly six radial limbs.
+Q2 -> Exactly four eyes; the axial far eye is dashed.
+Q3 -> Exactly three feeding openings.
+Q4 -> Exactly four gill openings; the axial far gill is dashed.
+Q5 -> Exactly six light organs; paired axial projections are concentric.
+Q6 -> Exactly four diamond-shaped sensory pits.
+Q7 -> Exactly eight stacked body segments.
+Q8 -> Three axial sections: crown segment 1, thorax segments 2–5, abdomen segments 6–8.
+Q9 -> No wings; the net is a built structure, not an appendage.
+N1 -> All organs and limbs are distributed around the vertical radial axis.
+N2 -> Open central sinus and open-ended channels show open circulation through the translucent thorax.
+RECONCILE -> Six limbs and six lights repeat every 60°; four eyes and four pits repeat every 90°, offset from one another. Three sections are functional axial divisions, while eight segments are their repeated units: 1+4+3.
+---
+
+L1 — front.svg, back.svg, left.svg, right.svg, top.svg, bottom.svg
+Source: L0 D3-veil-01
+P1 -> Identical 30 m scale, axial alignment and centered orthographic projection.
+P2 -> Ammonia sinuses remain visible in side views; hidden beneath dorsal and ventral surfaces.
+P3 -> Sealed segments and dense atmospheric field remain unchanged.
+F1 -> Flotation dome and drift net retain identical proportions.
+F2 -> Three filter openings are visible in every view, enlarged ventrally.
+F3 -> Six light organs retain position and spacing; occluded axial organs use concentric dashed outlines.
+F4 -> Basal cyst seal appears in side views and as six ventral seal marks.
+F5 -> Identical mauve-blue camouflage patches are retained.
+F6 -> The same hexagonal woven trap connects all six limbs.
+Q1 -> Six limbs at 60° intervals; side projections show paired axial limbs separately.
+Q2 -> Four eyes at 90° intervals; dashed where posterior or ventrally hidden.
+Q3 -> Three feeding openings at 120° intervals.
+Q4 -> Four gill openings at 90° intervals; dashed where occluded.
+Q5 -> Exactly six light organs in every view.
+Q6 -> Exactly four sensory pits, offset 45° from the eyes.
+Q7 -> Eight side bands or eight corresponding concentric axial rings.
+Q8 -> Crown, thorax and abdomen retain the same 1+4+3 segment grouping.
+Q9 -> No wings are present in any projection.
+N1 -> Radial geometry is explicit in top/bottom and preserved by symmetric side silhouettes.
+N2 -> Open sinuses are visible through side membranes; hidden in top/bottom views.
+RECONCILE -> Limbs/lights use sixfold spacing, eyes/pits use fourfold spacing, and feeding openings use threefold spacing about one axis. Three functional sections contain eight repeated segments in a 1+4+3 arrangement.

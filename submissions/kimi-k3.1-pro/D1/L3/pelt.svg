@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" fill="#e5f4f2"/>
+  <path d="M145 175C125 155 105 170 100 205C95 230 105 250 125 260L125 300C130 340 155 360 185 350L175 395L205 405L225 355L285 355L305 405L335 395L325 350C355 345 370 325 372 300L430 285L455 260L430 235L372 220C370 190 350 170 325 160L335 115L305 105L285 155L225 155L205 105L175 115L185 160C170 160 155 165 145 175Z" fill="#69c6c1" stroke="#173f48" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M128 214Q250 185 374 220L374 300Q250 335 128 300Z" fill="#83d2c9"/>
+  <g fill="none" stroke="#d8f3df" stroke-width="13">
+    <path d="M211 163L211 351"/>
+    <path d="M256 157L256 354"/>
+    <path d="M301 162L301 351"/>
+  </g>
+  <g fill="none" stroke="#277482" stroke-width="4" stroke-dasharray="9 7">
+    <path d="M126 214Q250 185 374 220"/>
+    <path d="M126 300Q250 335 374 300"/>
+    <path d="M111 260H430"/>
+    <path d="M185 160Q205 178 225 155M285 155Q305 178 325 160"/>
+    <path d="M185 350Q205 330 225 355M285 355Q305 330 325 350"/>
+    <path d="M372 220Q350 260 372 300"/>
+  </g>
+  <g fill="#e5f4f2" stroke="#173f48" stroke-width="4">
+    <circle cx="139" cy="211" r="9"/>
+    <circle cx="139" cy="238" r="9"/>
+    <circle cx="113" cy="190" r="6"/>
+    <circle cx="113" cy="218" r="6"/>
+    <ellipse cx="105" cy="258" rx="7" ry="12"/>
+    <circle cx="356" cy="260" r="8"/>
+  </g>
+  <ellipse cx="256" cy="300" rx="55" ry="25" fill="none" stroke="#65bcc7" stroke-width="4"/>
+</svg>

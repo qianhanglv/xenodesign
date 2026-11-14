@@ -1,0 +1,70 @@
+L0 — creature.svg
+P1 -> 2 m body, excluding antennae.
+P2 -> Faceted silica armor and rigid joints.
+F1 -> Vent chimneys, dark water and suspended particles.
+F2 -> Two comb-lined openings filter particles.
+F3 -> Six turquoise plate bands carry light patterns.
+F4 -> Overlapping plates and folding joints permit closure.
+Q1 -> Six limbs: three near, three far.
+Q2 -> Four anterior eyes.
+Q3 -> Two feeding openings.
+Q4 -> Two spore sacs; far sac dashed.
+Q5 -> Six dorsal plates.
+Q6 -> Two antennae.
+N1 -> Rigid articulated exoskeleton.
+RECONCILE -> Three limb pairs fold ventrally while six plates imbricate into a sphere.
+---
+
+L1 — front.svg, back.svg, left.svg, right.svg, top.svg, bottom.svg
+Source: L0 vent-01
+P1 -> Identical 2 m scale and centering.
+P2 -> Unchanged silica rims and rigid joints.
+F1 -> Deep-sea field without perspective.
+F2 -> Combs visible front/bottom; hidden openings dashed.
+F3 -> Six luminous bands retained.
+F4 -> Ventral seams and sockets show closure.
+Q1 -> Six limbs in every projection.
+Q2 -> Four eyes; occluded eyes dashed.
+Q3 -> Two feeding openings; occluded openings dashed.
+Q4 -> Two sacs; occluded sacs dashed, openings visible at back.
+Q5 -> Six plates; occluded edges dashed.
+Q6 -> Two antennae; occluded antennae dashed.
+N1 -> Unchanged exoskeletal outline.
+RECONCILE -> Six limbs fold into three ventral recess pairs before plate closure.
+---
+
+L2 — section.svg
+Source: L0 vent-01
+P1 -> Sagittal section preserves 2 m proportions.
+P2 -> Silica walls and mineral struts exposed.
+F1 -> Deep-sea armored exterior retained.
+F2 -> Two inlet canals join one digestive cavity.
+F3 -> Exterior luminous bands unchanged.
+F4 -> Thick plates and folding joints show closure.
+Q1 -> Six limbs; far trio darker.
+Q2 -> Four eyes; far pair subdued.
+Q3 -> Two openings connect to the shared cavity.
+Q4 -> Two posterior sacs above cavity; one dashed.
+Q5 -> Six plates in section.
+Q6 -> Two uncut antennae.
+N1 -> Exoskeleton provides structural material.
+RECONCILE -> Preserved joints fold all six limbs before plate closure.
+---
+
+L3 — skeleton.svg + pelt.svg
+Source: L0 vent-01
+P1 -> Both retain 2 m proportions.
+P2 -> Silica frame and mineralized cuticle.
+F1 -> Vent-adapted armor retained.
+F2 -> Two feeding rings and two pelt holes.
+F3 -> Six luminous bands cross pelt seams.
+F4 -> Frames, seams and aligned joints support closure.
+Q1 -> Six limb frames and six pelt extensions.
+Q2 -> Four eye rings and holes.
+Q3 -> Two feeding rings and holes.
+Q4 -> Two sac supports and openings.
+Q5 -> Six plate frames and panels.
+Q6 -> Two antenna guides and socket holes.
+N1 -> Exoskeletal frame, not internal bones.
+RECONCILE -> Three limb pairs fold ventrally; six dorsal panels close over them.
+PELT -> One continuous sheet; dorsal, ventral, midline and limb-base seams; holes for four eyes, two feeding openings, two antenna sockets and two spore-sac openings; six limb extensions; no tail.

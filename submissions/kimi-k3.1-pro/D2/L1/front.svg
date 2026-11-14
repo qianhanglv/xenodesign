@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" fill="#071722"/>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <g fill="none" stroke="#8fb9b5" stroke-width="7">
+      <path d="M213 207Q179 158 160 111"/>
+      <path d="M299 207Q333 158 352 111"/>
+    </g>
+    <path d="M154 100L162 94 170 106 160 114ZM342 106L350 94 358 100 352 114Z" fill="#72f1d2"/>
+    <g fill="none" stroke="#274c58" stroke-width="17">
+      <path d="M187 264L139 281 112 315"/>
+      <path d="M325 264L373 281 400 315"/>
+      <path d="M183 307L137 337 123 374"/>
+      <path d="M329 307L375 337 389 374"/>
+    </g>
+    <ellipse cx="256" cy="270" rx="98" ry="94" fill="#284d58" stroke="#9bc0bd" stroke-width="5"/>
+    <g fill="none" stroke="#a6cbc3" stroke-width="5">
+      <path d="M174 238Q256 145 338 238"/>
+      <path d="M181 225Q256 157 331 225"/>
+      <path d="M190 211Q256 168 322 211"/>
+      <path d="M201 199Q256 178 311 199"/>
+      <path d="M214 189Q256 181 298 189"/>
+      <path d="M229 181Q256 177 283 181"/>
+    </g>
+    <g fill="none" stroke="#72f1d2" stroke-width="4">
+      <path d="M177 236Q256 149 335 236"/><path d="M183 229Q256 154 329 229"/>
+      <path d="M192 214Q256 165 320 214"/><path d="M199 201Q256 174 313 201"/>
+      <path d="M216 190Q256 180 296 190"/><path d="M220 186Q256 178 292 186"/>
+    </g>
+    <g fill="#47868a" stroke="#9bc0bd" stroke-width="4" stroke-dasharray="6 5">
+      <ellipse cx="167" cy="263" rx="20" ry="30"/><ellipse cx="345" cy="263" rx="20" ry="30"/>
+    </g>
+    <g fill="#b9fff1" stroke="#193641" stroke-width="4">
+      <circle cx="219" cy="241" r="10"/><circle cx="293" cy="241" r="10"/>
+      <circle cx="219" cy="272" r="10"/><circle cx="293" cy="272" r="10"/>
+    </g>
+    <g fill="#0a202b" stroke="#77cbbb" stroke-width="5">
+      <ellipse cx="215" cy="316" rx="24" ry="17"/><ellipse cx="297" cy="316" rx="24" ry="17"/>
+    </g>
+    <g stroke="#b8e6d7" stroke-width="3">
+      <path d="M199 309L231 323M199 316L231 316M199 323L231 309"/>
+      <path d="M281 309L313 323M281 316L313 316M281 323L313 309"/>
+    </g>
+    <g fill="none" stroke="#6f999b" stroke-width="13">
+      <path d="M191 335L164 382 154 414"/>
+      <path d="M321 335L348 382 358 414"/>
+    </g>
+  </g>
+</svg>

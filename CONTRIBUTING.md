@@ -30,7 +30,22 @@ not another rule.
   deviate, say so in the note and the PR.
 - Do not submit a 4-frame storyboard as L4. L4 needs `motion.svg` or 8–12 frames
   with a stated fallback.
-- Keep the design note within the difficulty cap: D1 300, D2 600, D3 900 words.
+- Keep the design note within the difficulty cap: D1 300, D2 600, D3 900, XD-01 600 words.
+
+## Add a challenge run (XD-01)
+
+XD-01 is the first challenge card: D2 plus Q-25, a real through-hole cavity whose
+visible area is at least 1/3 of the body silhouette.
+
+1. Create `submissions/<model>/XD-01/L0/` through `L5/` using the same names as a
+   standard run.
+2. Use `cards/XD-01-donut-cavity-L5.md` unchanged; if you change anything, say
+   so in the note and the PR.
+3. In L0, state the measured cavity/silhouette ratio and how you measured it.
+   L2 must show a continuous void; L3 must show the hole or tunnel boundary.
+4. If a level fails, include it anyway and say what failed. XD-01 is a stress
+   test; a convincing failure is a valid result.
+5. For L5, list the saddle, pedal, and handlebar contact points.
 
 ## Add a new vocabulary item
 
@@ -39,7 +54,7 @@ The prompt library in `spec/提示词素材库.md` is a menu, not a closed list.
 1. Add the item at the end of the relevant table; **do not renumber** existing
    IDs.
 2. Classify it as P (global parameter), F (free goal), Q (exact count /
-   prohibition), or N (body-plan rule).
+   prohibition, or a hard geometric ratio such as Q-25), or N (body-plan rule).
 3. Write the English prompt phrase, the visual evidence a reviewer should look
    for, the minimum level where it is visible, and conflicts/mutual-exclusion
    notes.

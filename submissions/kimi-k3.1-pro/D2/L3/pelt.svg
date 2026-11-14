@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" fill="#071722"/>
+  <path d="M120 205Q105 220 105 256Q105 292 120 307L145 325L135 380L155 395L185 340L220 342L215 405L240 412L260 342L295 340L325 395L350 382L335 325L380 312Q405 290 405 256Q405 222 380 200L335 187L350 132L325 118L295 172L260 170L240 100L215 107L220 170L185 172L155 117L135 130L145 187Z" fill="#284d58" stroke="#9bc0bd" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M126 213Q256 181 386 213L386 299Q256 331 126 299Z" fill="#386c72"/>
+  <g fill="#386c72" stroke="#a6cbc3" stroke-width="4">
+    <path d="M126 213Q140 200 161 195L169 317Q143 312 126 299Z"/>
+    <path d="M161 195L207 187L213 325L169 317Z"/>
+    <path d="M207 187L256 184V328L213 325Z"/>
+    <path d="M256 184L305 187L299 325L256 328Z"/>
+    <path d="M305 187L351 195L343 317L299 325Z"/>
+    <path d="M351 195Q372 200 386 213V299Q370 312 343 317Z"/>
+  </g>
+  <g fill="none" stroke="#72f1d2" stroke-width="5" stroke-linecap="round">
+    <path d="M133 215L158 207M133 297L158 305"/>
+    <path d="M174 204L200 199M174 308L200 313"/>
+    <path d="M219 197H247M219 315H247"/>
+    <path d="M265 197H293M265 315H293"/>
+    <path d="M312 199L338 204M312 313L338 308"/>
+    <path d="M358 207L379 217M358 305L379 295"/>
+  </g>
+  <g fill="none" stroke="#789aa0" stroke-width="4" stroke-dasharray="9 7">
+    <path d="M126 213Q256 181 386 213"/>
+    <path d="M126 299Q256 331 386 299"/>
+    <path d="M108 256H402"/>
+    <path d="M145 187Q165 203 185 172M220 170Q240 192 260 170M295 172Q315 201 335 187"/>
+    <path d="M145 325Q165 309 185 340M220 342Q240 320 260 342M295 340Q315 311 335 325"/>
+  </g>
+  <g fill="#071722" stroke="#b9fff1" stroke-width="4">
+    <circle cx="132" cy="222" r="9"/><circle cx="153" cy="235" r="8"/>
+    <circle cx="132" cy="290" r="9"/><circle cx="153" cy="277" r="8"/>
+  </g>
+  <g fill="#071722" stroke="#77cbbb" stroke-width="4">
+    <ellipse cx="116" cy="246" rx="10" ry="14"/><ellipse cx="116" cy="270" rx="10" ry="14"/>
+  </g>
+  <g fill="#071722" stroke="#8fb9b5" stroke-width="4">
+    <circle cx="119" cy="207" r="7"/><circle cx="119" cy="305" r="7"/>
+  </g>
+  <g fill="#071722" stroke="#72f1d2" stroke-width="4">
+    <circle cx="326" cy="220" r="11"/><circle cx="326" cy="292" r="11"/>
+  </g>
+</svg>
