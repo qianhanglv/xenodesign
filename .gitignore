@@ -3,3 +3,7 @@ __pycache__/
 *.py[cod]
 .venv/
 .env
+
+# Social publishing kit lives outside the repo
+literary/post.md
+literary/assets/

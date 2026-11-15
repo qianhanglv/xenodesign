@@ -248,7 +248,7 @@ This pilot is deliberately unfinished.
 | `build_gallery.py` | Rebuilds `index.html`; stdlib only. | Maintainers |
 | `data.json` | Model, card, level, and count metadata. | Maintainers |
 | `archive/XD-01-L5/` | The first static L5 attempt, kept for comparison; not indexed by the gallery. | Readers |
-| `literary/` | Bonus extension: five text-only fan designs, prompts, oil portraits, and a post draft; not counted in the 152. | Readers / content |
+| `literary/` | Bonus extension: five text-only fan designs, prompts, oil portraits, and notes; not counted in the 152. | Readers |
 | `reports/pilot-01.md` | Pilot 01 observations. | Readers |
 | `reports/pilot-02.md` | Pilot 02 observations: Kimi, XD-01, L5, style studies. | Readers |
 | `reports/release-v0.1-pilot.md` | Release note for `v0.1-pilot`. | Maintainers |
@@ -288,6 +288,6 @@ A separate, non-benchmark extension at the end of the project: five text-only fa
 
 This set is also the evidence for the L3 prompt fix: the Runespoor/Feathered Serpent outputs predate the head/neck rule; the Water Monkey output postdates it. They are **not** counted in the 152 SVGs and do not change the model comparison.
 
-[Literary gallery](literary/index.html) · [Notes and verdicts](literary/README.md) · [Image/text post draft](literary/post.md)
+[Literary gallery](literary/index.html) · [Notes and verdicts](literary/README.md)
 
 Detailed notes: [reports/pilot-02.md](reports/pilot-02.md) · Gallery: [index.html](index.html)

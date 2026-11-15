@@ -3,8 +3,9 @@
 Five text-only fan designs made from the D2 prompts, kept at the **end** of the project as an entertainment extension. They are **not** part of the 152-SVG benchmark, the model comparison, or the D1/D2/D3 card set.
 
 Open the gallery: [index.html](index.html)  
-Post draft: [post.md](post.md)  
 Prompts: [three creatures](prompts/three-creatures-d2.md) · [Black Tai Sui / Water Monkey](prompts/black-taisui-water-monkey-d2.md)
+
+> The social-media post and its publishing images are intentionally kept outside this repository.
 
 > These are fan interpretations, not official canon. Each note keeps `[CANON]` and `[INFERRED]` tags. Short source clues are paraphrased; no film, game, animation, or fan-art reference was used.
 
