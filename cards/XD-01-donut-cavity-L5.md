@@ -151,10 +151,10 @@ Using the same creature as the source, draw skeleton.svg and pelt.svg (same view
 
 skeleton.svg: the mineral frame with a faint body outline. Joints and limbs align with the exterior. Same limb count, opening count, and cavity position; do not add or remove any.
 
-pelt.svg: the skin removed as ONE continuous piece and unfolded flat, like a tiger pelt stretched on the ground. Treat the skin as a single 2D surface with holes: the Q1 cavity must appear as a large hole or a tunnel boundary; every feeding opening, limb socket, and tail base must appear as a hole, boundary, or extension. Show dorsal/ventral/left/right layout and where the seams run. The sheet must be one connected piece.
+pelt.svg: the skin removed as ONE continuous piece and unfolded flat, like a tiger pelt stretched on the ground. Treat the skin as a single 2D surface with holes: the Q1 cavity must appear as a large hole or a tunnel boundary; every feeding opening, limb socket, and tail base must appear as a hole, boundary, or extension. This creature has no separate head; write "HEAD: none by canon" in the note and do not turn the Q1 cavity into a head. Show dorsal/ventral/left/right layout and where the seams run. The sheet must be one connected piece.
 Do NOT draw a cutaway. Do NOT draw an exploded view. Do NOT separate the skin into multiple pieces. Do NOT change counts or pattern.
 
-# L3 注释追加：写 PELT: one continuous sheet; seams...; holes...；Q1 在皮张上是洞/隧道边界；孔洞逐一列出。
+# L3 注释追加：写 PELT: one continuous sheet; HEAD: none by canon; seams...; holes...；Q1 在皮张上是洞/隧道边界；孔洞逐一列出。
 
 
 # ============================================================

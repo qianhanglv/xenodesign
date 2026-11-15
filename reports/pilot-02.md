@@ -41,6 +41,21 @@ Pilot 02 加了五样东西：**GPT 6.0 Sol**、**Gemini（web）**、**Kimi K3.
 - XD-01 当前最大 235 KB（`L3/skeleton.svg`）；归档的静态 `ride-static.svg` 是 313 KB。
 - Kimi 最大 4.4 KB，Gemini 最大 6.9 KB，GPT 6.0 Sol 最大 6.2 KB；线条和颜色块更简单；这不等于失败，但说明它们没有走“复杂路径”的路线。
 
+## 2.1 皮张提示词缺陷：头/颈缺失（已修）
+
+检查旧 L3 提示词时发现一个**提示词问题**，不是单纯的模型失败：
+
+- 旧提示词只写“one continuous piece”“holes for every opening/eye/limb/tail”，**没有说头/颈必须属于同一张皮**；
+- “like a tiger pelt”可以被读成一张平铺的躯干皮/图案，而不是“带头脸和脖子的完整皮”；
+- 模型只要画出一张连续的躯干皮，就已经满足旧提示词的显式要求，于是“无头皮”不算违规。
+
+修正：
+
+- 所有 L3 提示词加了一条硬规则：**有头就带头/颈**；头/脸是前端叶，颈是连接躯干和头的连续桥；禁止省略头、禁止画成单独面具、禁止用洞代替头。
+- 无头生物（水中监视者、黑太岁）必须在 note 写 `HEAD: none by canon` / `HEAD: none in this design`。
+- 自检、K5 检查、note 格式都加了 `HEAD/NECK` 项。
+- 旧图如果无头，按新规则应标 `headless pelt`，不能算通过。
+
 ## 3. Kimi K3.1 Pro
 
 ### D1

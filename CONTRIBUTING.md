@@ -16,8 +16,11 @@ not another rule.
 3. Put the design note next to the card or level:
    - card-level: `submissions/<model>/<card>/note.md`
    - level-level: `submissions/<model>/<card>/<level>/note.md`
-4. Run `python3 build_gallery.py` and check `index.html`.
-5. Open a pull request with: model name, version, card, levels, date, and any
+4. For L3 pelt: include the head and neck in the same continuous sheet when the
+   creature has one. A headless torso sheet, or a detached head/mask, is not a
+   pass. If the creature has no head by canon, write `HEAD: none by canon`.
+5. Run `python3 build_gallery.py` and check `index.html`.
+6. Open a pull request with: model name, version, card, levels, date, and any
    deviation from the prompt.
 
 ## Rules

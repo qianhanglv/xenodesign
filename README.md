@@ -105,7 +105,7 @@ All XD-01 levels: [assets/xd01-all-levels.png](assets/xd01-all-levels.png)
 
 ## The pelt test
 
-The pelt remains the differentiator. A good pelt is one continuous sheet with a boundary, seams, and pattern continuity — not a cutaway, not an exploded view, not several pieces. Pilot 02 adds GPT 6.0 Sol's two, Kimi's two, Gemini's two, and the XD-01 pelt with its central cavity.
+The pelt remains the differentiator. A good pelt is one continuous sheet with a boundary, seams, and pattern continuity — not a cutaway, not an exploded view, not several pieces. **If the creature has a head, the head and neck must be part of the same sheet**: the head/face is a front lobe and the neck is a continuous bridge, not a separate mask and not a headless torso. If the creature has no head by canon, the note must say so explicitly (`HEAD: none by canon`). Pilot 02 adds GPT 6.0 Sol's two, Kimi's two, Gemini's two, and the XD-01 pelt with its central cavity.
 
 ![Eleven pelts: DeepSeek, GPT 6.0 Sol, Kimi, Gemini, ChatGPT, and XD-01](assets/pelt-comparison-pilot02.png)
 
@@ -221,6 +221,7 @@ This pilot is deliberately unfinished.
 │   ├── chatgpt-web/           # D1–D3 (free web)
 │   └── experimental/          # non-SVG media
 ├── archive/                   # first static L5, kept for comparison
+├── literary/                  # bonus: five text-only fan designs, not in the 152
 ├── reports/
 │   ├── pilot-01.md
 │   ├── pilot-02.md
@@ -247,6 +248,7 @@ This pilot is deliberately unfinished.
 | `build_gallery.py` | Rebuilds `index.html`; stdlib only. | Maintainers |
 | `data.json` | Model, card, level, and count metadata. | Maintainers |
 | `archive/XD-01-L5/` | The first static L5 attempt, kept for comparison; not indexed by the gallery. | Readers |
+| `literary/` | Bonus extension: five text-only fan designs, prompts, oil portraits, and a post draft; not counted in the 152. | Readers / content |
 | `reports/pilot-01.md` | Pilot 01 observations. | Readers |
 | `reports/pilot-02.md` | Pilot 02 observations: Kimi, XD-01, L5, style studies. | Readers |
 | `reports/release-v0.1-pilot.md` | Release note for `v0.1-pilot`. | Maintainers |
@@ -271,5 +273,21 @@ Pilot 01 is tagged `v0.1-pilot`. Pilot 02 is published as `v0.2-pilot` (4-model 
 Pilot 02. Five models, 152 SVGs, one D2 hard variant, one L5. Still one sample per model/card, no repeats, no formal K1–K8 / M1–M7 scoring, and no blind human check. The XD-01 failures are intentionally visible.
 
 Next: formalize the K/M checklists, run 3 seeds per model/card, add a blind human check on L0, turn the animated L5 into a clean, contact-readable ride, and invite more models to XD-01.
+
+## Bonus: literary creatures
+
+A separate, non-benchmark extension at the end of the project: five text-only fan designs built from the same D2 prompts — Watcher in the Water, Runespoor, the Feathered Serpent, Black Tai Sui, and the Water Monkey.
+
+| Creature | Result |
+|---|---|
+| Feathered Serpent | Best portrait and best visual; pelt is a headless cape |
+| Water Monkey | Best actual design: head/neck and four limbs survive the pelt |
+| Runespoor | Best concept; pelt is explicitly “headless” |
+| Watcher in the Water | 21 tentacles hold; six views are the weakest |
+| Black Tai Sui | Best body horror; least information |
+
+This set is also the evidence for the L3 prompt fix: the Runespoor/Feathered Serpent outputs predate the head/neck rule; the Water Monkey output postdates it. They are **not** counted in the 152 SVGs and do not change the model comparison.
+
+[Literary gallery](literary/index.html) · [Notes and verdicts](literary/README.md) · [Image/text post draft](literary/post.md)
 
 Detailed notes: [reports/pilot-02.md](reports/pilot-02.md) · Gallery: [index.html](index.html)

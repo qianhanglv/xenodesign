@@ -40,7 +40,7 @@ Using the same creature as the source, draw a cutaway or cross-section (same vie
 === L3 RULES ===
 Using the same creature as the source, draw skeleton.svg: the structural frame with a faint body outline; joints and limbs must align with the exterior; keep the same counts.
 
-Also draw pelt.svg: the skin removed as ONE continuous piece and unfolded flat, like a tiger pelt stretched on the ground. Same viewBox. Show the complete outer surface, the seam/incision lines, and how the pattern continues across them. Treat the skin as a single 2D surface with holes: every opening, eye, limb socket, and tail base must appear as a hole, a boundary, or an extension in the sheet. Show the dorsal / ventral / left / right layout and where the seams run. The sheet must be one connected piece, not several pieces laid side by side. Do NOT draw a cutaway. Do NOT draw an exploded view. Do NOT separate the skin into multiple pieces. Do NOT change the creature's counts or pattern.
+Also draw pelt.svg: the skin removed as ONE continuous piece and unfolded flat, like a tiger pelt stretched on the ground. Same viewBox. Show the complete outer surface, the seam/incision lines, and how the pattern continues across them. Treat the skin as a single 2D surface with holes: every opening, eye, limb socket, and tail base must appear as a hole, a boundary, or an extension in the sheet. The pelt MUST include the head and neck as part of the same continuous sheet: the head/face is a front lobe; the neck is a continuous bridge to the torso; do not omit the head, do not draw a separate head/mask, and do not replace the head with a hole. Eye sockets, mouth/nostril openings, and ear/antenna holes sit on the head lobe. If the creature has no head by canon, write "HEAD: none by canon" in the note and do not invent one. Show the dorsal / ventral / left / right layout and where the seams run. The sheet must be one connected piece, not several pieces laid side by side. Do NOT draw a cutaway. Do NOT draw an exploded view. Do NOT separate the skin into multiple pieces. Do NOT change the creature's counts or pattern.
 
 === L4 RULES ===
 Using the same creature as the source, animate a full locomotion cycle: idle -> move -> stop -> idle. Output motion.svg: one self-contained animated SVG using SMIL or CSS, same 512x512 viewBox, 2-4 seconds, loop seamlessly. Keep anatomy identical in every frame: same limb count, opening count, pattern, and proportions. Show weight, contact, anticipation, and follow-through. No limb teleportation, no sliding feet, no changing counts. If you cannot animate, output 8-12 frames as frame01.svg ... frame12.svg and say so in the note. A 4-frame storyboard does NOT count as L4.
@@ -50,7 +50,7 @@ Using the same creature as the source, animate a full locomotion cycle: idle -> 
 - One line per constraint, format: P1 -> the visible feature that shows it.
 - If a constraint is hidden in this view, say so and where it is.
 - L1+: add a line "Source: L0 <id>" declaring the design is reused, not redrawn.
-- L3: add a line "PELT: one continuous sheet; seams ...; holes ...".
+- L3: add a line "PELT: one continuous sheet; HEAD/NECK: ...; seams ...; holes ..."; if no head, write "HEAD: none by canon".
 - L4: add a line "MOTION: loop Xs; contact ...; frames ...".
 - If two constraints conflict, add a CONFLICT line.
 - Do not write lore.
@@ -69,7 +69,7 @@ Design note
 5. One note line per constraint.
 6. Drawing and note agree; counts and patterns stay consistent across views.
 7. Total note is within 300 words for the whole task.
-8. L3 pelt is one continuous flat sheet (not a cutaway, not an exploded view); L4 is a real loop or 8-12 frames with a stated fallback; L1+ declares source reuse.
+8. L3 pelt is one continuous flat sheet with head/neck (or HEAD: none by canon), not a cutaway/exploded view; L4 is a real loop or 8-12 frames with a stated fallback; L1+ declares source reuse.
 ```
 
 ---
@@ -121,7 +121,7 @@ Using the same creature as the source, draw a cutaway or cross-section (same vie
 === L3 RULES ===
 Using the same creature as the source, draw skeleton.svg: the structural frame with a faint body outline; joints and limbs must align with the exterior; keep the same counts.
 
-Also draw pelt.svg: the skin removed as ONE continuous piece and unfolded flat, like a tiger pelt stretched on the ground. Same viewBox. Show the complete outer surface, the seam/incision lines, and how the pattern continues across them. Treat the skin as a single 2D surface with holes: every feeding opening, eye, limb socket, tail base, and spore-sac opening must appear as a hole, a boundary, or an extension in the sheet. Show the dorsal / ventral / left / right layout and where the seams run. The sheet must be one connected piece, not several pieces laid side by side. Do NOT draw a cutaway. Do NOT draw an exploded view. Do NOT separate the skin into multiple pieces. Do NOT change the creature's counts or pattern.
+Also draw pelt.svg: the skin removed as ONE continuous piece and unfolded flat, like a tiger pelt stretched on the ground. Same viewBox. Show the complete outer surface, the seam/incision lines, and how the pattern continues across them. Treat the skin as a single 2D surface with holes: every feeding opening, eye, limb socket, tail base, and spore-sac opening must appear as a hole, a boundary, or an extension in the sheet. The pelt MUST include the head and neck as part of the same continuous sheet: the head/face is a front lobe; the neck is a continuous bridge to the torso; do not omit the head, do not draw a separate head/mask, and do not replace the head with a hole. Eye sockets, mouth/nostril openings, and ear/antenna holes sit on the head lobe. If the creature has no head by canon, write "HEAD: none by canon" in the note and do not invent one. Show the dorsal / ventral / left / right layout and where the seams run. The sheet must be one connected piece, not several pieces laid side by side. Do NOT draw a cutaway. Do NOT draw an exploded view. Do NOT separate the skin into multiple pieces. Do NOT change the creature's counts or pattern.
 
 === THE DESIGN NOTE ===
 - At most 600 words PER TASK (all levels share this cap, not per view).
@@ -129,7 +129,7 @@ Also draw pelt.svg: the skin removed as ONE continuous piece and unfolded flat, 
 - If a constraint is hidden in this view, say so and where it is.
 - Add a RECONCILE line for Q1 (six limbs) and F4 (rolls into a ball): explain how six limbs fold so the body can close into a ball.
 - L1+ add a line "Source: L0 <id>".
-- L3 add a line "PELT: one continuous sheet; seams ...; holes ...".
+- L3 add a line "PELT: one continuous sheet; HEAD/NECK: ...; seams ...; holes ..."; if no head, write "HEAD: none by canon".
 - If two constraints conflict, add a CONFLICT line.
 - Do not write lore.
 
@@ -147,7 +147,7 @@ Design note
 5. One note line per constraint.
 6. Drawing and note agree; counts and patterns stay consistent across views.
 7. Total note is within 600 words for the whole task.
-8. L3 pelt is one continuous flat sheet (not a cutaway, not an exploded view); the RECONCILE line and L1+ Source lines are present.
+8. L3 pelt is one continuous flat sheet with head/neck (or HEAD: none by canon), not a cutaway/exploded view; the RECONCILE line and L1+ Source lines are present.
 ```
 
 ---
