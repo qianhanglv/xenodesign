@@ -116,8 +116,16 @@ portraits: 3
 ## Assets to attach
 
 - `xenodesign-spec-v0.4-pilot.zip` — four spec documents with D0–Dn, preflight, head/neck pelt rule, offline.
-- Do **not** attach the social post or its images; they are outside the repo.
-- GitHub automatically attaches the source ZIP. Do not attach every SVG individually.
+- `xenodesign-v0.4-hero-main.png` — main benchmark 5×3 L0 grid.
+- `xenodesign-v0.4-pelt-comparison.png` — main benchmark 11-pelt comparison.
+- `xenodesign-v0.4-literary-l0-grid.png` — five literary L0 portraits.
+- `xenodesign-v0.4-literary-portraits.png` — three oil portraits.
+- `xenodesign-v0.4-literary-pelts.png` — five literary pelts.
+- `xenodesign-v0.4-literary-pelt-verdict.png` — the three key pelts: Runespoor FAIL, Feathered Serpent FAIL, Water Monkey PASS.
+
+Do **not** attach the social post, cover, CTA, or posting-only images; they are outside the repo. The six images above are result sheets, not the social cover.
+
+GitHub automatically attaches the source ZIP. Do not attach every SVG individually.
 
 ## Suggested GitHub Release fields
 
