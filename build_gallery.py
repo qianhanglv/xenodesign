@@ -22,6 +22,13 @@ CARDS = [
     ("D2", "13 constraints", "L0–L3", "600-word note cap"),
     ("D3", "20 constraints", "L0–L1", "900-word note cap"),
 ]
+LITERARY = [
+    ("watcher-in-the-water", "Watcher in the Water", "水中监视者", "The Lord of the Rings", "L0–L3", True),
+    ("runespoor", "Runespoor", "三头蛇", "Harry Potter", "L0–L3", True),
+    ("feathered-serpent", "Feathered Serpent", "羽蛇", "Lord of the Mysteries", "L0–L4", True),
+    ("black-taisui", "Black Tai Sui", "黑太岁", "Dao of the Bizarre Immortal", "L0–L3", False),
+    ("water-monkey", "Water Monkey", "水猴子", "Dao of the Bizarre Immortal", "L0–L3", False),
+]
 LEVELS = [
     ("L0", "portrait"),
     ("L1", "six views"),
@@ -155,6 +162,36 @@ def render_model(model_dir: Path, name: str, card: str) -> list[str]:
     return parts
 
 
+def render_literary() -> list[str]:
+    root = ROOT / "literary"
+    parts: list[str] = []
+    parts.append('<section class="card" id="literary">')
+    parts.append('<div class="card-head">')
+    parts.append('<h2>Bonus: literary creatures</h2>')
+    parts.append('<span class="meta">5 fan designs · D2 · L0–L4 · not part of the 152-SVG benchmark</span>')
+    parts.append(f'<a class="note" href="{url(root / "index.html")}">full literary gallery</a>')
+    parts.append('</div>')
+    parts.append('<div class="models">')
+    for slug, name, cn, work, levels, has_portrait in LITERARY:
+        base = root / "results" / slug
+        parts.append('<article class="model">')
+        parts.append(f'<h3>{html.escape(name)} <small>· {html.escape(cn)}</small></h3>')
+        parts.append(f'<p class="meta">{html.escape(work)} · D2 · {html.escape(levels)}</p>')
+        parts.append('<div class="figs pair">')
+        parts.append(figure(base / "L0" / "creature.svg", "L0 · portrait"))
+        if has_portrait:
+            parts.append(figure(base / "portrait" / "oil.png", "oil portrait"))
+        else:
+            parts.append(figure(base / "L3" / "pelt.svg", "L3 · pelt"))
+        parts.append('</div>')
+        parts.append(f'<p class="links"><a href="{url(base / "manifest.md")}">manifest</a> · <a href="{url(base / "L3" / "note.md")}">L3 note</a></p>')
+        parts.append('</article>')
+    parts.append('</div>')
+    parts.append('<p class="caveat">Fan designs, not canon. [CANON] / [INFERRED] tags are in each note. The social-media post and its publishing images are intentionally kept outside this repository.</p>')
+    parts.append('</section>')
+    return parts
+
+
 def build() -> str:
     parts: list[str] = []
     parts.append(
@@ -197,6 +234,9 @@ section.card{margin:0 0 44px}
 .variant-head h3{margin:0;font-size:18px}
 .model{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px}
 .model h3{margin:0 0 10px;font-size:18px}
+.model h3 small{font-size:12px;color:var(--muted);font-weight:400}
+.model .meta{color:var(--muted);font-size:12px;margin:0 0 10px}
+.model .links{font-size:12px;color:var(--muted);margin:10px 0 0}
 .level{border-top:1px solid var(--line);padding:14px 0 4px}
 .level:first-of-type{border-top:0}
 .level-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:0 0 10px}
@@ -234,7 +274,7 @@ footer p{max-width:900px}
   <p class="caveat">Pilot 02 adds GPT 6.0 Sol, Gemini (web), Kimi K3.1 Pro, the D2 hard variant (XD-01), and the first L5 ride — animated, but still structurally distorted. Still one run per model/card; not a leaderboard.</p>
 </div></header>
 <nav><div class="wrap">
-  <a href="#D1">D1</a><a href="#D2">D2</a><a href="#D3">D3</a>
+  <a href="#D1">D1</a><a href="#D2">D2</a><a href="#D3">D3</a><a href="#literary">Literary bonus</a>
   <a href="assets/pelt-comparison-pilot02.png">11-pelt comparison</a>
   <a href="assets/l1-pilot02.png">Pilot 02 L1 grid</a>
   <a href="https://github.com/qianhanglv/xenodesign">README</a>
@@ -281,6 +321,8 @@ footer p{max-width:900px}
             parts.append('</div></div>')
 
         parts.append("</section>")
+
+    parts.extend(render_literary())
 
     parts.append(
         """</div></main>

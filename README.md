@@ -227,7 +227,8 @@ This pilot is deliberately unfinished.
 │   ├── pilot-02.md
 │   ├── release-v0.1-pilot.md
 │   ├── release-v0.2-pilot.md
-│   └── release-v0.3-pilot.md
+│   ├── release-v0.3-pilot.md
+│   └── release-v0.4-pilot.md
 ├── spec/                      # standard, guide, library (25 Q), template
 ├── LICENSE
 ├── LICENSE-CONTENT
@@ -253,14 +254,15 @@ This pilot is deliberately unfinished.
 | `reports/pilot-02.md` | Pilot 02 observations: Kimi, XD-01, L5, style studies. | Readers |
 | `reports/release-v0.1-pilot.md` | Release note for `v0.1-pilot`. | Maintainers |
 | `reports/release-v0.2-pilot.md` | Release note and asset list for `v0.2-pilot`. | Maintainers |
-| `reports/release-v0.3-pilot.md` | Release note and asset list for `v0.3-pilot`. | Maintainers |
+| `reports/release-v0.3-pilot.md` | Release note and asset list for `v0.3-pilot` (historical). | Maintainers |
+| `reports/release-v0.4-pilot.md` | Release note for `v0.4-pilot`: D0–Dn guide, pelt fix, literary bonus. | Maintainers |
 | `LICENSE` / `LICENSE-CONTENT` | MIT for code; CC BY 4.0 for prompts/docs/gallery images. | Everyone |
 | `CONTRIBUTING.md` | How to add a model run, a vocabulary item, or an experimental medium. | Contributors |
 | `.gitignore` | Keeps `.DS_Store`, caches, and `.env` out of the repo. | Maintainers |
 
 ## Release
 
-Pilot 01 is tagged `v0.1-pilot`. Pilot 02 is published as `v0.2-pilot` (4-model snapshot, 124 SVGs) and `v0.3-pilot` (5-model snapshot, 152 SVGs). v0.3 used the old “challenge” label; the living gallery now treats XD-01 as a D2 hard variant. Release notes: [v0.3](reports/release-v0.3-pilot.md) · [v0.2](reports/release-v0.2-pilot.md).
+Pilot 01 is tagged `v0.1-pilot`. Pilot 02 is published as `v0.2-pilot` (4-model snapshot, 124 SVGs) and `v0.3-pilot` (5-model snapshot, 152 SVGs). `v0.4-pilot` is the documentation + literary-bonus release; the main 152-SVG benchmark is unchanged. v0.3 used the old “challenge” label; the living gallery now treats XD-01 as a D2 hard variant. Release notes: [v0.4](reports/release-v0.4-pilot.md) · [v0.3](reports/release-v0.3-pilot.md) · [v0.2](reports/release-v0.2-pilot.md).
 
 ## License
 
@@ -286,7 +288,7 @@ A separate, non-benchmark extension at the end of the project: five text-only fa
 | Watcher in the Water | 21 tentacles hold; six views are the weakest |
 | Black Tai Sui | Best body horror; least information |
 
-This set is also the evidence for the L3 prompt fix: the Runespoor/Feathered Serpent outputs predate the head/neck rule; the Water Monkey output postdates it. They are **not** counted in the 152 SVGs and do not change the model comparison.
+The five L0 cards and the three oil portraits are also embedded in the main gallery under the **Literary bonus** nav link. This set is also the evidence for the L3 prompt fix: the Runespoor/Feathered Serpent outputs predate the head/neck rule; the Water Monkey output postdates it. They are **not** counted in the 152 SVGs and do not change the model comparison.
 
 [Literary gallery](literary/index.html) · [Notes and verdicts](literary/README.md)
 
