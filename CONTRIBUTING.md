@@ -55,11 +55,14 @@ The prompt library in `spec/提示词素材库.md` is a menu, not a closed list.
    IDs.
 2. Classify it as P (global parameter), F (free goal), Q (exact count /
    prohibition, or a hard geometric ratio such as Q-25), or N (body-plan rule).
+   Preference words such as "best / prefer / ideally / 最好 / 尽量" are **B
+   bonus**, not P/F/Q/N; they are valid at every D and cost 0 points.
 3. Write the English prompt phrase, the visual evidence a reviewer should look
    for, the minimum level where it is visible, and conflicts/mutual-exclusion
    notes.
 4. If it is a new Q dimension, give it a new `Q-xx` ID and at least three
-   variant examples (`no X`, `exactly N`, `no more than N`, etc.).
+   variant examples (`no X`, `exactly N`, `no more than N`, etc.). One card may
+   use each Q dimension only once; the library is capped at 25 Q dimensions.
 5. Test it with the authoring guide: turn it into a card, check that the
    difficulty and note cap are right, and run at least one model.
 6. Open a PR with the new item and one example card.

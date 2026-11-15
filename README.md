@@ -6,6 +6,30 @@ Five models, three standard cards, and one D2 hard variant. 152 SVGs — portrai
 
 ![Fifteen L0 creatures: DeepSeek, GPT 6.0 Sol, Kimi, Gemini, and ChatGPT on D1/D2/D3](assets/hero-l0-pilot02.png)
 
+## Why this exists / 项目初衷
+
+XenoDesign is a **performance test for AI**, built as a successor and complement to the pelican test. The pelican test showed that one familiar drawing can be memorized or overfit; XenoDesign asks for a creature that has to stay coherent across six views, a section, a skeleton, a topological pelt, motion, and a bicycle.
+
+What each step is testing:
+
+- **Alien theme** — there is no reliable real-world reference to retrieve; the model cannot fall back on a memorized animal.
+- **Random feature combinations** — anti-contamination: the combination space is enormous and cannot be exhaustively optimized for; vendors cannot pre-train a fixed answer.
+- **Features → drawing** — instruction following, logical processing, and spatial perception: every constraint must become a visible feature.
+- **Six views / section / skeleton** — whether the model keeps a 3D “ledger” instead of one convincing view.
+- **Pelt unfolding** — a specialized spatial-reasoning test, plus creativity and source drift: does the model keep the same topology when the skin is unfolded flat?
+- **Bicycle (L5)** — creativity and transfer: a complete, contact-readable scene, not a portrait.
+
+| Stage | What it tests |
+|---|---|
+| **L0** | Instruction following: every constraint becomes a visible feature; no text-only escape. |
+| **L1** | Spatial consistency: the six views describe the same 3D object. |
+| **L2** | Internal logic: openings connect, the cavity stays inside the outline, material matches. |
+| **L3** | Topological pelt: one continuous skin, holes/seams, no source drift; creativity under a hard spatial constraint. |
+| **L4** | Dynamic consistency: counts, contact, and patterns do not drift in motion. |
+| **L5** | Creativity and transfer: a complete bicycle scene with readable contact, not another portrait. |
+
+**中文：** 这个项目不是为了选美，而是为了测试 AI 的性能，目标是替代/补充鹈鹕测试。外星主题避免真实参照；随机组合防止厂商专项优化；由特征到绘图看逻辑与空间感；皮张展开看空间感、创造性和偏移；L5 骑车看创造力。
+
 ## What's new in Pilot 02
 
 - **GPT 6.0 Sol** ran the three standard cards (D1–D3).
@@ -15,6 +39,7 @@ Five models, three standard cards, and one D2 hard variant. 152 SVGs — portrai
 - **First L5**: a twisted first attempt, now with an animated 3.2 s version (`ride.svg`); the original static version is archived.
 - **Two style studies**: the XD-01 creature repainted as an illuminated miniature and a woodcut.
 - The prompt library gains **Q-25**, a geometric-ratio Q for through-hole cavities.
+- The authoring guide now starts with a **bilingual preflight**, scores **D0–Dn by points**, audits same-class conflicts, and requires **per-level SVG/MD files**.
 
 ## What this is
 
@@ -129,8 +154,8 @@ The same XD-01 geometry was rendered twice: an illuminated miniature with parchm
 
 Pilot 02 is the second run of a small open standard:
 
-- [Main standard](spec/异星生物设计_主标准.md) — P/F/Q/N constraints, D1–D3, L0–L5, checks.
-- [Prompt authoring guide](spec/提示词撰写指南.md) — raw requirement words → complete prompt.
+- [Main standard](spec/异星生物设计_主标准.md) — P/F/Q/N constraints, D0–Dn point scoring, L0–L5, checks.
+- [Prompt authoring guide](spec/提示词撰写指南.md) — raw requirement words → bilingual preflight → complete prompt with per-level files.
 - [Prompt library](spec/提示词素材库.md) — 7 P / 26 F / 25 Q / 10 N / 6 bonus badges, plus Q-25 for through-hole geometry.
 - [L0 template](spec/L0_通用提示词模板.md) — a copy-paste prompt a blank model can execute.
 
@@ -141,21 +166,25 @@ The documents are Chinese-first for now; the prompts themselves are English so t
 The three standard cards are examples, not the whole standard. The kit is:
 
 - **Prompt library** — the parts: 7 P, 26 F, 25 Q, 10 N, 6 bonus badges, plus a Tension library.
-- **Prompt authoring guide** — the compiler: turns raw requirement words into a complete prompt.
+- **Prompt authoring guide** — the compiler: points → D0–Dn, bilingual preflight, conflicts, complete prompt with per-level files.
 - **L0 template** — the output skeleton.
 
 A simple workflow:
 
 1. **Pick parts** from the library, or write your own words. Target loads:
 
-| Difficulty | P | F | Q | N |
-|---|---|---|---|---|
-| D1 | 1 | 2 | 3 | 0 |
-| D2 | 2 | 4 | 6 | 1 |
-| D3 | 3 | 6 | 9 | 2 |
+| Difficulty | Typical P | Typical F | Typical Q | Typical N | Note cap |
+|---|---:|---:|---:|---:|---:|
+| D0 | 0–1 | 0–1 | 0–2 | 0 | 150 |
+| D1 | 1 | 2 | 3 | 0 | 300 |
+| D2 | 2 | 4 | 6 | 1 | 600 |
+| D3 | 3 | 6 | 9 | 2 | 900 |
+| D4+ | by points | by points | by points | by points | 1,200+ |
 
-2. **Add your own words if you want.** The library is a menu, not a closed list. Write a new P/F/Q/N item in the same format, give it a new ID at the end, and say what visual evidence a reviewer should look for. Do not renumber existing IDs.
-3. **Compile it** with the meta-prompt in the authoring guide. It classifies each word, normalizes vague wording, checks conflicts/tensions, sets the difficulty and note cap, and writes the complete prompt.
+Difficulty is **point-based**: `5P + 10F + 5Q + 10N`; D0 < 40, D1 40–89, D2 90–139, D3 140–189, D4 190–239, D5 240–289, Dn by the same +50 pattern. If you give only 2 requirements and no D, the guide defaults to **D0**, not D1. Bonus items (including “best/prefer/最好”) cost 0 and are valid at every D.
+
+2. **Add your own words if you want.** The library is a menu, not a closed list. Write a new P/F/Q/N/B item in the same format, give it a new ID at the end, and say what visual evidence a reviewer should look for. Do not renumber existing IDs.
+3. **Compile it** with the meta-prompt in the authoring guide. It classifies each word, computes the points/difficulty, runs a bilingual preflight, audits same-class conflicts, and then writes the complete prompt with a per-level file contract.
 4. **Run and submit**: save the SVGs under `submissions/<model>/<card>/<level>/`, save the note, run `python3 build_gallery.py`, and open a PR.
 
 **You are not limited to the library.** The library gives you parts; the guide turns parts into a prompt; your own words are allowed as long as they are visible, countable, or checkable.
@@ -165,11 +194,12 @@ A simple workflow:
 This pilot is deliberately unfinished.
 
 - **More models.** Any model, open or closed, local or hosted. The XD-01 challenge is especially open — it currently has only one model.
+- **Expand the vocabulary.** The prompt library is a menu, not a closed list. Add new P/F/Q/N items with a visual-evidence note, keep IDs stable, and add one example card. See [CONTRIBUTING.md](CONTRIBUTING.md). 中文：欢迎扩充词库。
 - **More styles and media.** SVG is the reference format because it renders and diffs cleanly, but the design logic is the point. Raster, pixel art, 3D, ASCII, video, or another medium is welcome under [`submissions/experimental/`](submissions/experimental/README.md); say what you changed.
 - **L5: the bicycle is moving.** The first one now has an animated 3.2 s loop — still twisted, still imperfect, but it moves. We want the next one to be structurally clean, contact-readable, and unmistakably riding. Different creature, different bike, different failure: all welcome.
 - **More hard variants.** Q-25 is the first geometric-ratio Q. If you have another topology test — a handle, a second tunnel, a non-orientable surface — propose it as a D2/D3 variant, not a new card.
 
-中文：第一个 L5 已经有动图版了——结构仍然扭曲，但它真的骑着车动了起来。更期待下一个：结构干净、接触正确、真的像在骑的“外星人骑自行车”。
+中文：第一个 L5 已经有动图版了——结构仍然扭曲，但它真的骑着车动了起来。更期待下一个：结构干净、接触正确、真的像在骑的“外星人骑自行车”；也欢迎扩充词库。
 
 ## Files
 
