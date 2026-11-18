@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" role="img" aria-label="Original cryo-creature study">
+<defs>
+  <linearGradient id="shell" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e1f5f4"/><stop offset="0.42" stop-color="#7ba8b8"/><stop offset="1" stop-color="#29465f"/></linearGradient>
+  <linearGradient id="shellDark" x1="0" y1="0" x2="0.8" y2="1"><stop offset="0" stop-color="#a9d7da"/><stop offset="0.55" stop-color="#4f788d"/><stop offset="1" stop-color="#20374f"/></linearGradient>
+  <linearGradient id="crystal" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f0ffff"/><stop offset="0.5" stop-color="#7bd4d5"/><stop offset="1" stop-color="#367e91"/></linearGradient>
+  <linearGradient id="sac" x1="0" y1="0" x2="0.9" y2="1"><stop offset="0" stop-color="#bafff3" stop-opacity="0.9"/><stop offset="0.4" stop-color="#41c8cb" stop-opacity="0.82"/><stop offset="1" stop-color="#176b91" stop-opacity="0.92"/></linearGradient>
+  <radialGradient id="glow"><stop offset="0" stop-color="#b6fff0" stop-opacity="0.75"/><stop offset="1" stop-color="#4ad3d5" stop-opacity="0"/></radialGradient>
+  <linearGradient id="bone" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff1c8"/><stop offset="1" stop-color="#b7c8ca"/></linearGradient>
+  <pattern id="icegrain" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M2 18 L8 8 L13 13 L19 3" fill="none" stroke="#d7f7f2" stroke-width="1.5" opacity=".28"/><circle cx="18" cy="19" r="1.5" fill="#d7f7f2" opacity=".34"/></pattern>
+  <filter id="soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="5"/></filter>
+</defs>
+<style>
+.outline{stroke:#18374d;stroke-width:5;stroke-linejoin:round;stroke-linecap:round}
+.fine{stroke:#23465d;stroke-width:2.4;stroke-linejoin:round;stroke-linecap:round;fill:none}
+.glint{stroke:#e7ffff;stroke-width:3;stroke-linecap:round;fill:none;opacity:.82}
+.plate{fill:url(#shell);stroke:#18374d;stroke-width:4;stroke-linejoin:round}
+.limb{fill:none;stroke:#507f91;stroke-width:14;stroke-linecap:round;stroke-linejoin:round}
+.limb-hi{fill:none;stroke:#c4eeee;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}
+.joint{fill:url(#crystal);stroke:#18374d;stroke-width:3}
+.pad{fill:#294f63;stroke:#102e45;stroke-width:3}
+.sac{fill:url(#sac);stroke:#c0fff3;stroke-width:3}
+</style>
+
+<path d="M24 46 H488 V82 L462 91 L434 82 L407 91 L378 82 L350 91 L322 82 L294 91 L266 82 L238 91 L210 82 L182 91 L154 82 L126 91 L98 82 L70 91 L44 82 L24 86 Z" fill="#bceff0" stroke="#8bcbd3" stroke-width="4" opacity=".4"/>
+<path d="M137 257 C137 226 157 203 189 194 C214 171 252 166 285 176 C319 181 347 201 360 227 C375 254 362 289 339 309 C315 329 277 337 244 329 C204 330 171 310 151 287 C141 278 137 268 137 257 Z" fill="#355a70" stroke="#18374d" stroke-width="6"/>
+<path d="M145 257 C145 229 164 211 194 201 C220 183 254 178 282 187 C316 193 339 214 351 239 C361 260 351 285 332 302 C308 322 276 325 245 319 C208 321 177 304 157 282 Z" fill="#a9cdd0" stroke="#e5ffff" stroke-width="3"/>
+<path d="M162 252 C166 223 191 206 218 203 L240 231 L226 287 L186 291 Z" fill="#6d9aaa" stroke="#2c5268" stroke-width="3"/>
+<path d="M240 195 L283 192 L316 214 L304 246 L267 241 Z" fill="#7fa9b4" stroke="#2c5268" stroke-width="3"/>
+<path d="M223 245 C227 218 249 207 273 211 C302 213 322 238 317 266 C314 292 291 308 265 304 C238 301 219 276 223 245 Z" fill="url(#sac)" stroke="#d0fff5" stroke-width="4"/>
+<path d="M410 262 C385 255 354 258 331 264 Q320 266 311 263" fill="none" stroke="#3c9da8" stroke-width="9" stroke-linecap="round"/><path d="M410 262 Q375 254 354 258" fill="none" stroke="#ddffff" stroke-width="3" stroke-linecap="round"/>
+<path d="M399 259 C377 259 342 263 313 263" fill="none" stroke="#173d53" stroke-width="2" stroke-dasharray="4 4"/>
+<!-- Crystal ribs and longitudinal support frame -->
+<g fill="none" stroke="#e7f7e9" stroke-width="5" opacity=".95"><path d="M207 205 Q196 251 216 302"/><path d="M232 192 Q221 247 239 314"/><path d="M307 199 Q324 250 308 306"/><path d="M330 214 Q345 256 324 291"/></g>
+<g fill="#d7f8ed" stroke="#315a70" stroke-width="2"><path d="M190 217 l14 -7 7 13 -14 8Z"/><path d="M203 244 l14 -7 7 13 -14 8Z"/><path d="M207 272 l14 -7 7 13 -14 8Z"/><path d="M304 218 l14 -5 7 13 -14 8Z"/><path d="M311 248 l14 -5 7 13 -14 8Z"/><path d="M306 278 l14 -5 7 13 -14 8Z"/></g>
+<!-- Two antenna roots and the paired sensory canals -->
+<path d="M356 207 C356 184 367 162 389 142" fill="none" stroke="#c8f4ec" stroke-width="7" stroke-linecap="round"/><path d="M379 207 C390 186 409 172 431 166" fill="none" stroke="#c8f4ec" stroke-width="7" stroke-linecap="round"/>
+<path d="M356 207 L348 224 M379 207 L371 225" class="fine"/>
+<!-- Four articulated limb roots: two offset pairs in sagittal projection -->
+<g fill="none" stroke="#456f83" stroke-width="13" stroke-linecap="round"><path d="M190 296 L177 332 L193 359"/><path d="M213 300 L224 333 L239 356"/><path d="M286 302 L275 338 L288 365"/><path d="M309 296 L324 329 L342 352"/></g>
+<g fill="#b9e8e5" stroke="#22465c" stroke-width="3"><circle cx="190" cy="296" r="8"/><circle cx="213" cy="300" r="8"/><circle cx="286" cy="302" r="8"/><circle cx="309" cy="296" r="8"/></g>
+<path d="M155 251 C134 243 115 237 93 241 C106 251 111 264 93 278 C117 279 140 270 160 263 Z" fill="#557f91" stroke="#18374d" stroke-width="5"/>
+<path d="M319 213 C338 188 374 187 396 205 C412 219 417 244 412 261 C408 281 389 295 365 292 C343 290 326 279 316 261 C309 245 310 226 319 213 Z" fill="#83aeb8" stroke="#18374d" stroke-width="5"/>
+<ellipse cx="384" cy="231" rx="8" ry="10" fill="#102e45"/><path d="M405 262 Q414 259 419 263" stroke="#16374d" stroke-width="4" stroke-linecap="round" fill="none"/>
+<path d="M410 262 C385 253 356 254 337 260 Q325 264 310 263" fill="none" stroke="#173d53" stroke-width="8" stroke-linecap="round"/><path d="M410 262 C385 253 356 254 337 260 Q325 264 310 263" fill="none" stroke="#68d9d2" stroke-width="3" stroke-linecap="round"/>
+<path d="M38 374 Q256 361 474 374" fill="none" stroke="#8cc9d0" stroke-width="3" opacity=".25"/>
+</svg>

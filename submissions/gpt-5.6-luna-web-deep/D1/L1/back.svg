@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" role="img" aria-label="Original cryo-creature study">
+<defs>
+  <linearGradient id="shell" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e1f5f4"/><stop offset="0.42" stop-color="#7ba8b8"/><stop offset="1" stop-color="#29465f"/></linearGradient>
+  <linearGradient id="shellDark" x1="0" y1="0" x2="0.8" y2="1"><stop offset="0" stop-color="#a9d7da"/><stop offset="0.55" stop-color="#4f788d"/><stop offset="1" stop-color="#20374f"/></linearGradient>
+  <linearGradient id="crystal" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f0ffff"/><stop offset="0.5" stop-color="#7bd4d5"/><stop offset="1" stop-color="#367e91"/></linearGradient>
+  <linearGradient id="sac" x1="0" y1="0" x2="0.9" y2="1"><stop offset="0" stop-color="#bafff3" stop-opacity="0.9"/><stop offset="0.4" stop-color="#41c8cb" stop-opacity="0.82"/><stop offset="1" stop-color="#176b91" stop-opacity="0.92"/></linearGradient>
+  <radialGradient id="glow"><stop offset="0" stop-color="#b6fff0" stop-opacity="0.75"/><stop offset="1" stop-color="#4ad3d5" stop-opacity="0"/></radialGradient>
+  <linearGradient id="bone" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff1c8"/><stop offset="1" stop-color="#b7c8ca"/></linearGradient>
+  <pattern id="icegrain" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M2 18 L8 8 L13 13 L19 3" fill="none" stroke="#d7f7f2" stroke-width="1.5" opacity=".28"/><circle cx="18" cy="19" r="1.5" fill="#d7f7f2" opacity=".34"/></pattern>
+  <filter id="soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="5"/></filter>
+</defs>
+<style>
+.outline{stroke:#18374d;stroke-width:5;stroke-linejoin:round;stroke-linecap:round}
+.fine{stroke:#23465d;stroke-width:2.4;stroke-linejoin:round;stroke-linecap:round;fill:none}
+.glint{stroke:#e7ffff;stroke-width:3;stroke-linecap:round;fill:none;opacity:.82}
+.plate{fill:url(#shell);stroke:#18374d;stroke-width:4;stroke-linejoin:round}
+.limb{fill:none;stroke:#507f91;stroke-width:14;stroke-linecap:round;stroke-linejoin:round}
+.limb-hi{fill:none;stroke:#c4eeee;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}
+.joint{fill:url(#crystal);stroke:#18374d;stroke-width:3}
+.pad{fill:#294f63;stroke:#102e45;stroke-width:3}
+.sac{fill:url(#sac);stroke:#c0fff3;stroke-width:3}
+</style>
+
+<path d="M185 286 L129 322 L101 343" class="limb"/><path d="M185 286 L129 322 L101 343" class="limb-hi"/><circle cx="185" cy="286" r="8" class="joint"/><circle cx="129" cy="322" r="7" class="joint"/><ellipse cx="101" cy="343" rx="15" ry="8" class="pad"/><path d="M327 286 L383 322 L411 343" class="limb"/><path d="M327 286 L383 322 L411 343" class="limb-hi"/><circle cx="327" cy="286" r="8" class="joint"/><circle cx="383" cy="322" r="7" class="joint"/><ellipse cx="411" cy="343" rx="15" ry="8" class="pad"/><path d="M207 307 L178 351 L162 379" class="limb"/><path d="M207 307 L178 351 L162 379" class="limb-hi"/><circle cx="207" cy="307" r="8" class="joint"/><circle cx="178" cy="351" r="7" class="joint"/><ellipse cx="162" cy="379" rx="15" ry="8" class="pad"/><path d="M305 307 L334 351 L350 379" class="limb"/><path d="M305 307 L334 351 L350 379" class="limb-hi"/><circle cx="305" cy="307" r="8" class="joint"/><circle cx="334" cy="351" r="7" class="joint"/><ellipse cx="350" cy="379" rx="15" ry="8" class="pad"/><ellipse cx="256" cy="334" rx="12" ry="21" fill="url(#shellDark)" stroke="#18374d" stroke-width="4" opacity=".9"/><ellipse cx="256" cy="335" rx="4" ry="11" fill="#b5e6e6"/><path d="M256 168 C299 167 335 193 345 231 C356 273 331 305 294 319 L218 319 C181 305 156 273 167 231 C177 193 213 167 256 168 Z" class="plate"/>
+      <path d="M195 230 Q256 187 317 230 L305 281 Q256 312 207 281 Z" fill="#8bb6c0" stroke="#31586d" stroke-width="4"/>
+      <path d="M222 249 C222 226 238 210 256 210 C275 210 290 226 290 249 C290 270 275 284 256 284 C237 284 222 270 222 249 Z" class="sac"/><path d="M204 227 Q256 199 308 227" class="fine"/><path d="M220 290 Q256 306 292 290" class="glint"/><path d="M220 181 Q193 146 180 115 Q176 105 168 100" fill="none" stroke="#24475d" stroke-width="10" stroke-linecap="round"/><path d="M220 181 Q193 146 180 115 Q176 105 168 100" fill="none" stroke="url(#crystal)" stroke-width="5" stroke-linecap="round"/>
+      <path d="M292 181 Q319 146 332 115 Q336 105 344 100" fill="none" stroke="#24475d" stroke-width="10" stroke-linecap="round"/><path d="M292 181 Q319 146 332 115 Q336 105 344 100" fill="none" stroke="url(#crystal)" stroke-width="5" stroke-linecap="round"/>
+</svg>

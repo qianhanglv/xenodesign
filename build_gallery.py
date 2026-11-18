@@ -16,6 +16,7 @@ MODELS = [
     ("kimi-k3.1-pro", "Kimi K3.1 Pro"),
     ("gemini-web", "Gemini (web)"),
     ("chatgpt-web", "ChatGPT (web, free)"),
+    ("gpt-5.6-luna-web-deep", "GPT 5.6 Luna (web, deep thinking)"),
 ]
 CARDS = [
     ("D1", "6 constraints", "L0–L4", "300-word note cap"),
@@ -168,7 +169,7 @@ def render_literary() -> list[str]:
     parts.append('<section class="card" id="literary">')
     parts.append('<div class="card-head">')
     parts.append('<h2>Bonus: literary creatures</h2>')
-    parts.append('<span class="meta">5 fan designs · D2 · L0–L4 · not part of the 152-SVG benchmark</span>')
+    parts.append('<span class="meta">5 fan designs · D2 · L0–L4 · not part of the 180-SVG benchmark</span>')
     parts.append(f'<a class="note" href="{url(root / "index.html")}">full literary gallery</a>')
     parts.append('</div>')
     parts.append('<div class="models">')
@@ -262,7 +263,7 @@ footer p{max-width:900px}
 <header class="hero"><div class="wrap">
   <p class="kicker">XenoDesign · Pilot 02</p>
   <h1>Can an AI design a coherent alien?</h1>
-  <p class="sub">Five models. Three standard cards. One hard challenge. 152 SVGs — from portrait to the first L5 bicycle. Same rules, same prompts: a visual pilot, not a leaderboard.</p>
+  <p class="sub">Six models. Three standard cards. One hard challenge. 180 SVGs — from portrait to the first L5 bicycle. Same rules, same prompts: a visual pilot, not a leaderboard.</p>
   <div class="badges">
     <span class="badge">n = 1 per model/card</span>
     <span class="badge">no repeats</span>
@@ -270,12 +271,12 @@ footer p{max-width:900px}
     <span class="badge">D2 hard variant</span>
     <span class="badge">first L5 · animated</span>
   </div>
-  <img class="hero-grid" src="assets/hero-l0-pilot02.png" alt="Fifteen L0 alien creatures: DeepSeek, GPT 6.0 Sol, Kimi, Gemini, and ChatGPT on D1/D2/D3">
-  <p class="caveat">Pilot 02 adds GPT 6.0 Sol, Gemini (web), Kimi K3.1 Pro, the D2 hard variant (XD-01), and the first L5 ride — animated, but still structurally distorted. Still one run per model/card; not a leaderboard.</p>
+  <img class="hero-grid" src="assets/hero-l0-pilot02.png" alt="Eighteen L0 alien creatures: DeepSeek, GPT 6.0 Sol, Kimi, Gemini, ChatGPT, and GPT 5.6 Luna on D1/D2/D3">
+  <p class="caveat">Pilot 02 adds GPT 6.0 Sol, Gemini (web), Kimi K3.1 Pro, GPT 5.6 Luna (web, deep thinking), the D2 hard variant (XD-01), and the first L5 ride — animated, but still structurally distorted. Still one run per model/card; not a leaderboard.</p>
 </div></header>
 <nav><div class="wrap">
   <a href="#D1">D1</a><a href="#D2">D2</a><a href="#D3">D3</a><a href="#literary">Literary bonus</a>
-  <a href="assets/pelt-comparison-pilot02.png">11-pelt comparison</a>
+  <a href="assets/pelt-comparison-pilot02.png">13-pelt comparison</a>
   <a href="assets/l1-pilot02.png">Pilot 02 L1 grid</a>
   <a href="https://github.com/qianhanglv/xenodesign">README</a>
   <a href="https://github.com/qianhanglv/xenodesign#build-your-own-card">Build a card</a>
@@ -327,10 +328,10 @@ footer p{max-width:900px}
     parts.append(
         """</div></main>
 <footer><div class="wrap">
-  <p><strong>What this is:</strong> Pilot 02 of the XenoDesign prompts — five models, three standard cards, and one D2 hard variant. <strong>What this is not:</strong> a ranking. One sample per model per card, no repeated seeds, no formal K1–K8 / M1–M7 review. The D2 hard variant (XD-01) is a stress test, and its failures are part of the result.</p>
-  <p>Pilot 02: <a href="assets/hero-l0-pilot02.png">5×3 L0 grid</a> · <a href="assets/pelt-comparison-pilot02.png">11-pelt comparison</a> · <a href="assets/l1-pilot02.png">L1 six views</a> · <a href="assets/xd01-all-levels.png">XD-01 all levels</a> · <a href="assets/xd01-failure.png">XD-01 failure comparison</a> · <a href="assets/xd01-art.png">illuminated / woodcut</a> · <a href="assets/xd01-l5.png">first L5 (animated)</a></p>
+  <p><strong>What this is:</strong> Pilot 02 of the XenoDesign prompts — six models, three standard cards, and one D2 hard variant. <strong>What this is not:</strong> a ranking. One sample per model per card, no repeated seeds, no formal K1–K8 / M1–M7 review. The D2 hard variant (XD-01) is a stress test, and its failures are part of the result.</p>
+  <p>Pilot 02: <a href="assets/hero-l0-pilot02.png">6×3 L0 grid</a> · <a href="assets/pelt-comparison-pilot02.png">13-pelt comparison</a> · <a href="assets/l1-pilot02.png">L1 six views</a> · <a href="assets/xd01-all-levels.png">XD-01 all levels</a> · <a href="assets/xd01-failure.png">XD-01 failure comparison</a> · <a href="assets/xd01-art.png">illuminated / woodcut</a> · <a href="assets/xd01-l5.png">first L5 (animated)</a></p>
   <p>Pilot 01: <a href="assets/section-skeleton-grid.png">sections and skeletons</a> · <a href="assets/motion-grid.png">motion</a></p>
-  <p>Bonus: <a href="literary/index.html">literary creatures</a> — five text-only fan designs; not part of the 152-SVG benchmark.</p>
+  <p>Bonus: <a href="literary/index.html">literary creatures</a> — five text-only fan designs; not part of the 180-SVG benchmark.</p>
   <p>Generated by <code>build_gallery.py</code>. No external assets, no JavaScript, no tracking.</p>
 </div></footer>
 </body></html>"""

@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+
+<defs>
+  <linearGradient id="shell" x1="0" y1="0" x2="0.9" y2="1">
+    <stop offset="0" stop-color="#e2f2e8"/>
+    <stop offset="0.42" stop-color="#91b8ae"/>
+    <stop offset="1" stop-color="#365f69"/>
+  </linearGradient>
+  <linearGradient id="shellDark" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#8cb8b2"/>
+    <stop offset="1" stop-color="#294a58"/>
+  </linearGradient>
+  <linearGradient id="plate" x1="0" y1="0" x2="0.8" y2="1">
+    <stop offset="0" stop-color="#f0f1d9"/>
+    <stop offset="0.48" stop-color="#9dbdb0"/>
+    <stop offset="1" stop-color="#456a70"/>
+  </linearGradient>
+  <linearGradient id="ventral" x1="0" y1="0" x2="0.8" y2="1">
+    <stop offset="0" stop-color="#6b9391"/>
+    <stop offset="1" stop-color="#233c4a"/>
+  </linearGradient>
+  <linearGradient id="limb" x1="0" y1="0" x2="0.8" y2="1">
+    <stop offset="0" stop-color="#b9d3c4"/>
+    <stop offset="1" stop-color="#436d72"/>
+  </linearGradient>
+  <radialGradient id="glow">
+    <stop offset="0" stop-color="#e0ffff"/>
+    <stop offset="0.35" stop-color="#6dfff0"/>
+    <stop offset="1" stop-color="#16aeb5" stop-opacity="0.18"/>
+  </radialGradient>
+  <linearGradient id="sac" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#ffe8a0"/>
+    <stop offset="0.5" stop-color="#c98954"/>
+    <stop offset="1" stop-color="#6f4550"/>
+  </linearGradient>
+  <radialGradient id="cavity">
+    <stop offset="0" stop-color="#b9d3a7"/>
+    <stop offset="0.7" stop-color="#648d83"/>
+    <stop offset="1" stop-color="#294b59"/>
+  </radialGradient>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#071b2b"/>
+    <stop offset="1" stop-color="#163846"/>
+  </linearGradient>
+  <pattern id="micro" width="18" height="18" patternUnits="userSpaceOnUse">
+    <path d="M2 9 L9 2 L16 9 L9 16 Z" fill="none" stroke="#d5eee0" stroke-opacity=".10" stroke-width="1"/>
+  </pattern>
+  <pattern id="ventralPattern" width="22" height="18" patternUnits="userSpaceOnUse">
+    <path d="M0 9 L11 1 L22 9 L11 17 Z" fill="none" stroke="#c3e2d4" stroke-opacity=".24" stroke-width="1"/>
+  </pattern>
+</defs>
+<style>
+  .outline{stroke:#142f3d;stroke-width:7;stroke-linejoin:round;stroke-linecap:round}
+  .seam{fill:none;stroke:#234652;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+  .fine{fill:none;stroke:#d5e8d9;stroke-opacity:.62;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+  .glint{fill:none;stroke:#69fff0;stroke-width:4;stroke-linecap:round;filter:none}
+  .limbStroke{fill:none;stroke:#163744;stroke-width:26;stroke-linecap:round;stroke-linejoin:round}
+  .limbCore{fill:none;stroke:url(#limb);stroke-width:18;stroke-linecap:round;stroke-linejoin:round}
+  .joint{fill:#bdd6c4;stroke:#214653;stroke-width:5}
+  .port{fill:#071e2a;stroke:#69bcb2;stroke-width:5}
+  .eye{fill:#071d2a;stroke:#b6e6d2;stroke-width:4}
+  .eyeCore{fill:#73fff0;stroke:#e2ffff;stroke-width:1.8}
+  .plate{fill:url(#plate);stroke:#1a3a48;stroke-width:5;stroke-linejoin:round}
+  .sac{fill:url(#sac);stroke:#472f3b;stroke-width:5}
+  .antenna{fill:none;stroke:#a6cdbd;stroke-width:9;stroke-linecap:round}
+  .antennaCore{fill:none;stroke:#edffed;stroke-width:2.5;stroke-linecap:round}
+</style>
+<rect width="512" height="512" fill="url(#bg)"/>
+
+<!-- One continuous hide perimeter: head lobe, neck bridge, torso, left/right flanks, ventral flap -->
+<path d="M256 18
+ C211 18 176 38 174 72
+ C172 96 190 113 209 126
+ L194 148
+ C158 159 124 178 94 204
+ C67 227 42 238 17 250
+ C36 271 63 279 96 276
+ L108 337
+ C135 361 177 374 215 380
+ L215 400
+ C201 414 188 426 188 445
+ C188 476 221 495 256 497
+ C291 495 324 476 324 445
+ C324 426 311 414 297 400
+ L297 380
+ C335 374 377 361 404 337
+ L416 276
+ C449 279 476 271 495 250
+ C470 238 445 227 418 204
+ C388 178 354 159 318 148
+ L303 126
+ C322 113 340 96 338 72
+ C336 38 301 18 256 18 Z" fill="url(#shell)" class="outline"/>
+<!-- dorsal torso field; pattern is continuous across the seam guides -->
+<path d="M256 151 C207 153 158 179 139 222 C126 272 151 337 208 365 C225 375 240 379 256 382 C272 379 287 375 304 365 C361 337 386 272 373 222 C354 179 305 153 256 151 Z" fill="url(#micro)" opacity=".95" stroke="#355d68" stroke-width="3"/>
+<!-- six dorsal plate impressions -->
+<g fill="url(#plate)" stroke="#294b58" stroke-width="4">
+ <path d="M218 168 Q256 151 294 168 L286 193 Q256 203 226 193 Z"/>
+ <path d="M207 207 Q256 190 305 207 L296 232 Q256 243 216 232 Z"/>
+ <path d="M200 247 Q256 229 312 247 L303 272 Q256 284 209 272 Z"/>
+ <path d="M201 287 Q256 270 311 287 L302 312 Q256 323 210 312 Z"/>
+ <path d="M211 326 Q256 310 301 326 L291 348 Q256 359 221 348 Z"/>
+ <path d="M228 358 Q256 348 284 358 L276 376 Q256 383 236 376 Z"/>
+</g>
+<g class="glint">
+ <path d="M231 174 Q256 166 281 174 M222 213 Q256 203 290 213 M215 253 Q256 243 297 253 M216 293 Q256 284 296 293 M226 332 Q256 324 286 332 M237 363 Q256 357 275 363"/>
+</g>
+<!-- lateral left and right flank regions, attached to torso as one hide -->
+<path d="M139 204 Q107 222 47 249 Q73 265 112 258 Q127 245 149 233" fill="#547f83" fill-opacity=".8" stroke="#294b58" stroke-width="3"/>
+<path d="M373 204 Q405 222 465 249 Q439 265 400 258 Q385 245 363 233" fill="#547f83" fill-opacity=".8" stroke="#294b58" stroke-width="3"/>
+<path d="M48 250 Q86 239 127 218 M54 260 Q93 251 128 233 M464 250 Q426 239 385 218 M458 260 Q419 251 384 233" class="glint" opacity=".75"/>
+<!-- six limb-socket holes: three along each flank -->
+<g fill="#071d29" stroke="#c6e3d4" stroke-width="5">
+ <ellipse cx="104" cy="218" rx="13" ry="9" transform="rotate(-22 104 218)"/>
+ <ellipse cx="85" cy="250" rx="13" ry="9" transform="rotate(-10 85 250)"/>
+ <ellipse cx="103" cy="282" rx="13" ry="9" transform="rotate(18 103 282)"/>
+ <ellipse cx="408" cy="218" rx="13" ry="9" transform="rotate(22 408 218)"/>
+ <ellipse cx="427" cy="250" rx="13" ry="9" transform="rotate(10 427 250)"/>
+ <ellipse cx="409" cy="282" rx="13" ry="9" transform="rotate(-18 409 282)"/>
+</g>
+<!-- head/front lobe and uninterrupted neck bridge -->
+<path d="M193 121 Q256 95 319 121 L303 153 Q256 169 209 153 Z" fill="#7fa89f" fill-opacity=".72" stroke="#294b58" stroke-width="3"/>
+<!-- four eye-socket holes on the head lobe -->
+<g fill="#071d29" stroke="#d4e9d9" stroke-width="5">
+ <ellipse cx="220" cy="70" rx="11" ry="9"/><ellipse cx="292" cy="70" rx="11" ry="9"/>
+ <ellipse cx="211" cy="94" rx="11" ry="9"/><ellipse cx="301" cy="94" rx="11" ry="9"/>
+</g>
+<!-- two antenna root holes and exactly two feeding openings -->
+<g fill="#071d29" stroke="#cbe4d6" stroke-width="5">
+ <ellipse cx="232" cy="34" rx="8" ry="6"/><ellipse cx="280" cy="34" rx="8" ry="6"/>
+ <ellipse cx="187" cy="128" rx="12" ry="7" transform="rotate(-28 187 128)"/>
+ <ellipse cx="325" cy="128" rx="12" ry="7" transform="rotate(28 325 128)"/>
+</g>
+<!-- ventral panel remains attached by a broad bridge; two sac apertures -->
+<path d="M220 381 Q256 394 292 381 L303 414 Q256 436 209 414 Z" fill="url(#ventral)" stroke="#294b58" stroke-width="3"/>
+<path d="M214 414 Q256 430 298 414 L315 456 Q305 484 256 490 Q207 484 197 456 Z" fill="url(#ventralPattern)" stroke="#294b58" stroke-width="3"/>
+<g fill="#071d29" stroke="#d5e9d9" stroke-width="5">
+ <ellipse cx="220" cy="454" rx="13" ry="9"/><ellipse cx="292" cy="454" rx="13" ry="9"/>
+</g>
+<!-- seam/incision guides: no separation; lines terminate within the connected sheet -->
+<path d="M176 147 Q139 190 135 243 Q132 299 177 350 M336 147 Q373 190 377 243 Q380 299 335 350" fill="none" stroke="#183e4a" stroke-width="3" stroke-dasharray="9 7"/>
+<path d="M188 116 Q256 139 324 116 M201 387 Q256 403 311 387" fill="none" stroke="#183e4a" stroke-width="3" stroke-dasharray="8 7"/>
+<!-- repeated photophore traces cross seam guides without breaking pattern continuity -->
+<path d="M139 225 Q153 214 169 209 M343 209 Q359 214 373 225 M116 256 Q139 245 157 242 M355 242 Q373 245 396 256 M222 137 Q256 145 290 137" class="glint"/>
+
+</svg>

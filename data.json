@@ -1,6 +1,6 @@
 {
   "pilot": "pilot-02",
-  "date": "2026-11-14",
+  "date": "2026-11-18",
   "models": [
     {
       "id": "deepseek-v4.1-flash",
@@ -31,6 +31,12 @@
       "name": "ChatGPT (web, free)",
       "version": "not captured",
       "note": "Free web UI; model version not recorded"
+    },
+    {
+      "id": "gpt-5.6-luna-web-deep",
+      "name": "GPT 5.6 Luna (web, deep thinking)",
+      "version": "5.6 Luna",
+      "note": "Web UI, deep-thinking mode; D1/D2/D3 run with the revised experimental prompts; placed after ChatGPT (web, free)"
     }
   ],
   "cards": [
@@ -68,26 +74,26 @@
     }
   ],
   "counts": {
-    "svgs": 152,
-    "l0": 16,
-    "l1": 96,
-    "l2": 11,
-    "l3": 22,
-    "l4": 6,
+    "svgs": 180,
+    "l0": 19,
+    "l1": 114,
+    "l2": 13,
+    "l3": 26,
+    "l4": 7,
     "l5": 1,
     "style_studies": 2,
-    "pelts": 11,
-    "models": 5,
+    "pelts": 13,
+    "models": 6,
     "cards": 3,
-    "card_runs": 16,
+    "card_runs": 19,
     "q_dimensions": 25,
     "l5_animated": 1,
     "l5_archived": 1,
     "variants": 1
   },
-  "notes": "Design notes are included. DeepSeek/ChatGPT use card/level notes; GPT 6.0 Sol, Kimi and Gemini use card-level DESIGN_NOTES.md (Kimi D1 has no note); XD-01 is a D2 hard variant with a card README plus per-level notes.",
-  "caution": "n=1 per model/card; no repeats; no formal K/M scoring; ChatGPT and Gemini versions not captured; XD-01 is a stress test and its failures are part of the result; the L5 is now animated but still structurally distorted; the static first attempt is archived.",
-  "source": "Desktop experiment folders, 2026-11-14",
+  "notes": "Design notes are included. DeepSeek/ChatGPT use card/level notes; GPT 6.0 Sol, Kimi, Gemini and GPT 5.6 Luna use card-level manifests/notes; XD-01 is a D2 hard variant with a card README plus per-level notes. The GPT 5.6 Luna deep-thinking run uses the revised experimental prompts and is placed after ChatGPT (web, free).",
+  "caution": "n=1 per model/card; no repeats; no formal K/M scoring; ChatGPT and Gemini versions not captured; the GPT 5.6 Luna run is a deep-thinking web run, not an independent API model; XD-01 is a stress test and its failures are part of the result; the L5 is animated but still structurally distorted; the static first attempt is archived.",
+  "source": "Desktop experiment folders, 2026-11-14 + 2026-11-18",
   "variants": [
     {
       "id": "XD-01",

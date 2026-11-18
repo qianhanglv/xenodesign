@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+
+<defs>
+  <linearGradient id="shell" x1="0" y1="0" x2="0.9" y2="1">
+    <stop offset="0" stop-color="#e2f2e8"/>
+    <stop offset="0.42" stop-color="#91b8ae"/>
+    <stop offset="1" stop-color="#365f69"/>
+  </linearGradient>
+  <linearGradient id="shellDark" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#8cb8b2"/>
+    <stop offset="1" stop-color="#294a58"/>
+  </linearGradient>
+  <linearGradient id="plate" x1="0" y1="0" x2="0.8" y2="1">
+    <stop offset="0" stop-color="#f0f1d9"/>
+    <stop offset="0.48" stop-color="#9dbdb0"/>
+    <stop offset="1" stop-color="#456a70"/>
+  </linearGradient>
+  <linearGradient id="ventral" x1="0" y1="0" x2="0.8" y2="1">
+    <stop offset="0" stop-color="#6b9391"/>
+    <stop offset="1" stop-color="#233c4a"/>
+  </linearGradient>
+  <linearGradient id="limb" x1="0" y1="0" x2="0.8" y2="1">
+    <stop offset="0" stop-color="#b9d3c4"/>
+    <stop offset="1" stop-color="#436d72"/>
+  </linearGradient>
+  <radialGradient id="glow">
+    <stop offset="0" stop-color="#e0ffff"/>
+    <stop offset="0.35" stop-color="#6dfff0"/>
+    <stop offset="1" stop-color="#16aeb5" stop-opacity="0.18"/>
+  </radialGradient>
+  <linearGradient id="sac" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#ffe8a0"/>
+    <stop offset="0.5" stop-color="#c98954"/>
+    <stop offset="1" stop-color="#6f4550"/>
+  </linearGradient>
+  <radialGradient id="cavity">
+    <stop offset="0" stop-color="#b9d3a7"/>
+    <stop offset="0.7" stop-color="#648d83"/>
+    <stop offset="1" stop-color="#294b59"/>
+  </radialGradient>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#071b2b"/>
+    <stop offset="1" stop-color="#163846"/>
+  </linearGradient>
+  <pattern id="micro" width="18" height="18" patternUnits="userSpaceOnUse">
+    <path d="M2 9 L9 2 L16 9 L9 16 Z" fill="none" stroke="#d5eee0" stroke-opacity=".10" stroke-width="1"/>
+  </pattern>
+  <pattern id="ventralPattern" width="22" height="18" patternUnits="userSpaceOnUse">
+    <path d="M0 9 L11 1 L22 9 L11 17 Z" fill="none" stroke="#c3e2d4" stroke-opacity=".24" stroke-width="1"/>
+  </pattern>
+</defs>
+<style>
+  .outline{stroke:#142f3d;stroke-width:7;stroke-linejoin:round;stroke-linecap:round}
+  .seam{fill:none;stroke:#234652;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+  .fine{fill:none;stroke:#d5e8d9;stroke-opacity:.62;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+  .glint{fill:none;stroke:#69fff0;stroke-width:4;stroke-linecap:round;filter:none}
+  .limbStroke{fill:none;stroke:#163744;stroke-width:26;stroke-linecap:round;stroke-linejoin:round}
+  .limbCore{fill:none;stroke:url(#limb);stroke-width:18;stroke-linecap:round;stroke-linejoin:round}
+  .joint{fill:#bdd6c4;stroke:#214653;stroke-width:5}
+  .port{fill:#071e2a;stroke:#69bcb2;stroke-width:5}
+  .eye{fill:#071d2a;stroke:#b6e6d2;stroke-width:4}
+  .eyeCore{fill:#73fff0;stroke:#e2ffff;stroke-width:1.8}
+  .plate{fill:url(#plate);stroke:#1a3a48;stroke-width:5;stroke-linejoin:round}
+  .sac{fill:url(#sac);stroke:#472f3b;stroke-width:5}
+  .antenna{fill:none;stroke:#a6cdbd;stroke-width:9;stroke-linecap:round}
+  .antennaCore{fill:none;stroke:#edffed;stroke-width:2.5;stroke-linecap:round}
+</style>
+<rect width="512" height="512" fill="url(#bg)"/>
+
+<!-- hydrothermal plume and mineral chimney, environmental backdrop -->
+<path d="M34 90 C20 125 43 153 28 183 C17 204 22 230 42 247 L72 247 C59 216 82 192 67 162 C54 136 67 112 61 84 Z" fill="#284c58" opacity=".72"/>
+<path d="M22 245 L78 245 L91 414 L8 414 Z" fill="#183b49" opacity=".75"/>
+<path d="M34 96 C47 72 50 55 43 34 M55 105 C70 81 67 63 78 48" fill="none" stroke="#6b9c9a" stroke-opacity=".22" stroke-width="13" stroke-linecap="round"/>
+<!-- lower body and ventral shell -->
+<path d="M92 263 C112 200 193 173 281 186 C351 197 395 225 418 271 C403 324 344 359 258 363 C172 366 110 330 92 263 Z" fill="url(#ventral)" class="outline"/>
+<path d="M111 271 C150 235 212 227 278 238 C333 247 372 274 385 301 C347 337 292 350 234 343 C176 338 132 310 111 271 Z" fill="url(#ventralPattern)" opacity=".68"/>
+<!-- dorsal carapace -->
+<path d="M88 246 C100 189 154 143 233 140 C306 136 370 167 412 225 C408 274 356 302 275 306 C189 309 124 287 88 246 Z" fill="url(#shell)" class="outline"/>
+<path d="M109 237 C141 190 187 168 245 166 C312 164 359 190 391 226" class="fine"/>
+<!-- six dorsal plates, counted from rear to head -->
+<g>
+ <path d="M116 222 Q124 177 158 160 Q180 169 178 218 Q149 239 116 222 Z" class="plate"/>
+ <path d="M158 198 Q164 151 198 145 Q220 158 214 204 Q187 221 158 198 Z" class="plate"/>
+ <path d="M201 184 Q210 139 245 139 Q266 153 258 196 Q229 207 201 184 Z" class="plate"/>
+ <path d="M245 183 Q259 139 292 143 Q311 160 297 203 Q270 211 245 183 Z" class="plate"/>
+ <path d="M287 193 Q307 154 336 166 Q353 184 333 224 Q306 226 287 193 Z" class="plate"/>
+ <path d="M327 213 Q353 178 378 196 Q393 218 361 248 Q339 243 327 213 Z" class="plate"/>
+ <path d="M128 209 Q143 185 159 179 M171 190 Q185 167 199 164 M214 178 Q231 156 246 157 M258 179 Q276 157 291 161 M300 191 Q319 173 335 181 M340 211 Q358 194 371 203" class="glint"/>
+</g>
+<!-- far-side limbs: three, lifted clear of the dorsal silhouette -->
+<g opacity=".98">
+ <path d="M145 220 Q128 177 111 151 L82 132" class="limbStroke"/><path d="M145 220 Q128 177 111 151 L82 132" class="limbCore"/><circle cx="145" cy="220" r="12" class="joint"/><circle cx="111" cy="151" r="11" class="joint"/><path d="M69 129 Q82 120 97 129 Q93 142 72 140 Z" fill="#789e98" stroke="#163744" stroke-width="4"/><path d="M77 131 L90 134" class="glint"/>
+ <path d="M220 191 Q219 148 218 121 L205 91" class="limbStroke"/><path d="M220 191 Q219 148 218 121 L205 91" class="limbCore"/><circle cx="220" cy="191" r="12" class="joint"/><circle cx="218" cy="121" r="11" class="joint"/><path d="M192 88 Q205 79 220 88 Q216 101 195 99 Z" fill="#789e98" stroke="#163744" stroke-width="4"/><path d="M200 90 L213 93" class="glint"/>
+ <path d="M322 218 Q347 176 363 150 L393 129" class="limbStroke"/><path d="M322 218 Q347 176 363 150 L393 129" class="limbCore"/><circle cx="322" cy="218" r="12" class="joint"/><circle cx="363" cy="150" r="11" class="joint"/><path d="M380 126 Q393 117 408 126 Q404 139 383 137 Z" fill="#789e98" stroke="#163744" stroke-width="4"/><path d="M388 128 L401 131" class="glint"/>
+</g>
+<!-- head and continuous neck -->
+<path d="M335 214 C351 185 383 173 420 187 C451 199 469 228 457 262 C447 290 417 306 384 296 C354 287 334 254 335 214 Z" fill="url(#shellDark)" class="outline"/>
+<path d="M360 220 Q397 193 433 210 M365 270 Q405 291 440 265" class="fine"/>
+<!-- four eyes: paired upper and lower on the forward face -->
+<g>
+ <ellipse cx="407" cy="211" rx="12" ry="10" class="eye"/><ellipse cx="407" cy="211" rx="4.7" ry="4.7" class="eyeCore"/>
+ <ellipse cx="433" cy="224" rx="12" ry="10" class="eye"/><ellipse cx="433" cy="224" rx="4.7" ry="4.7" class="eyeCore"/>
+ <ellipse cx="398" cy="244" rx="12" ry="10" class="eye"/><ellipse cx="398" cy="244" rx="4.7" ry="4.7" class="eyeCore"/>
+ <ellipse cx="424" cy="257" rx="12" ry="10" class="eye"/><ellipse cx="424" cy="257" rx="4.7" ry="4.7" class="eyeCore"/>
+</g>
+<!-- exactly two rigid antennae -->
+<path d="M418 190 Q432 151 460 135" class="antenna"/><path d="M418 190 Q432 151 460 135" class="antennaCore"/>
+<path d="M440 202 Q465 176 486 174" class="antenna"/><path d="M440 202 Q465 176 486 174" class="antennaCore"/>
+<circle cx="460" cy="135" r="7" fill="url(#glow)"/><circle cx="486" cy="174" r="7" fill="url(#glow)"/>
+<!-- exactly two feeding openings -->
+<ellipse cx="443" cy="278" rx="14" ry="7" transform="rotate(-18 443 278)" class="port"/>
+<ellipse cx="407" cy="292" rx="14" ry="7" transform="rotate(-18 407 292)" class="port"/>
+<path d="M435 278 l12 -2 M399 292 l12 -2" stroke="#75fff0" stroke-width="2.5" stroke-linecap="round"/>
+<!-- near-side limbs: three -->
+<g>
+      <path d="M150,302 Q137.5,324.5 125,361 L100,399" class="limbStroke"/>
+      <path d="M150,302 Q137.5,324.5 125,361 L100,399" class="limbCore"/>
+      <circle cx="150" cy="302" r="12" class="joint"/>
+      <circle cx="125" cy="361" r="11" class="joint"/>
+      <path d="M87,396 Q100,387 115,396 Q111,409 90,407 Z" fill="#789e98" stroke="#163744" stroke-width="4"/>
+      <path d="M95,398 L108,401" class="glint"/>
+    </g><g>
+      <path d="M245,324 Q243.5,349.0 242,388 L220,435" class="limbStroke"/>
+      <path d="M245,324 Q243.5,349.0 242,388 L220,435" class="limbCore"/>
+      <circle cx="245" cy="324" r="12" class="joint"/>
+      <circle cx="242" cy="388" r="11" class="joint"/>
+      <path d="M207,432 Q220,423 235,432 Q231,445 210,443 Z" fill="#789e98" stroke="#163744" stroke-width="4"/>
+      <path d="M215,434 L228,437" class="glint"/>
+    </g><g>
+      <path d="M342,305 Q356.5,325.0 371,359 L400,397" class="limbStroke"/>
+      <path d="M342,305 Q356.5,325.0 371,359 L400,397" class="limbCore"/>
+      <circle cx="342" cy="305" r="12" class="joint"/>
+      <circle cx="371" cy="359" r="11" class="joint"/>
+      <path d="M387,394 Q400,385 415,394 Q411,407 390,405 Z" fill="#789e98" stroke="#163744" stroke-width="4"/>
+      <path d="M395,396 L408,399" class="glint"/>
+    </g>
+<!-- exactly two ventral spore sacs, visible below the shell -->
+<ellipse cx="256" cy="361" rx="27" ry="19" class="sac"/><path d="M239 357 Q256 345 273 357" class="fine"/>
+<ellipse cx="313" cy="355" rx="24" ry="17" class="sac"/><path d="M298 351 Q313 341 328 351" class="fine"/>
+<!-- mineralized intake comb ridges and photophore rails -->
+<path d="M377 300 l-8 10 M386 302 l-8 12 M396 303 l-8 12" stroke="#c6e0cf" stroke-width="3" stroke-linecap="round"/>
+<path d="M118 257 Q159 287 208 294 M215 302 Q275 314 326 289" class="glint" opacity=".72"/>
+
+</svg>
