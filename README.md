@@ -234,7 +234,8 @@ This pilot is deliberately unfinished.
 │   ├── release-v0.1-pilot.md
 │   ├── release-v0.2-pilot.md
 │   ├── release-v0.3-pilot.md
-│   └── release-v0.4-pilot.md
+│   ├── release-v0.4-pilot.md
+│   └── release-v0.5-pilot.md
 ├── spec/                      # standard, guide, library (25 Q), template
 ├── LICENSE
 ├── LICENSE-CONTENT
@@ -261,14 +262,15 @@ This pilot is deliberately unfinished.
 | `reports/release-v0.1-pilot.md` | Release note for `v0.1-pilot`. | Maintainers |
 | `reports/release-v0.2-pilot.md` | Release note and asset list for `v0.2-pilot`. | Maintainers |
 | `reports/release-v0.3-pilot.md` | Release note and asset list for `v0.3-pilot` (historical). | Maintainers |
-| `reports/release-v0.4-pilot.md` | Combined release note for `v0.4-pilot`: D0–Dn guide, pelt fix, GPT 5.6 Luna, GPT 6.2 Sol, literary bonus. | Maintainers |
+| `reports/release-v0.4-pilot.md` | Published release: D0–Dn guide, pelt fix, literary bonus (5 models, 152 SVGs). | Maintainers |
+| `reports/release-v0.5-pilot.md` | Seven-model release: GPT 6.2 Sol leads, GPT 5.6 Luna joins (7 models, 208 SVGs). | Maintainers |
 | `LICENSE` / `LICENSE-CONTENT` | MIT for code; CC BY 4.0 for prompts/docs/gallery images. | Everyone |
 | `CONTRIBUTING.md` | How to add a model run, a vocabulary item, or an experimental medium. | Contributors |
 | `.gitignore` | Keeps `.DS_Store`, caches, and `.env` out of the repo. | Maintainers |
 
 ## Release
 
-Pilot 01 is tagged `v0.1-pilot`. Pilot 02 is published as `v0.2-pilot` (4-model snapshot, 124 SVGs) and `v0.3-pilot` (5-model snapshot, 152 SVGs). `v0.4-pilot` is the combined documentation, literary-bonus, GPT 5.6 Luna, and GPT 6.2 Sol release; the current living benchmark is 208 SVGs. v0.3 used the old “challenge” label; the living gallery now treats XD-01 as a D2 hard variant. Release notes: [v0.4](reports/release-v0.4-pilot.md) · [v0.3](reports/release-v0.3-pilot.md) · [v0.2](reports/release-v0.2-pilot.md).
+Pilot 01 is tagged `v0.1-pilot`. Pilot 02 is published as `v0.2-pilot` (4-model snapshot, 124 SVGs), `v0.3-pilot` (5-model snapshot, 152 SVGs), and `v0.4-pilot` (D0–Dn guide, pelt fix, literary bonus; 5 models, 152 SVGs). `v0.5-pilot` is the current seven-model release: GPT 6.2 Sol leads and GPT 5.6 Luna joins (7 models, 208 SVGs). v0.3 used the old “challenge” label; the living gallery now treats XD-01 as a D2 hard variant. Release notes: [v0.5](reports/release-v0.5-pilot.md) · [v0.4](reports/release-v0.4-pilot.md) · [v0.3](reports/release-v0.3-pilot.md) · [v0.2](reports/release-v0.2-pilot.md).
 
 ## License
 

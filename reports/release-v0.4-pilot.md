@@ -1,23 +1,21 @@
 # Pilot 02 — `v0.4-pilot`
 
-Date: 2026-11-20
+Date: 2026-11-15
 Repo: https://github.com/qianhanglv/xenodesign  
 Gallery: https://qianhanglv.github.io/xenodesign/  
 Report: https://github.com/qianhanglv/xenodesign/blob/main/reports/pilot-02.md
 
 ## What this release is
 
-`v0.4-pilot` is the combined **benchmark + documentation + bonus-extension release**. It supersedes the unreleased v0.4 draft and includes two new runs: **GPT 5.6 Luna (web, deep thinking)** and **GPT 6.2 Sol**.
+`v0.4-pilot` is a **documentation + bonus-extension release**. It does not add a new model run and it does not change the 152-SVG benchmark matrix.
 
-It ships five things:
+It ships three things:
 
 1. the **D0–Dn / bilingual preflight** authoring guide;
 2. the **L3 pelt head/neck fix** and the prompt audit behind it;
-3. **GPT 5.6 Luna** as the seventh sample, placed after ChatGPT;
-4. **GPT 6.2 Sol** as the first sample, with complete manifests and a test report;
-5. **five literary-creature fan designs** as an entertainment extension at the end of the project.
+3. **five literary-creature fan designs** as an entertainment extension at the end of the project.
 
-The benchmark is now **7 models, 3 standard cards, 1 D2 hard variant, 208 active SVGs, 15 pelts**. The bonus adds **5 fan designs, 51 SVGs, 3 oil portraits** and is **not counted** in the 208.
+The benchmark remains **5 models, 3 standard cards, 1 D2 hard variant, 152 active SVGs, 11 pelts**. The bonus adds **5 fan designs, 51 SVGs, 3 oil portraits** and is **not counted** in the 152.
 
 ## What's new
 
@@ -41,23 +39,7 @@ The new rule:
 
 The fix is in the standard, the authoring guide, the D1/D2 card prompts, the XD-01 prompt, the L3 note format, and the K5 check.
 
-### 3. GPT 5.6 Luna (web, deep thinking)
-
-- D1 11, D2 10, D3 7 = 28 SVGs.
-- D1/D2/D3 manifests included; notes 300/300, 574/600, 837/900.
-- D1/D2 L3 pelts explicitly record `HEAD/NECK`; D2 has a `RECONCILE`.
-- D3 is L0/L1 only; the drawings are flatter and more diagrammatic than the leading vector runs.
-- Placed after ChatGPT (web, free) in README and gallery.
-
-### 4. GPT 6.2 Sol
-
-- D1 11, D2 10, D3 7 = 28 SVGs.
-- Complete manifests and `test-report.md`; notes 239/300, 411/600, 471/900.
-- D1/D2 L3 pelts explicitly keep the head and neck.
-- Placed first in README and gallery; this is a new sample, not a new benchmark suite.
-- D3 is L0/L1 only; the test report is a self-check, not an independent recomputation.
-
-### 5. Literary bonus
+### 3. Literary bonus
 
 A separate `literary/` section, not part of the benchmark:
 
@@ -77,7 +59,7 @@ The literary section is deliberately **not** a ranking and **not** a model compa
 
 ## What it is not
 
-- **Not a new benchmark suite.** The benchmark is the same D1/D2/D3 pipeline; GPT 5.6 Luna and GPT 6.2 Sol are new samples, not new cards.
+- **Not a new model matrix.** The 152-SVG benchmark is unchanged.
 - **Not a ranking.** n = 1 per model/card; no repeats, no human scoring.
 - **Not canon.** The literary creatures are fan interpretations; `[INFERRED]` anatomy is not an original-source claim.
 - **Not a clean literary set.** Runespoor and Feathered Serpent fail the new head/neck pelt rule; they are kept as evidence, not silently rerun.
@@ -85,23 +67,23 @@ The literary section is deliberately **not** a ranking and **not** a model compa
 
 ## Counts
 
-### Main benchmark
+### Main benchmark (unchanged)
 
 ```text
-models: 7
+models: 5
 standard cards: 3
 D2 hard variants: 1
-active SVGs: 208
-L0: 22
-L1: 132
-L2: 15
-L3: 30
-L4: 8
+active SVGs: 152
+L0: 16
+L1: 96
+L2: 11
+L3: 22
+L4: 6
 L5: 1
-pelts: 15
+pelts: 11
 ```
 
-### Literary bonus (not counted in 208)
+### Literary bonus (not counted in 152)
 
 ```text
 designs: 5
@@ -122,11 +104,11 @@ portraits: 3
 - Runespoor L1 drifts in head orientation; the Feathered Serpent pelt is a headless cape; both are old-prompt outputs.
 - Watcher and Black Tai Sui have weak six-view differentiation because they are radially symmetric.
 - The Feathered Serpent portrait is the strongest image but cannot prove the L1/L3 design.
-- ChatGPT and Gemini web versions were not captured; GPT 5.6 Luna is a user-labelled deep-thinking web run; GPT 6.2 Sol has a self-reported test report; GPT 6.2 Sol D3 and Luna D3 stop at L0/L1.
+- ChatGPT and Gemini web versions were not captured.
 
 ## How to reproduce
 
-1. For the benchmark: `cards/experiment-prompts.md` or `cards/XD-01-donut-cavity-L5.md`; `python3 build_gallery.py`. GPT 6.2 Sol is under `submissions/gpt-6.2-sol/`; GPT 5.6 Luna under `submissions/gpt-5.6-luna-web-deep/`.
+1. For the benchmark: `cards/experiment-prompts.md` or `cards/XD-01-donut-cavity-L5.md`; `python3 build_gallery.py`.
 2. For literary bonus: `literary/prompts/three-creatures-d2.md` and `literary/prompts/black-taisui-water-monkey-d2.md`; open `literary/index.html`.
 3. Main gallery: https://qianhanglv.github.io/xenodesign/
 4. Literary gallery: https://qianhanglv.github.io/xenodesign/literary/
@@ -134,15 +116,14 @@ portraits: 3
 ## Assets to attach
 
 - `xenodesign-spec-v0.4-pilot.zip` — four spec documents with D0–Dn, preflight, head/neck pelt rule, offline.
-- `xenodesign-v0.4-hero-main.png` — main benchmark 7×3 L0 grid.
-- `xenodesign-v0.4-gpt-6.2-sol-preview.png` — GPT 6.2 Sol D1/D2/D3 preview sheet.
-- `xenodesign-v0.4-pelt-comparison.png` — main benchmark 15-pelt comparison.
+- `xenodesign-v0.4-hero-main.png` — main benchmark 5×3 L0 grid.
+- `xenodesign-v0.4-pelt-comparison.png` — main benchmark 11-pelt comparison.
 - `xenodesign-v0.4-literary-l0-grid.png` — five literary L0 portraits.
 - `xenodesign-v0.4-literary-portraits.png` — three oil portraits.
 - `xenodesign-v0.4-literary-pelts.png` — five literary pelts.
 - `xenodesign-v0.4-literary-pelt-verdict.png` — the three key pelts: Runespoor FAIL, Feathered Serpent FAIL, Water Monkey PASS.
 
-Do **not** attach the social post, cover, CTA, or posting-only images; they are outside the repo. The result sheets above are not the social cover.
+Do **not** attach the social post, cover, CTA, or posting-only images; they are outside the repo. The six images above are result sheets, not the social cover.
 
 GitHub automatically attaches the source ZIP. Do not attach every SVG individually.
 
@@ -150,12 +131,12 @@ GitHub automatically attaches the source ZIP. Do not attach every SVG individual
 
 - **Tag:** `v0.4-pilot`
 - **Target:** `main`
-- **Title:** `Pilot 02 — v0.4: 7 models, GPT 6.2 Sol, GPT 5.6 Luna, pelt fix, literary bonus`
+- **Title:** `Pilot 02 — v0.4: D0–Dn guide, pelt head/neck fix, literary bonus`
 - **Description:** paste the sections above.
-- **Assets:** the spec ZIP plus the comparison-image set above.
+- **Assets:** the spec ZIP.
 - **Set as latest:** yes.
 - **Pre-release:** optional; `0.4` is still a pilot.
 
 ## One-line release summary
 
-> v0.4: the authoring guide gets D0–Dn and a preflight, the pelt gets a head/neck rule, GPT 6.2 Sol leads a seven-model benchmark, GPT 5.6 Luna joins after ChatGPT, and five literary creatures close the set.
+> v0.4: the authoring guide gets D0–Dn and a preflight, the pelt gets a head/neck rule, and five literary creatures join at the end — not as a benchmark, but as the evidence for why the rule was needed.
