@@ -1,7 +1,13 @@
 {
   "pilot": "pilot-02",
-  "date": "2026-11-18",
+  "date": "2026-11-20",
   "models": [
+    {
+      "id": "gpt-6.2-sol",
+      "name": "GPT 6.2 Sol",
+      "version": "6.2 Sol",
+      "note": "Web UI; D1/D2/D3 run with the current experimental prompts; complete manifests and test report; placed first"
+    },
     {
       "id": "deepseek-v4.1-flash",
       "name": "DeepSeek v4.1 Flash",
@@ -74,26 +80,26 @@
     }
   ],
   "counts": {
-    "svgs": 180,
-    "l0": 19,
-    "l1": 114,
-    "l2": 13,
-    "l3": 26,
-    "l4": 7,
+    "svgs": 208,
+    "l0": 22,
+    "l1": 132,
+    "l2": 15,
+    "l3": 30,
+    "l4": 8,
     "l5": 1,
     "style_studies": 2,
-    "pelts": 13,
-    "models": 6,
+    "pelts": 15,
+    "models": 7,
     "cards": 3,
-    "card_runs": 19,
+    "card_runs": 22,
     "q_dimensions": 25,
     "l5_animated": 1,
     "l5_archived": 1,
     "variants": 1
   },
-  "notes": "Design notes are included. DeepSeek/ChatGPT use card/level notes; GPT 6.0 Sol, Kimi, Gemini and GPT 5.6 Luna use card-level manifests/notes; XD-01 is a D2 hard variant with a card README plus per-level notes. The GPT 5.6 Luna deep-thinking run uses the revised experimental prompts and is placed after ChatGPT (web, free).",
-  "caution": "n=1 per model/card; no repeats; no formal K/M scoring; ChatGPT and Gemini versions not captured; the GPT 5.6 Luna run is a deep-thinking web run, not an independent API model; XD-01 is a stress test and its failures are part of the result; the L5 is animated but still structurally distorted; the static first attempt is archived.",
-  "source": "Desktop experiment folders, 2026-11-14 + 2026-11-18",
+  "notes": "Design notes are included. GPT 6.2 Sol is first, then DeepSeek/GPT 6.0 Sol/Kimi/Gemini/ChatGPT/GPT 5.6 Luna. GPT 6.2 Sol and GPT 5.6 Luna use the revised experimental prompts; GPT 6.2 Sol has a test report and full manifests. XD-01 is a D2 hard variant.",
+  "caution": "n=1 per model/card; no repeats; no formal K/M scoring; GPT 5.6 Luna is a user-labelled deep-thinking web run; GPT 6.2 Sol is a web run with a self-reported test report; XD-01 is a stress test; the L5 is animated but structurally distorted; the static first attempt is archived.",
+  "source": "Desktop experiment folders, 2026-11-14 + 2026-11-18 + 2026-11-20",
   "variants": [
     {
       "id": "XD-01",

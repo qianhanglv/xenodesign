@@ -2,9 +2,9 @@
 
 **Can an AI design a coherent alien?**
 
-Six models, three standard cards, and one D2 hard variant. 180 SVGs — portrait, six views, section, skeleton, topological pelt, motion, and the first L5 bicycle. A visual pilot, not a leaderboard.
+Seven models, three standard cards, and one D2 hard variant. 208 SVGs — portrait, six views, section, skeleton, topological pelt, motion, and the first L5 bicycle. A visual pilot, not a leaderboard.
 
-![Eighteen L0 creatures: DeepSeek, GPT 6.0 Sol, Kimi, Gemini, ChatGPT, and GPT 5.6 Luna on D1/D2/D3](assets/hero-l0-pilot02.png)
+![Twenty-one L0 creatures: GPT 6.2 Sol, DeepSeek, GPT 6.0 Sol, Kimi, Gemini, ChatGPT, and GPT 5.6 Luna on D1/D2/D3](assets/hero-l0-pilot02.png)
 
 ## Why this exists / 项目初衷
 
@@ -32,6 +32,7 @@ What each step is testing:
 
 ## What's new in Pilot 02
 
+- **GPT 6.2 Sol** ran the three standard cards (D1–D3) with full manifests and a test report; placed first.
 - **GPT 6.0 Sol** ran the three standard cards (D1–D3).
 - **Gemini (web)** ran the three standard cards (D1–D3).
 - **Kimi K3.1 Pro** ran the three standard cards (D1–D3).
@@ -45,7 +46,7 @@ What each step is testing:
 ## What this is
 
 - **A pipeline test.** One set of prompts asks for a single creature carried through L0 portrait, L1 six orthographic views, L2 section, L3 skeleton + topological pelt, L4 motion, and optionally L5 ride.
-- **A six-model comparison.** DeepSeek v4.1 Flash, GPT 6.0 Sol, Kimi K3.1 Pro, Gemini (web), ChatGPT (web, free), and GPT 5.6 Luna (web, deep thinking) ran the same three standard cards: 6, 13, and 20 constraints.
+- **A seven-model comparison.** GPT 6.2 Sol, DeepSeek v4.1 Flash, GPT 6.0 Sol, Kimi K3.1 Pro, Gemini (web), ChatGPT (web, free), and GPT 5.6 Luna (web, deep thinking) ran the same three standard cards: 6, 13, and 20 constraints.
 - **A D2 hard variant.** XD-01 stays inside D2: it adds a donut-topology constraint (one real through-hole covering at least a third of the silhouette). It is designed to break single-view plausibility.
 - **A first look at the hardest part.** The L3 pelt is specified as **one continuous skin, unfolded flat** — not a cutaway, not an exploded view, not several pieces.
 
@@ -56,7 +57,7 @@ What each step is testing:
 - **Not a claim about intelligence.** It is a visual smoke test for composition, spatial consistency, and instruction following.
 - **Not a clean pass for XD-01.** The variant is deliberately hard; its failures are part of the result, not hidden.
 - **Not a clean L5.** The ride is structurally distorted; the animated version moves, but the geometry still twists.
-- **Counts are active submissions.** The archived static L5 is extra and is not in the 180.
+- **Counts are active submissions.** The archived static L5 is extra and is not in the 208.
 
 ## The cards
 
@@ -75,6 +76,7 @@ D2 hard-variant prompt: [cards/XD-01-donut-cavity-L5.md](cards/XD-01-donut-cavit
 
 | Model | D1 | D2 | D3 | D2-hard | Notes |
 |---|---|---|---|---|---|
+| GPT 6.2 Sol | L0–L4 | L0–L3 | L0–L1 | — | first; complete manifests + test report |
 | DeepSeek v4.1 Flash | L0–L4 | L0–L3 | L0–L1 | L0–L5 | standard + D2 hard variant |
 | GPT 6.0 Sol | L0–L4 | L0–L3 | L0–L1 | — | notes included |
 | Kimi K3.1 Pro | L0–L4 | L0–L3 | L0–L1 | — | D1 note missing |
@@ -107,9 +109,9 @@ All XD-01 levels: [assets/xd01-all-levels.png](assets/xd01-all-levels.png)
 
 ## The pelt test
 
-The pelt remains the differentiator. A good pelt is one continuous sheet with a boundary, seams, and pattern continuity — not a cutaway, not an exploded view, not several pieces. **If the creature has a head, the head and neck must be part of the same sheet**: the head/face is a front lobe and the neck is a continuous bridge, not a separate mask and not a headless torso. If the creature has no head by canon, the note must say so explicitly (`HEAD: none by canon`). Pilot 02 adds GPT 6.0 Sol's two, Kimi's two, Gemini's two, GPT 5.6 Luna's two, and the XD-01 pelt with its central cavity.
+The pelt remains the differentiator. A good pelt is one continuous sheet with a boundary, seams, and pattern continuity — not a cutaway, not an exploded view, not several pieces. **If the creature has a head, the head and neck must be part of the same sheet**: the head/face is a front lobe and the neck is a continuous bridge, not a separate mask and not a headless torso. If the creature has no head by canon, the note must say so explicitly (`HEAD: none by canon`). Pilot 02 adds GPT 6.2 Sol's two, GPT 6.0 Sol's two, Kimi's two, Gemini's two, GPT 5.6 Luna's two, and the XD-01 pelt with its central cavity.
 
-![Thirteen pelts: DeepSeek, GPT 6.0 Sol, Kimi, Gemini, ChatGPT, GPT 5.6 Luna, and XD-01](assets/pelt-comparison-pilot02.png)
+![Fifteen pelts: GPT 6.2 Sol, DeepSeek, GPT 6.0 Sol, Kimi, Gemini, ChatGPT, GPT 5.6 Luna, and XD-01](assets/pelt-comparison-pilot02.png)
 
 ## First L5: the bicycle
 
@@ -137,15 +139,16 @@ The same XD-01 geometry was rendered twice: an illuminated miniature with parchm
 
 ## First observations
 
-1. **All 180 SVGs are structurally valid.** 180/180 parse, use `viewBox="0 0 512 512"`, and contain no `<text>`, `<image>`, `<script>`, `foreignObject`, or external `href`. The largest file is 363 KB, under the 512 KB cap.
+1. **All 208 SVGs are structurally valid.** 208/208 parse, use `viewBox="0 0 512 512"`, and contain no `<text>`, `<image>`, `<script>`, `foreignObject`, or external `href`. The largest file is 363 KB, under the 512 KB cap.
 2. **The pelt is still the differentiator.** DeepSeek, GPT 6.0 Sol, Kimi, and Gemini read more like one continuous skin; ChatGPT's D1/D2 pelts are single sheets but read more like symmetrical patterns. The XD-01 pelt is the clearest topological test because the central hole has to survive the unfold.
 3. **Kimi is strongest at D2/D3; its D1 is much simpler and has no design note.** D1 is a clean, friendly creature, but without a note the six constraints cannot be checked line by line. D2 and D3 have detailed notes and much denser constraint mapping. The gap is useful: a model can produce a clean picture without showing the reasoning.
-4. **GPT 6.0 Sol is the cleanest vector stylist of the six.** D1 is a tiny fish-like ice creature, D2 a vent-orb, D3 a 24 m cyst-weaver. D1/D2 include pelt and section; D3 stops at L0/L1. Its D1 uses only two walking limbs, which is allowed by “≤4” — don't misread it as a missing limb.
-5. **Gemini is one of the most literal note-takers of the six.** Its cards come with scale bars and a full constraint map; D1 is a fish-like ice creature with a dorsal water sac, D2 a vent beetle, D3 a green radial organism. D1/D2 include pelt and section; D3 stops at L0/L1. The notes are systematic; the pictures are flatter and more diagram-like than Kimi's.
+4. **GPT 6.0 Sol is one of the cleanest vector stylists of the seven.** D1 is a tiny fish-like ice creature, D2 a vent-orb, D3 a 24 m cyst-weaver. D1/D2 include pelt and section; D3 stops at L0/L1. Its D1 uses only two walking limbs, which is allowed by “≤4” — don't misread it as a missing limb.
+5. **Gemini is one of the most literal note-takers of the seven.** Its cards come with scale bars and a full constraint map; D1 is a fish-like ice creature with a dorsal water sac, D2 a vent beetle, D3 a green radial organism. D1/D2 include pelt and section; D3 stops at L0/L1. The notes are systematic; the pictures are flatter and more diagram-like than Kimi's.
 6. **XD-01 shows the single-view trap.** The L0 ring and the L5 bicycle are convincing at a glance; the L1 side views and L2 section are where the topology falls apart. The notes claim a 0.39 area ratio and a continuous void; the artifacts do not fully prove either.
 7. **The first L5 now moves.** `ride.svg` is a 3.2 s animated loop; the body is still visibly twisted, and the contact/balance need a frame-by-frame check. The static first attempt is kept in `archive/XD-01-L5/`.
 8. **Style studies are cheap and high-leverage.** Re-rendering the same geometry in two historical styles adds a second axis — representation — without changing the design constraints.
-9. **GPT 5.6 Luna (deep thinking) is the most note-disciplined new run.** It fills the manifest, its D1/D2/D3 notes stay within 300 / 574 / 837 words, and its D1/D2 pelts explicitly record `HEAD/NECK`; the drawings are flatter and more diagrammatic, but the constraint ledger is unusually complete.
+9. **GPT 6.2 Sol is the strongest new run.** 28 SVGs, 239 / 411 / 471 note words, complete manifests and a test report; D1/D2 pelts explicitly keep the head and neck. It is the new first column, not a separate benchmark.
+10. **GPT 5.6 Luna (deep thinking) is the most note-disciplined new run.** It fills the manifest, its D1/D2/D3 notes stay within 300 / 574 / 837 words, and its D1/D2 pelts explicitly record `HEAD/NECK`; the drawings are flatter and more diagrammatic, but the constraint ledger is unusually complete.
 
 ![GPT 6.0 Sol on D1/D2/D3](assets/gpt-sol-l0-grid.png)
 
@@ -224,7 +227,7 @@ This pilot is deliberately unfinished.
 │   ├── chatgpt-web/           # D1–D3 (free web)
 │   └── experimental/          # non-SVG media
 ├── archive/                   # first static L5, kept for comparison
-├── literary/                  # bonus: five text-only fan designs, not in the 180
+├── literary/                  # bonus: five text-only fan designs, not in the 208
 ├── reports/
 │   ├── pilot-01.md
 │   ├── pilot-02.md
@@ -245,27 +248,27 @@ This pilot is deliberately unfinished.
 |---|---|---|
 | `README.md` | Landing page: what this is, the cards, the challenge, how to build a card. | Everyone |
 | `index.html` | Static gallery; GitHub Pages serves it. | Visitors |
-| `assets/` | Rendered comparison sheets, including the 6×3 L0 grid, 13-pelt comparison, and XD-01 failure sheet. | README and gallery |
+| `assets/` | Rendered comparison sheets, including the 7×3 L0 grid, 15-pelt comparison, and XD-01 failure sheet. | README and gallery |
 | `cards/` | The standard prompts and the XD-01 challenge. | People running a model |
-| `submissions/` | 180 SVGs and the design notes, grouped by model/card/level. | Contributors and reviewers |
+| `submissions/` | 208 SVGs and the design notes, grouped by model/card/level. | Contributors and reviewers |
 | `spec/` | Main standard, authoring guide, prompt library, L0 template. | People building new cards |
 | `build_gallery.py` | Rebuilds `index.html`; stdlib only. | Maintainers |
 | `data.json` | Model, card, level, and count metadata. | Maintainers |
 | `archive/XD-01-L5/` | The first static L5 attempt, kept for comparison; not indexed by the gallery. | Readers |
-| `literary/` | Bonus extension: five text-only fan designs, prompts, oil portraits, and notes; not counted in the 180. | Readers |
+| `literary/` | Bonus extension: five text-only fan designs, prompts, oil portraits, and notes; not counted in the 208. | Readers |
 | `reports/pilot-01.md` | Pilot 01 observations. | Readers |
 | `reports/pilot-02.md` | Pilot 02 observations: Kimi, XD-01, L5, style studies. | Readers |
 | `reports/release-v0.1-pilot.md` | Release note for `v0.1-pilot`. | Maintainers |
 | `reports/release-v0.2-pilot.md` | Release note and asset list for `v0.2-pilot`. | Maintainers |
 | `reports/release-v0.3-pilot.md` | Release note and asset list for `v0.3-pilot` (historical). | Maintainers |
-| `reports/release-v0.4-pilot.md` | Release note for `v0.4-pilot`: D0–Dn guide, pelt fix, literary bonus. | Maintainers |
+| `reports/release-v0.4-pilot.md` | Combined release note for `v0.4-pilot`: D0–Dn guide, pelt fix, GPT 5.6 Luna, GPT 6.2 Sol, literary bonus. | Maintainers |
 | `LICENSE` / `LICENSE-CONTENT` | MIT for code; CC BY 4.0 for prompts/docs/gallery images. | Everyone |
 | `CONTRIBUTING.md` | How to add a model run, a vocabulary item, or an experimental medium. | Contributors |
 | `.gitignore` | Keeps `.DS_Store`, caches, and `.env` out of the repo. | Maintainers |
 
 ## Release
 
-Pilot 01 is tagged `v0.1-pilot`. Pilot 02 is published as `v0.2-pilot` (4-model snapshot, 124 SVGs) and `v0.3-pilot` (5-model snapshot, 152 SVGs). `v0.4-pilot` is the documentation + literary-bonus release (before the GPT 5.6 Luna run); the current living benchmark is 180 SVGs. v0.3 used the old “challenge” label; the living gallery now treats XD-01 as a D2 hard variant. Release notes: [v0.4](reports/release-v0.4-pilot.md) · [v0.3](reports/release-v0.3-pilot.md) · [v0.2](reports/release-v0.2-pilot.md).
+Pilot 01 is tagged `v0.1-pilot`. Pilot 02 is published as `v0.2-pilot` (4-model snapshot, 124 SVGs) and `v0.3-pilot` (5-model snapshot, 152 SVGs). `v0.4-pilot` is the combined documentation, literary-bonus, GPT 5.6 Luna, and GPT 6.2 Sol release; the current living benchmark is 208 SVGs. v0.3 used the old “challenge” label; the living gallery now treats XD-01 as a D2 hard variant. Release notes: [v0.4](reports/release-v0.4-pilot.md) · [v0.3](reports/release-v0.3-pilot.md) · [v0.2](reports/release-v0.2-pilot.md).
 
 ## License
 
@@ -275,7 +278,7 @@ Pilot 01 is tagged `v0.1-pilot`. Pilot 02 is published as `v0.2-pilot` (4-model 
 
 ## Status
 
-Pilot 02. Six models, 180 SVGs, one D2 hard variant, one L5. Still one sample per model/card, no repeats, no formal K1–K8 / M1–M7 scoring, and no blind human check. The XD-01 failures are intentionally visible.
+Pilot 02. Seven models, 208 SVGs, one D2 hard variant, one L5. Still one sample per model/card, no repeats, no formal K1–K8 / M1–M7 scoring, and no blind human check. The XD-01 failures are intentionally visible.
 
 Next: formalize the K/M checklists, run 3 seeds per model/card, add a blind human check on L0, turn the animated L5 into a clean, contact-readable ride, and invite more models to XD-01.
 
@@ -291,7 +294,7 @@ A separate, non-benchmark extension at the end of the project: five text-only fa
 | Watcher in the Water | 21 tentacles hold; six views are the weakest |
 | Black Tai Sui | Best body horror; least information |
 
-The five L0 cards and the three oil portraits are also embedded in the main gallery under the **Literary bonus** nav link. This set is also the evidence for the L3 prompt fix: the Runespoor/Feathered Serpent outputs predate the head/neck rule; the Water Monkey output postdates it. They are **not** counted in the 180 SVGs and do not change the model comparison.
+The five L0 cards and the three oil portraits are also embedded in the main gallery under the **Literary bonus** nav link. This set is also the evidence for the L3 prompt fix: the Runespoor/Feathered Serpent outputs predate the head/neck rule; the Water Monkey output postdates it. They are **not** counted in the 208 SVGs and do not change the model comparison.
 
 [Literary gallery](literary/index.html) · [Notes and verdicts](literary/README.md)
 
